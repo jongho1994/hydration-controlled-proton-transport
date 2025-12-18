@@ -1,0 +1,1 @@
+Topology information for the LAMMPS trajectory (.lammpstrj) files is identical to that defined in RMD_EQ/C1_NoCoeff.data. Bond, angle, and dihedral parameters are specified separately in the corresponding par_*.inp parameter files.
