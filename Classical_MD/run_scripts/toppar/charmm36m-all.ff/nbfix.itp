@@ -1,0 +1,180 @@
+; CHARMM-port for GROMACS
+; created with charmm2gmx version 1.0.4.dev2+gfb54046 on 2024-03-22 16:05:01.648701
+; Code: https://gitlab.com/awacha/charmm2gmx
+; Documentation: https://awacha.gitlab.com/charmm2gmx
+; Citation: András F. Wacha and Justin A. Lemkul: "charmm2gmx: An Automated 
+;      Method to Port the CHARMM Additive Force Field to GROMACS". Journal of
+;      Chemical Information and Modeling 2023, 63(14), 4246-4252.
+;      DOI: 10.1021/acs.jcim.3c00860
+;
+; Charmm2GMX written by András Wacha and Justin Lemkul, based on the original
+; port by E. Prabhu Raman, Justin A. Lemkul, Robert Best and Alexander D. 
+; MacKerell, Jr.
+; The following files were used: 
+; 
+; toppar/par_FES.prm
+; toppar/par_FMN.prm
+; toppar/par_SF4.prm
+; toppar/par_all36_carb.prm
+; toppar/par_all36_cgenff.prm
+; toppar/par_all36_lipid.prm
+; toppar/par_all36_na.prm
+; toppar/par_all36m_prot.prm
+; toppar/top_FES.rtf
+; toppar/top_SF4.rtf
+; toppar/toppar_all36_lipid_archaeal.str
+; toppar/toppar_water_ions.str
+;
+
+[ nonbond_params ]
+
+
+; NBFIX parameters from 
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_FES.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_FMN.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_SF4.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_all36_carb.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_all36_cgenff.prm
+;      i        j  func           sigma         epsilon
+   NG2S2    CLGR1     1  0.345668702638  1.673600000000 ; CHLB..ACME
+   NG2S1    CLGR1     1  0.345668702638  1.673600000000 ; CHLB..NMA
+   NG2P1    CLGR1     1  0.311814551349  4.393200000000 ; CHLB..MGUA
+  NG2R50    CLGR1     1  0.304687361604  1.924640000000 ; CHLB..IMIA(NE2)
+  NG2R51    CLGR1     1  0.334087019303  2.008320000000 ; CHLB..IMIA(ND1-HD2)/INDO(NE1)
+   NG3P3    CLGR1     1  0.283305792369 15.062400000000 ; CHLB..MAMM
+   OG2D1    CLGR1     1  0.302905564168  0.836800000000 ; NMA (carbonyl oxygen in amide) and CL of CGenFF
+   OG2D2    CLGR1     1  0.249451641079 10.460000000000 ; CHLB..ACET
+   SG311    CLGR1     1  0.341214209048  1.589920000000 ; CHLB..MESH  ;  they are already in the prm for protein
+    HGP3    CLGR1     1  0.251233438516  0.836800000000 ; CHLB..MESH  ;  they are already in the prm for protein
+   NG2S2    BRGR1     1  0.360813980847  1.255200000000 ; BROB..ACEM
+   NG2S1    BRGR1     1  0.358141284692  1.255200000000 ; BROB..NMA
+   OG2D1    BRGR1     1  0.313596348785  1.129680000000 ; BROB..NMA/ACEM
+  NG2R50    BRGR1     1  0.321614437249  0.920480000000 ; BROB..IMIA(NE2)
+  NG2R51    BRGR1     1  0.338541512893  3.012480000000 ; BROB..IMIA(ND1-HD2)/INDO(NE1)
+   SG311    BRGR1     1  0.329632525712  2.050160000000 ; BROB...MESH
+    HGP3    BRGR1     1  0.264596919288  1.004160000000 ; BROB...MESH
+   NG3P3    BRGR1     1  0.296669273141 15.271600000000 ; BROB..MAMM
+   NG2P1    BRGR1     1  0.326068930839  4.602400000000 ; BROB..MGUA
+   OG2D2    BRGR1     1  0.265487818006  5.230000000000 ; BROB..ACET
+     NH2    CLGR1     1  0.345668702638  1.673600000000 ; CHLB..ACME-NG2S2
+     NH1    CLGR1     1  0.345668702638  1.673600000000 ; CHLB..NMA-NG2S1, backbone N
+     NR2    CLGR1     1  0.304687361604  1.924640000000 ; CHLB..IMIA-NG2R50(NE2)
+     NR1    CLGR1     1  0.334087019303  2.008320000000 ; CHLB..IMIA-NG2R51(ND1-HD2)
+      NY    CLGR1     1  0.334087019303  2.008320000000 ; CHLB..INDO-NG2R51(NE1)
+     NH3    CLGR1     1  0.283305792369 15.062400000000 ; CHLB..MAMM-NG3P3,  larger eps was used to inprove interE
+     NC2    CLGR1     1  0.311814551349  4.393200000000 ; CHLB..MGUA-NG2P1,  larger eps was used to inprove interE
+       O    CLGR1     1  0.302905564168  0.836800000000 ; NMA, carbonyl oxygen in amide of protein
+      OC    CLGR1     1  0.249451641079 10.460000000000 ; CHLB..ACET-OG2D2,  larger eps was used to inprove interE
+       S    CLGR1     1  0.341214209048  1.589920000000 ; NBFIX for cysteine sulphur
+      HS    CLGR1     1  0.251233438516  0.836800000000 ; NBFIX for cysteine sulphur
+     NH2    BRGR1     1  0.360813980847  1.255200000000 ; BROB..ACEM-NG2S2
+     NH1    BRGR1     1  0.358141284692  1.255200000000 ; BROB..NMA-NG2S1, backbone N
+       O    BRGR1     1  0.313596348785  1.129680000000 ; BROB..NMA/ACEM-OG2D1
+     NR2    BRGR1     1  0.321614437249  0.920480000000 ; BROB..IMIA-NG2R50(NE2)
+     NR1    BRGR1     1  0.338541512893  3.012480000000 ; BROB..IMIA-NG2R51(ND1-HD2)
+      NY    BRGR1     1  0.338541512893  3.012480000000 ; BROB..IMIA-NG2R51(NE1)
+     NH3    BRGR1     1  0.296669273141 15.271600000000 ; BROB..MAMM-NG3P3, larger eps was used to inprove interE
+     NC2    BRGR1     1  0.326068930839  4.602400000000 ; BROB..MGUA-NG2P1, larger eps was used to inprove interE
+      OC    BRGR1     1  0.265487818006  5.230000000000 ; BROB..ACET-OG2D2, larger eps was used to inprove interE
+   OC2D1    CLGR1     1  0.302905564168  0.836800000000 ; NMA, carbonyl oxygen in carbohydrate amides
+   OC2D2    CLGR1     1  0.249451641079 10.460000000000 ; from CLGR1 OG2D2, ACET
+   OC2D3    CLGR1     1  0.302905564168  0.836800000000 ; from CLGR1 OG2D1, NMA
+   OC2D4    CLGR1     1  0.302905564168  0.836800000000 ; from CLGR1 OG2D1, NMA
+   OC2D2    BRGR1     1  0.265487818006  5.230000000000 ; from BRGR1 OG2D2, ACET
+   OC2D3    BRGR1     1  0.313596348785  1.129680000000 ; from BRGR1 OG2D1, NMA
+   OC2D4    BRGR1     1  0.313596348785  1.129680000000 ; from BRGR1 OG2D1, NMA
+     OBL    CLGR1     1  0.302905564168  0.836800000000 ; from CLGR1 OG2D1, NMA
+    NH3L    CLGR1     1  0.283305792369 15.062400000000 ; from NG3P3 CLGR1, MAMM
+     OCL    CLGR1     1  0.249451641079 10.460000000000 ; from CLGR1 OG2D2, ACET
+     OBL    BRGR1     1  0.313596348785  1.129680000000 ; from BRGR1 OG2D1, NMA
+    NH3L    BRGR1     1  0.296669273141 15.271600000000 ; from NG3P3 BRGR1, MAMM
+     OCL    BRGR1     1  0.265487818006  5.230000000000 ; from BRGR1 OG2D2, ACET
+     NN1    CLGR1     1  0.345668702638  1.673600000000 ; from CLGR1 NG2S2, ACEM
+     NN2    CLGR1     1  0.334087019303  2.008320000000 ; from CLGR1 NG2R51, NH-IMID
+    NN2U    CLGR1     1  0.334087019303  2.008320000000 ; from CLGR1 NG2R51, NH-IMID
+    NN2G    CLGR1     1  0.334087019303  2.008320000000 ; from CLGR1 NG2R51, HN-IMID
+     NN3    CLGR1     1  0.304687361604  1.924640000000 ; from CLGR1 NG2R50, N-IMID
+    NN3A    CLGR1     1  0.304687361604  1.924640000000 ; from CLGR1 NG2R50, N-IMID
+    NN3G    CLGR1     1  0.304687361604  1.924640000000 ; from CLGR1 NG2R50, N-IMID
+     NN4    CLGR1     1  0.304687361604  1.924640000000 ; from CLGR1 NG2R50, N-IMID
+     ON1    CLGR1     1  0.302905564168  0.836800000000 ; from CLGR1 OG2D1, NMA
+    ON1C    CLGR1     1  0.302905564168  0.836800000000 ; from CLGR1 OG2D1, NMA
+     NN1    BRGR1     1  0.360813980847  1.255200000000 ; from BRGR1 NG2S2, ACEM
+     NN2    BRGR1     1  0.338541512893  3.012480000000 ; from BRGR1 NG2R51, NH-IMID
+    NN2U    BRGR1     1  0.338541512893  3.012480000000 ; from BRGR1 NG2R51, NH-IMID
+    NN2G    BRGR1     1  0.338541512893  3.012480000000 ; from BRGR1 NG2R51, HN-IMID
+     NN3    BRGR1     1  0.321614437249  0.920480000000 ; from BRGR1 NG2R50, N-IMID
+    NN3A    BRGR1     1  0.321614437249  0.920480000000 ; from BRGR1 NG2R50, N-IMID
+    NN3G    BRGR1     1  0.321614437249  0.920480000000 ; from BRGR1 NG2R50, N-IMID
+     NN4    BRGR1     1  0.321614437249  0.920480000000 ; from BRGR1 NG2R50, N-IMID
+     ON1    BRGR1     1  0.313596348785  1.129680000000 ; from BRGR1 OG2D1, NMA
+    ON1C    BRGR1     1  0.313596348785  1.129680000000 ; from BRGR1 OG2D1, NMA
+
+
+; NBFIX parameters from toppar/par_all36_lipid.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_all36_na.prm
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/par_all36m_prot.prm
+;      i        j  func           sigma         epsilon
+     NC2       OC     1  0.324019863788  0.648181096000 ; From osmotic pressure calibration
+
+
+; NBFIX parameters from toppar/top_FES.rtf
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/top_SF4.rtf
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/toppar_all36_lipid_archaeal.str
+;      i        j  func           sigma         epsilon
+
+
+; NBFIX parameters from toppar/toppar_water_ions.str
+;      i        j  func           sigma         epsilon
+     CLA      SOD     1  0.332394311738  0.351037600000 ; Savelyev and MacKerell, JPCB 2015
+     CLA      POT     1  0.363575766873  0.477812800000 ; Savelyev and MacKerell, JPCB 2015
+     SOD       OC     1  0.287760285959  0.313883680000 ; osmotic P; carboxylate =O
+     SOD       OS     1  0.278851298778  0.313883680000 ; POPC optim.; ester =O
+     LIT      ON3     1  0.283083067689  0.069872800000 ; Savelyev and MacKerell, JPCB 2015
+     SOD      OCL     1  0.287760285959  0.313883680000 ; osmotic P; carboxylate =O
+     SOD      OBL     1  0.278851298778  0.313883680000 ; POPC optim.; ester =O
+     SOD      O2L     1  0.281523994932  0.313883680000 ; POPC optim.; phosphate =O
+     SOD    OC2D2     1  0.287760285959  0.313883680000 ; osmotic P; carboxylate =O
+     SOD    OC2DP     1  0.281523994932  0.313883680000 ; POPC optim.; phosphate =O
+     SOD    OG2D2     1  0.287760285959  0.313883680000 ; osmotic P; carboxylate =O
+     SOD    OG2P1     1  0.281523994932  0.313883680000 ; POPC optim.; phosphate =O
+     CLA      LIT     1  0.328518902314  0.078240800000 ; Savelyev and MacKerell, JPCB 2015
+     POT       OC     1  0.313952708273  0.427604800000 ; PNAS, 111: E5354-E5362 (2014)
+     POT      OCL     1  0.313952708273  0.427604800000 ; PNAS, 111: E5354-E5362 (2014)
+     POT    OC2D2     1  0.313952708273  0.427604800000 ; PNAS, 111: E5354-E5362 (2014)
+     POT    OG2D2     1  0.313952708273  0.427604800000 ; PNAS, 111: E5354-E5362 (2014)
+     CAL      CLA     1  0.332037952251  0.561342176000 ; from J. Phys. Chem. B 2018, 122, 1484−1494
+     CAL      O2L     1  0.290076622626  0.502080000000 ; from J. Phys. Chem. B 2018, 122, 1484−1494
+     CAL    OC2DP     1  0.290076622626  0.502080000000 ; from J. Phys. Chem. B 2018, 122, 1484−1494
+     CAL    OG2P1     1  0.290076622626  0.502080000000 ; from J. Phys. Chem. B 2018, 122, 1484−1494
+     CAL      OCL     1  0.287938465703  0.502080000000 ; Rong Shen and Benoit Roux, personal communication
+     CAL       OC     1  0.287938465703  0.502080000000 ; Nature Structural & Molecular Biology 23: 590 (2016)
+     CAL    OC2D2     1  0.287938465703  0.502080000000 ; 
+     CAL    OG2D2     1  0.287938465703  0.502080000000 ; 

@@ -1,0 +1,3989 @@
+; CHARMM-port for GROMACS
+; created with charmm2gmx version 1.0.4.dev2+gfb54046 on 2024-03-22 16:05:02.116188
+; Code: https://gitlab.com/awacha/charmm2gmx
+; Documentation: https://awacha.gitlab.com/charmm2gmx
+; Citation: András F. Wacha and Justin A. Lemkul: "charmm2gmx: An Automated 
+;      Method to Port the CHARMM Additive Force Field to GROMACS". Journal of
+;      Chemical Information and Modeling 2023, 63(14), 4246-4252.
+;      DOI: 10.1021/acs.jcim.3c00860
+;
+; Charmm2GMX written by András Wacha and Justin Lemkul, based on the original
+; port by E. Prabhu Raman, Justin A. Lemkul, Robert Best and Alexander D. 
+; MacKerell, Jr.
+; Residue topology information from the CHARMM force field
+
+[ bondedtypes ]
+; Col 1: Type of bond 
+; Col 2: Type of angles 
+; Col 3: Type of proper dihedrals 
+; Col 4: Type of improper dihedrals 
+; Col 5: Generate all dihedrals if 1, only heavy atoms of 0. 
+; Col 6: Number of excluded neighbors for nonbonded interactions 
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1 
+; Col 8: Remove propers over the same bond as an improper if it is 1 
+; bonds  angles  dihedrals  impropers  all_dihedrals  nrexcl  HH14  RemoveDih 
+    1       5        9          2            1           3      1       0
+
+; residue topologies from file toppar/top_all36_carb.rtf
+
+[ AALL ]
+; 4C1 alpha-D-allose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AALT ]
+; 4C1 alpha-D-altrose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AARB ]
+; alpha-Arabinose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ ABEQ ]
+; abequose, 3,6-didexoxy-alpha-D-xylo-hexose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3261 -0.1800   3
+      H31     HCA2  0.0900   3
+      H32     HCA2  0.0900   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3   H31
+       C3   H32
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+
+[ ADEO ]
+; alpha-Deoxy-Ribose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3251 -0.1800   3
+      H21     HCA2  0.0900   3
+      H22     HCA2  0.0900   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2   H21
+       C2   H22
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       C4    C5
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ AFRU ]
+; alpha-Fructofuranose
+  [ atoms ]
+       O5   OC3C51 -0.4000   1
+       C2   CC3051  0.4300   1
+       O2    OC311 -0.6500   1
+      HO2     HCP1  0.4200   1
+       C5   CC3153  0.1100   1
+       H5     HCA1  0.0900   1
+       C6    CC321  0.0500   2
+      H61     HCA2  0.0900   2
+      H62     HCA2  0.0900   2
+       O6    OC311 -0.6500   2
+      HO6     HCP1  0.4200   2
+       C1    CC321  0.0500   3
+      H11     HCA2  0.0900   3
+      H12     HCA2  0.0900   3
+       O1    OC311 -0.6500   3
+      HO1     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3151  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+  [ bonds ]
+       O5    C2
+       C2    C1
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C5    O5
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C1   H11
+       C1   H12
+       C1    O1
+       O1   HO1
+
+[ AFUC ]
+; alpha-L-fucose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+
+[ AGAL ]
+; 4C1 alpha-D-galactose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AGALNA ]
+; 2-acetyl-2-deoxy-alpha-D-galactosamine
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.0700   2
+       H2     HCA1  0.0900   2
+        N    NC2D1 -0.4700   2
+       HN     HCP1  0.3100   2
+        C    CC2O1  0.5100   3
+        O    OC2D1 -0.5100   3
+       CT    CC331 -0.2700   4
+      HT1     HCA3  0.0900   4
+      HT2     HCA3  0.0900   4
+      HT3     HCA3  0.0900   4
+       C3   CC3161  0.1400   5
+       H3     HCA1  0.0900   5
+       O3    OC311 -0.6500   5
+      HO3     HCP1  0.4200   5
+       C4   CC3161  0.1400   6
+       H4     HCA1  0.0900   6
+       O4    OC311 -0.6500   6
+      HO4     HCP1  0.4200   6
+       C6    CC321  0.0500   7
+      H61     HCA2  0.0900   7
+      H62     HCA2  0.0900   7
+       O6    OC311 -0.6500   7
+      HO6     HCP1  0.4200   7
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2     N
+        N    HN
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+  [ impropers ]
+        C    CT     N     O
+        N     C    C2    HN
+
+[ AGLC ]
+; 4C1 alpha-D-glucose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AGLCA ]
+; 4C1 alpha-D-glucoronic acid
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC2O2  0.5200   5
+      O61    OC2D2 -0.7600   5
+      O62    OC2D2 -0.7600   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   O61
+       C6   O62
+       C5    O5
+  [ impropers ]
+       C6    C5   O62   O61
+
+[ AGLCNA ]
+; 2-acetyl-2-deoxy-alpha-D-glucosamine
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.0700   2
+       H2     HCA1  0.0900   2
+        N    NC2D1 -0.4700   2
+       HN     HCP1  0.3100   2
+        C    CC2O1  0.5100   3
+        O    OC2D1 -0.5100   3
+       CT    CC331 -0.2700   4
+      HT1     HCA3  0.0900   4
+      HT2     HCA3  0.0900   4
+      HT3     HCA3  0.0900   4
+       C3   CC3161  0.1400   5
+       H3     HCA1  0.0900   5
+       O3    OC311 -0.6500   5
+      HO3     HCP1  0.4200   5
+       C4   CC3161  0.1400   6
+       H4     HCA1  0.0900   6
+       O4    OC311 -0.6500   6
+      HO4     HCP1  0.4200   6
+       C6    CC321  0.0500   7
+      H61     HCA2  0.0900   7
+      H62     HCA2  0.0900   7
+       O6    OC311 -0.6500   7
+      HO6     HCP1  0.4200   7
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2     N
+        N    HN
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+  [ impropers ]
+        C    CT     N     O
+        N     C    C2    HN
+
+[ AGUL ]
+; 4C1 alpha-D-gulose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AIDO ]
+; 4C1 alpha-D-idose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AIDOA ]
+; alpha-L-iduronic acid
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC2O2  0.5200   5
+      O61    OC2D2 -0.7600   5
+      O62    OC2D2 -0.7600   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   O61
+       C6   O62
+       C5    O5
+  [ impropers ]
+       C6    C5   O62   O61
+
+[ ALLOSE ]
+; D-Allose, open, free aldehdye
+  [ atoms ]
+       C1    CC2O4  0.2000   1
+       O1    OC2D4 -0.4000   1
+       H1     HCR1  0.0600   1
+       C2    CC312  0.2800   1
+       H2     HCA1  0.0900   1
+       O2    OC311 -0.6500   1
+      HO2     HCP1  0.4200   1
+       C3    CC312  0.1400   2
+       H3     HCA1  0.0900   2
+       O3    OC311 -0.6500   2
+      HO3     HCP1  0.4200   2
+       C4    CC312  0.1400   3
+       H4     HCA1  0.0900   3
+       O4    OC311 -0.6500   3
+      HO4     HCP1  0.4200   3
+       C5    CC312  0.1400   4
+       H5     HCA1  0.0900   4
+       O5    OC311 -0.6500   4
+      HO5     HCP1  0.4200   4
+       C6    CC322  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+  [ impropers ]
+       C1    C2    O1    H1
+
+[ ALYF ]
+; alpha-Lyxofuranose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ AMAN ]
+; 4C1 alpha-D-mannose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ ANE5AC ]
+; alpha-Neu5Ac (N-acetyl-alpha-D-neuraminic acid)
+  [ atoms ]
+       C1    CC2O2  0.3000   1
+      O11    OC2D2 -0.6000   1
+      O12    OC2D2 -0.6000   1
+       C2   CC3062  0.3300   1
+       O2    OC311 -0.6500   1
+      HO2     HCP1  0.4200   1
+       C6   CC3163  0.1100   1
+       H6     HCA1  0.0900   1
+       O6   OC3C61 -0.4000   1
+       C3   CC3261 -0.1800   2
+      H31     HCA2  0.0900   2
+      H32     HCA2  0.0900   2
+       C4   CC3161  0.1400   3
+       H4     HCA1  0.0900   3
+       O4    OC311 -0.6500   3
+      HO4     HCP1  0.4200   3
+       C5   CC3161  0.0700   4
+       H5     HCA1  0.0900   4
+        N    NC2D1 -0.4700   4
+       HN     HCP1  0.3100   4
+        C    CC2O1  0.5100   5
+        O    OC2D1 -0.5100   5
+       CT    CC331 -0.2700   6
+      HT1     HCA3  0.0900   6
+      HT2     HCA3  0.0900   6
+      HT3     HCA3  0.0900   6
+       C7    CC312  0.1400   7
+       H7     HCA1  0.0900   7
+       O7    OC311 -0.6500   7
+      HO7     HCP1  0.4200   7
+       C8    CC312  0.1400   8
+       H8     HCA1  0.0900   8
+       O8    OC311 -0.6500   8
+      HO8     HCP1  0.4200   8
+       C9    CC322  0.0500   9
+      H91     HCA2  0.0900   9
+      H92     HCA2  0.0900   9
+       O9    OC311 -0.6500   9
+      HO9     HCP1  0.4200   9
+  [ bonds ]
+       C1   O11
+       C1   O12
+       C2    O2
+       C2    C1
+       O2   HO2
+       C2    O6
+       C2    C3
+       C3   H31
+       C3   H32
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5     N
+        N    HN
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+       C5    C6
+       C6    H6
+       C6    C7
+       C7    O7
+       C7    H7
+       C6    O6
+       O7   HO7
+       C7    C8
+       C8    H8
+       C8    O8
+       O8   HO8
+       C8    C9
+       C9   H91
+       C9   H92
+       C9    O9
+       O9   HO9
+  [ impropers ]
+        C    CT     N     O
+        N     C    C5    HN
+       C1    C2   O12   O11
+
+[ ARHM ]
+; alpha-L-rhamnose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+
+[ ARHMOA ]
+; 2-O-Acetyl-alpha-L-rhamnose (alpha-6-Deoxy-L-mannose)
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1700   2
+       H2     HCA1  0.0900   2
+       O2    OC301 -0.4900   2
+      CA2    CC2O5  0.9000   2
+      OA2    OC2D1 -0.6300   2
+      CB2    CC331 -0.3100   2
+      HB1     HCA3  0.0900   2
+      HB2     HCA3  0.0900   2
+      HB3     HCA3  0.0900   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+       O2   CA2
+      CA2   OA2
+      CA2   CB2
+      CB2   HB1
+      CB2   HB2
+      CB2   HB3
+
+[ ARIB ]
+; alpha-Ribose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ ATAL ]
+; 4C1 alpha-D-talose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ AXYF ]
+; alpha-Xylofuranose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ AXYL ]
+; alpha-D-xylose (a-glucose w/o exocyclic moiety) og
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3263  0.0200   1
+      H51     HCA2  0.0900   1
+      H52     HCA2  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5   H52
+       C5    O5
+
+[ BALL ]
+; 4C1 beta-D-allose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BALT ]
+; 4C1 beta-D-altrose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BARB ]
+; beta-Arabinose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ BDEO ]
+; beta-Deoxy-Ribose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3251 -0.1800   3
+      H21     HCA2  0.0900   3
+      H22     HCA2  0.0900   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2   H21
+       C2   H22
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       C4    C5
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ BFRU ]
+; beta-Fructofuranose
+  [ atoms ]
+       O5   OC3C51 -0.4000   1
+       C2   CC3051  0.4300   1
+       O2    OC311 -0.6500   1
+      HO2     HCP1  0.4200   1
+       C5   CC3153  0.1100   1
+       H5     HCA1  0.0900   1
+       C6    CC321  0.0500   2
+      H61     HCA2  0.0900   2
+      H62     HCA2  0.0900   2
+       O6    OC311 -0.6500   2
+      HO6     HCP1  0.4200   2
+       C1    CC321  0.0500   3
+      H11     HCA2  0.0900   3
+      H12     HCA2  0.0900   3
+       O1    OC311 -0.6500   3
+      HO1     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3151  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+  [ bonds ]
+       O5    C2
+       C2    C1
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C5    O5
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C1   H11
+       C1   H12
+       C1    O1
+       O1   HO1
+
+[ BFUC ]
+; beta-L-fucose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+
+[ BGAL ]
+; 4C1 beta-D-galactose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BGALNA ]
+; 2-acetyl-2-deoxy-beta-D-galactosamine
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.0700   2
+       H2     HCA1  0.0900   2
+        N    NC2D1 -0.4700   2
+       HN     HCP1  0.3100   2
+        C    CC2O1  0.5100   3
+        O    OC2D1 -0.5100   3
+       CT    CC331 -0.2700   4
+      HT1     HCA3  0.0900   4
+      HT2     HCA3  0.0900   4
+      HT3     HCA3  0.0900   4
+       C3   CC3161  0.1400   5
+       H3     HCA1  0.0900   5
+       O3    OC311 -0.6500   5
+      HO3     HCP1  0.4200   5
+       C4   CC3161  0.1400   6
+       H4     HCA1  0.0900   6
+       O4    OC311 -0.6500   6
+      HO4     HCP1  0.4200   6
+       C6    CC321  0.0500   7
+      H61     HCA2  0.0900   7
+      H62     HCA2  0.0900   7
+       O6    OC311 -0.6500   7
+      HO6     HCP1  0.4200   7
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2     N
+        N    HN
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+  [ impropers ]
+        C    CT     N     O
+        N     C    C2    HN
+
+[ BGLC ]
+; 4C1 beta-D-glucose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BGLCA ]
+; 4C1 beta-D-glucoronic acid
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC2O2  0.5200   5
+      O61    OC2D2 -0.7600   5
+      O62    OC2D2 -0.7600   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   O61
+       C6   O62
+       C5    O5
+  [ impropers ]
+       C6    C5   O62   O61
+
+[ BGLCA0 ]
+; 4C1 beta-D-glucoronic acid
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC2O2  0.0000   5
+      O61    OC2D2  0.0000   5
+      O62    OC2D2  0.0000   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   O61
+       C6   O62
+       C5    O5
+  [ impropers ]
+       C6    C5   O62   O61
+
+[ BGLCN0 ]
+; 2-acetyl-2-deoxy-beta-D-glucosamine
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161 -0.0900   2
+       H2     HCA1  0.0900   2
+        N    NC2D1  0.0000   2
+       HN     HCP1  0.0000   2
+        C    CC2O1  0.0000   3
+        O    OC2D1  0.0000   3
+       CT    CC331 -0.2700   4
+      HT1     HCA3  0.0900   4
+      HT2     HCA3  0.0900   4
+      HT3     HCA3  0.0900   4
+       C3   CC3161  0.1400   5
+       H3     HCA1  0.0900   5
+       O3    OC311 -0.6500   5
+      HO3     HCP1  0.4200   5
+       C4   CC3161  0.1400   6
+       H4     HCA1  0.0900   6
+       O4    OC311 -0.6500   6
+      HO4     HCP1  0.4200   6
+       C6    CC321  0.0500   7
+      H61     HCA2  0.0900   7
+      H62     HCA2  0.0900   7
+       O6    OC311 -0.6500   7
+      HO6     HCP1  0.4200   7
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2     N
+        N    HN
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+  [ impropers ]
+        C    CT     N     O
+        N     C    C2    HN
+
+[ BGLCNA ]
+; 2-acetyl-2-deoxy-beta-D-glucosamine
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.0700   2
+       H2     HCA1  0.0900   2
+        N    NC2D1 -0.4700   2
+       HN     HCP1  0.3100   2
+        C    CC2O1  0.5100   3
+        O    OC2D1 -0.5100   3
+       CT    CC331 -0.2700   4
+      HT1     HCA3  0.0900   4
+      HT2     HCA3  0.0900   4
+      HT3     HCA3  0.0900   4
+       C3   CC3161  0.1400   5
+       H3     HCA1  0.0900   5
+       O3    OC311 -0.6500   5
+      HO3     HCP1  0.4200   5
+       C4   CC3161  0.1400   6
+       H4     HCA1  0.0900   6
+       O4    OC311 -0.6500   6
+      HO4     HCP1  0.4200   6
+       C6    CC321  0.0500   7
+      H61     HCA2  0.0900   7
+      H62     HCA2  0.0900   7
+       O6    OC311 -0.6500   7
+      HO6     HCP1  0.4200   7
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2     N
+        N    HN
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+  [ impropers ]
+        C    CT     N     O
+        N     C    C2    HN
+
+[ BGUL ]
+; 4C1 beta-D-gulose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BIDO ]
+; 4C1 beta-D-idose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BIDOA ]
+; beta-L-iduronic acid
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC2O2  0.5200   5
+      O61    OC2D2 -0.7600   5
+      O62    OC2D2 -0.7600   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   O61
+       C6   O62
+       C5    O5
+  [ impropers ]
+       C6    C5   O62   O61
+
+[ BLYF ]
+; beta-Lyxofuranose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ BMAN ]
+; 4C1 beta-D-mannose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BNE5AC ]
+; beta-Neu5Ac (N-acetyl-alpha-D-neuraminic acid)
+  [ atoms ]
+       C1    CC2O2  0.3000   1
+      O11    OC2D2 -0.6000   1
+      O12    OC2D2 -0.6000   1
+       C2   CC3062  0.3300   1
+       O2    OC311 -0.6500   1
+      HO2     HCP1  0.4200   1
+       C6   CC3163  0.1100   1
+       H6     HCA1  0.0900   1
+       O6   OC3C61 -0.4000   1
+       C3   CC3261 -0.1800   2
+      H31     HCA2  0.0900   2
+      H32     HCA2  0.0900   2
+       C4   CC3161  0.1400   3
+       H4     HCA1  0.0900   3
+       O4    OC311 -0.6500   3
+      HO4     HCP1  0.4200   3
+       C5   CC3161  0.0700   4
+       H5     HCA1  0.0900   4
+        N    NC2D1 -0.4700   4
+       HN     HCP1  0.3100   4
+        C    CC2O1  0.5100   5
+        O    OC2D1 -0.5100   5
+       CT    CC331 -0.2700   6
+      HT1     HCA3  0.0900   6
+      HT2     HCA3  0.0900   6
+      HT3     HCA3  0.0900   6
+       C7    CC312  0.1400   7
+       H7     HCA1  0.0900   7
+       O7    OC311 -0.6500   7
+      HO7     HCP1  0.4200   7
+       C8    CC312  0.1400   8
+       H8     HCA1  0.0900   8
+       O8    OC311 -0.6500   8
+      HO8     HCP1  0.4200   8
+       C9    CC322  0.0500   9
+      H91     HCA2  0.0900   9
+      H92     HCA2  0.0900   9
+       O9    OC311 -0.6500   9
+      HO9     HCP1  0.4200   9
+  [ bonds ]
+       C1   O11
+       C1   O12
+       C2    O2
+       C2    C1
+       O2   HO2
+       C2    O6
+       C2    C3
+       C3   H31
+       C3   H32
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5     N
+        N    HN
+        N     C
+        C     O
+        C    CT
+       CT   HT1
+       CT   HT2
+       CT   HT3
+       C5    C6
+       C6    H6
+       C6    C7
+       C7    O7
+       C7    H7
+       C6    O6
+       O7   HO7
+       C7    C8
+       C8    H8
+       C8    O8
+       O8   HO8
+       C8    C9
+       C9   H91
+       C9   H92
+       C9    O9
+       O9   HO9
+  [ impropers ]
+        C    CT     N     O
+        N     C    C5    HN
+       C1    C2   O12   O11
+
+[ BRHM ]
+; beta-L-rhamnose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC331 -0.2700   5
+      H61     HCA3  0.0900   5
+      H62     HCA3  0.0900   5
+      H63     HCA3  0.0900   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6   H63
+       C5    O5
+
+[ BRIB ]
+; beta-Ribose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ BTAL ]
+; 4C1 beta-D-talose
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3163  0.1100   1
+       H5     HCA1  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C6    CC321  0.0500   5
+      H61     HCA2  0.0900   5
+      H62     HCA2  0.0900   5
+       O6    OC311 -0.6500   5
+      HO6     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+
+[ BXYF ]
+; beta-Xylofuranose
+  [ atoms ]
+       O4   OC3C51 -0.4000   1
+       C1   CC3152  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C4   CC3153  0.1100   1
+       H4     HCA1  0.0900   1
+       C5    CC321  0.0500   2
+      H51     HCA2  0.0900   2
+      H52     HCA2  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3151  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3151  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+  [ bonds ]
+       O4    C1
+       C1    H1
+       C1    O1
+       O1   HO1
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    C5
+       C4    O4
+       C5   H51
+       C5   H52
+       C5    O5
+       O5   HO5
+
+[ BXYL ]
+; beta-D-xylose (b-glucose w/o exocyclic moiety) og
+  [ atoms ]
+       C1   CC3162  0.3400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3263  0.0200   1
+      H51     HCA2  0.0900   1
+      H52     HCA2  0.0900   1
+       O5   OC3C61 -0.4000   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    O5
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5   H52
+       C5    O5
+
+[ DALTOL ]
+; D-ALTritOL (same as talitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ DARAOL ]
+; D-ARAbitOL (same as lyxitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC322  0.0500   5
+      H51     HCA2  0.0900   5
+      H52     HCA2  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5    O5
+       O5   HO5
+       C5   H52
+
+[ DGLUOL ]
+; D-GLUcitOL (sorbitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ DGULOL ]
+; D-GULitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ DIDIOL ]
+; D-IDItOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ DMANOL ]
+; D-MANnitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ DTHROL ]
+; D-THReitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC322  0.0500   4
+      H41     HCA2  0.0900   4
+      H42     HCA2  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4   H41
+       C4    O4
+       O4   HO4
+       C4   H42
+
+[ INI1 ]
+; cyclic  myi-inositol
+  [ atoms ]
+       C1   CC3161  0.1400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2   CC3161  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3   CC3161  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4   CC3161  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5   CC3161  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6   CC3161  0.1400   6
+       H6     HCA1  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    C6
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6    H6
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ INI2 ]
+; cyclic  epi-inositol
+  [ atoms ]
+       C1   CC3161  0.1400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3161  0.1400   2
+       H5     HCA1  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3161  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3161  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3161  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+       C6   CC3161  0.1400   6
+       H6     HCA1  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    C6
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6    H6
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ INI3 ]
+; cyclic  allo-inositol
+  [ atoms ]
+       C1   CC3161  0.1400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3161  0.1400   2
+       H5     HCA1  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3161  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3161  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3161  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+       C6   CC3161  0.1400   6
+       H6     HCA1  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    C6
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6    H6
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ INI4 ]
+; cyclic  l-chiro-inositol
+  [ atoms ]
+       C1   CC3161  0.1400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3161  0.1400   2
+       H5     HCA1  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3161  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3161  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3161  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+       C6   CC3161  0.1400   6
+       H6     HCA1  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    C6
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6    H6
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ INI5 ]
+; cyclic  muco-inositol
+  [ atoms ]
+       C1   CC3161  0.1400   1
+       H1     HCA1  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C5   CC3161  0.1400   2
+       H5     HCA1  0.0900   2
+       O5    OC311 -0.6500   2
+      HO5     HCP1  0.4200   2
+       C2   CC3161  0.1400   3
+       H2     HCA1  0.0900   3
+       O2    OC311 -0.6500   3
+      HO2     HCP1  0.4200   3
+       C3   CC3161  0.1400   4
+       H3     HCA1  0.0900   4
+       O3    OC311 -0.6500   4
+      HO3     HCP1  0.4200   4
+       C4   CC3161  0.1400   5
+       H4     HCA1  0.0900   5
+       O4    OC311 -0.6500   5
+      HO4     HCP1  0.4200   5
+       C6   CC3161  0.1400   6
+       H6     HCA1  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1    H1
+       O1   HO1
+       C1    C6
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6    H6
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LALTOL ]
+; L-ALTritOL (same as talitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LARAOL ]
+; L-ARAbitOL (same as lyxitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC322  0.0500   5
+      H51     HCA2  0.0900   5
+      H52     HCA2  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5    O5
+       O5   HO5
+       C5   H52
+
+[ LGLUOL ]
+; L-GLUcitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LGULOL ]
+; L-GULitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LIDIOL ]
+; L-IDItOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LMANOL ]
+; L-MANnitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ LTHROL ]
+; L-THReitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC322  0.0500   4
+      H41     HCA2  0.0900   4
+      H42     HCA2  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4   H41
+       C4    O4
+       O4   HO4
+       C4   H42
+
+[ MALLOL ]
+; Meso-ALLitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ MERYOL ]
+; Meso-ERYthritOL (mertitol)
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC322  0.0500   4
+      H41     HCA2  0.0900   4
+      H42     HCA2  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4   H41
+       C4    O4
+       O4   HO4
+       C4   H42
+
+[ MGALOL ]
+; Meso-GALacticOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC312  0.1400   5
+       H5     HCA1  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+       C6    CC322  0.0500   6
+      H61     HCA2  0.0900   6
+      H62     HCA2  0.0900   6
+       O6    OC311 -0.6500   6
+      HO6     HCP1  0.4200   6
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+
+[ MGLYOL ]
+; Meso-GLYcerOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC322  0.0500   3
+      H31     HCA2  0.0900   3
+      H32     HCA2  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3   H31
+       C3    O3
+       O3   HO3
+       C3   H32
+
+[ MRIBOL ]
+; Meso-RIBitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC322  0.0500   5
+      H51     HCA2  0.0900   5
+      H52     HCA2  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5    O5
+       O5   HO5
+       C5   H52
+
+[ MXYLOL ]
+; Meso-XYLitOL
+  [ atoms ]
+       C1    CC322  0.0500   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC312  0.1400   2
+       H2     HCA1  0.0900   2
+       O2    OC311 -0.6500   2
+      HO2     HCP1  0.4200   2
+       C3    CC312  0.1400   3
+       H3     HCA1  0.0900   3
+       O3    OC311 -0.6500   3
+      HO3     HCP1  0.4200   3
+       C4    CC312  0.1400   4
+       H4     HCA1  0.0900   4
+       O4    OC311 -0.6500   4
+      HO4     HCP1  0.4200   4
+       C5    CC322  0.0500   5
+      H51     HCA2  0.0900   5
+      H52     HCA2  0.0900   5
+       O5    OC311 -0.6500   5
+      HO5     HCP1  0.4200   5
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    H2
+       C2    O2
+       O2   HO2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5   H51
+       C5    O5
+       O5   HO5
+       C5   H52
+
+[ PSICOS ]
+; D-Psicose, open, free ketose
+  [ atoms ]
+       C1    CC322  0.0900   1
+      H11     HCA2  0.0900   1
+      H12     HCA2  0.0900   1
+       O1    OC311 -0.6500   1
+      HO1     HCP1  0.4200   1
+       C2    CC2O3  0.4000   1
+       O2    OC2D3 -0.4800   1
+       C3    CC312  0.1800   1
+       H3     HCA1  0.0900   1
+       O3    OC311 -0.6500   1
+      HO3     HCP1  0.4200   1
+       C4    CC312  0.1400   2
+       H4     HCA1  0.0900   2
+       O4    OC311 -0.6500   2
+      HO4     HCP1  0.4200   2
+       C5    CC312  0.1400   3
+       H5     HCA1  0.0900   3
+       O5    OC311 -0.6500   3
+      HO5     HCP1  0.4200   3
+       C6    CC322  0.0500   4
+      H61     HCA2  0.0900   4
+      H62     HCA2  0.0900   4
+       O6    OC311 -0.6500   4
+      HO6     HCP1  0.4200   4
+  [ bonds ]
+       C1    O1
+       C1   H11
+       O1   HO1
+       C1   H12
+       C1    C2
+       C2    O2
+       C2    C3
+       C3    H3
+       C3    O3
+       O3   HO3
+       C3    C4
+       C4    H4
+       C4    O4
+       O4   HO4
+       C4    C5
+       C5    H5
+       C5    C6
+       C6   H61
+       C6   H62
+       C6    O6
+       O6   HO6
+       C5    O5
+       O5   HO5
+  [ impropers ]
+       C2    C1    C3    O2
