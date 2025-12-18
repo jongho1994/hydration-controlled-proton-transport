@@ -1,0 +1,223 @@
+improper_coeff       1              120                0  # C    CP1  N    O   
+improper_coeff       2              120                0  # C    CP1  NH1  O   
+improper_coeff       3              120                0  # C    CT1  N    O   
+improper_coeff       4              120                0  # C    CT1  NH1  O   
+improper_coeff       5              120                0  # C    CT2  N    O   
+improper_coeff       6              120                0  # C    CT2  NH1  O   
+improper_coeff       7              120                0  # C    CT3  NH1  O   
+improper_coeff       8                0                0  # C    HC   HC   NC2 
+improper_coeff       9               45                0  # C    NC2  NC2  NC2 
+improper_coeff      10               96                0  # CC   CP1  OC   OC  
+improper_coeff      11               96                0  # CC   CT1  OC   OC  
+improper_coeff      12               45                0  # CC   CT2  NH2  O   
+improper_coeff      13               96                0  # CC   CT2  OC   OC  
+improper_coeff      14               96                0  # CC   CT2A OC   OC  
+improper_coeff      15               45                0  # CC   NH2  CT2  O   
+improper_coeff      16              100                0  # CD   CT2  OH1  OB  
+improper_coeff      17              100                0  # CL   OSL  CTL2 OBL 
+improper_coeff      18                0                0  # CP3  CP1  C    N   
+improper_coeff      19              0.5                0  # CPH1 CPH1 NR2  HR3 
+improper_coeff      20              0.5                0  # CPH1 NR2  CPH1 HR3 
+improper_coeff      21              0.5                0  # CPH2 NR1  NR2  HR1 
+improper_coeff      22              0.5                0  # CPH2 NR2  NR1  HR1 
+improper_coeff      23             0.45                0  # H    CPH1 CPH2 NR1 
+improper_coeff      24             0.45                0  # H    CPH2 CPH1 NR1 
+improper_coeff      25               20                0  # H    CT1  C    NH1 
+improper_coeff      26               20                0  # H    CT2  C    NH1 
+improper_coeff      27               20                0  # H    CT3  C    NH1 
+improper_coeff      28                4                0  # H    H    CC   NH2 
+improper_coeff 29 179.91400 0.00
+improper_coeff 30 119.94267 0.00
+improper_coeff 31 59.97133 0.00
+improper_coeff 32 179.91400 0.00
+improper_coeff 33 59.97133 0.00
+improper_coeff 34 159.92355 0.00
+improper_coeff 35 159.92355 0.00
+improper_coeff 36 159.92355 0.00
+improper_coeff 37 159.92355 0.00
+improper_coeff 38 89.95700 0.00
+improper_coeff 39 79.96178 0.00
+improper_coeff 40 49.97611 0.00
+improper_coeff 41 89.95700 0.00
+improper_coeff 42 89.95700 0.00
+improper_coeff 43 89.95700 0.00
+improper_coeff 44 89.95700 0.00
+improper_coeff 45 89.95700 0.00
+improper_coeff 46 89.95700 0.00
+improper_coeff 47 71.96560 0.00
+improper_coeff 48 14.99283 0.00
+improper_coeff 49 14.99283 0.00
+improper_coeff 50 24.98806 0.00
+improper_coeff 51 17.99140 0.00
+improper_coeff 52 52.97468 0.00
+improper_coeff 53 52.97468 0.00
+improper_coeff 54 52.97468 0.00
+improper_coeff 55 22.98901 0.00
+improper_coeff 56 29.98567 0.00
+improper_coeff 57 52.97468 0.00
+improper_coeff 58 52.97468 0.00
+improper_coeff 59 9.99522 0.00
+improper_coeff 60 52.97468 0.00
+improper_coeff 61 52.97468 0.00
+improper_coeff 62 52.97468 0.00
+improper_coeff 63 22.98901 0.00
+improper_coeff 64 52.97468 0.00
+improper_coeff 65 52.97468 0.00
+improper_coeff 66 9.99522 0.00
+improper_coeff 67 29.98567 0.00
+improper_coeff 68 12.99379 0.00
+improper_coeff 69 29.98567 0.00
+improper_coeff 70 12.99379 0.00
+improper_coeff 71 84.95939 0.00
+improper_coeff 72 39.98089 0.00
+improper_coeff 73 84.95939 0.00
+improper_coeff 74 25.98758 0.00
+improper_coeff 75 29.98567 0.00
+improper_coeff 76 29.98567 0.00
+improper_coeff 77 29.98567 0.00
+improper_coeff 78 31.98471 0.00
+improper_coeff 79 119.94267 0.00
+improper_coeff 80 119.94267 0.00
+improper_coeff 81 119.94267 0.00
+improper_coeff 82 119.94267 0.00
+improper_coeff 83 119.94267 0.00
+improper_coeff 84 69.96656 0.00
+improper_coeff 85 119.94267 0.00
+improper_coeff 86 119.94267 0.00
+improper_coeff 87 119.94267 0.00
+improper_coeff 88 119.94267 0.00
+improper_coeff 89 119.94267 0.00
+improper_coeff 90 119.94267 0.00
+improper_coeff 91 119.94267 0.00
+improper_coeff 92 119.94267 0.00
+improper_coeff 93 119.94267 0.00
+improper_coeff 94 119.94267 0.00
+improper_coeff 95 119.94267 0.00
+improper_coeff 96 119.94267 0.00
+improper_coeff 97 70.96608 0.00
+improper_coeff 98 119.94267 0.00
+improper_coeff 99 119.94267 0.00
+improper_coeff 100 119.94267 0.00
+improper_coeff 101 119.94267 0.00
+improper_coeff 102 119.94267 0.00
+improper_coeff 103 119.94267 0.00
+improper_coeff 104 119.94267 0.00
+improper_coeff 105 119.94267 0.00
+improper_coeff 106 49.97611 0.00
+improper_coeff 107 65.96847 0.00
+improper_coeff 108 65.96847 0.00
+improper_coeff 109 71.96560 0.00
+improper_coeff 110 61.97038 0.00
+improper_coeff 111 61.97038 0.00
+improper_coeff 112 61.97038 0.00
+improper_coeff 113 52.97468 0.00
+improper_coeff 114 64.96894 0.00
+improper_coeff 115 64.96894 0.00
+improper_coeff 116 64.96894 0.00
+improper_coeff 117 74.96417 0.00
+improper_coeff 118 95.95413 0.00
+improper_coeff 119 95.95413 0.00
+improper_coeff 120 95.95413 0.00
+improper_coeff 121 95.95413 0.00
+improper_coeff 122 95.95413 0.00
+improper_coeff 123 95.95413 0.00
+improper_coeff 124 95.95413 0.00
+improper_coeff 125 95.95413 0.00
+improper_coeff 126 95.95413 0.00
+improper_coeff 127 95.95413 0.00
+improper_coeff 128 66.96799 0.00
+improper_coeff 129 19.99044 0.00
+improper_coeff 130 59.97133 0.00
+improper_coeff 131 13.99331 0.00
+improper_coeff 132 13.99331 0.00
+improper_coeff 133 52.97468 0.00
+improper_coeff 134 52.97468 0.00
+improper_coeff 135 49.97611 0.00
+improper_coeff 136 49.97611 0.00
+improper_coeff 137 49.97611 0.00
+improper_coeff 138 87.95796 0.00
+improper_coeff 139 87.95796 0.00
+improper_coeff 140 71.96560 0.00
+improper_coeff 141 71.96560 0.00
+improper_coeff 142 71.96560 0.00
+improper_coeff 143 59.97133 0.00
+improper_coeff 144 69.96656 0.00
+improper_coeff 145 69.96656 0.00
+improper_coeff 146 69.96656 0.00
+improper_coeff 147 97.95318 0.00
+improper_coeff 148 59.97133 0.00
+improper_coeff 149 86.45867 0.00
+improper_coeff 150 79.96178 0.00
+improper_coeff 151 79.96178 0.00
+improper_coeff 152 144.93072 0.00
+improper_coeff 153 106.94888 0.00
+improper_coeff 154 61.97038 0.00
+improper_coeff 155 84.95939 0.00
+improper_coeff 156 79.96178 0.00
+improper_coeff 157 89.95700 0.00
+improper_coeff 158 89.95700 0.00
+improper_coeff 159 89.95700 0.00
+improper_coeff 160 89.95700 0.00
+improper_coeff 161 119.94267 0.00
+improper_coeff 162 109.94744 0.00
+improper_coeff 163 89.95700 0.00
+improper_coeff 164 89.95700 0.00
+improper_coeff 165 28.58634 0.00
+improper_coeff 166 44.97850 0.00
+improper_coeff 167 42.97946 0.00
+improper_coeff 168 42.97946 0.00
+improper_coeff 169 0.00000 0.00
+improper_coeff 170 14.99283 0.00
+improper_coeff 171 89.95700 0.00
+improper_coeff 172 59.97133 0.00
+improper_coeff 173 89.95700 0.00
+improper_coeff 174 89.95700 0.00
+improper_coeff 175 51.97516 0.00
+improper_coeff 176 77.96273 0.00
+improper_coeff 177 89.95700 0.00
+improper_coeff 178 89.95700 0.00
+improper_coeff 179 89.95700 0.00
+improper_coeff 180 50.97563 0.00
+improper_coeff 181 30.98519 0.00
+improper_coeff 182 38.98137 0.00
+improper_coeff 183 38.98137 0.00
+improper_coeff 184 38.98137 0.00
+improper_coeff 185 83.95987 0.00
+improper_coeff 186 57.97229 0.00
+improper_coeff 187 83.95987 0.00
+improper_coeff 188 57.97229 0.00
+improper_coeff 189 51.97516 0.00
+improper_coeff 190 51.97516 0.00
+improper_coeff 191 27.98662 0.00
+improper_coeff 192 46.97754 0.00
+improper_coeff 193 -0.99952 0.00
+improper_coeff 194 41.97993 0.00
+improper_coeff 195 41.97993 0.00
+improper_coeff 196 41.97993 0.00
+improper_coeff 197 41.97993 0.00
+improper_coeff 198 41.97993 0.00
+improper_coeff 199 41.97993 0.00
+improper_coeff 200 41.97993 0.00
+improper_coeff 201 21.98949 0.00
+improper_coeff 202 18.99092 0.00
+improper_coeff 203 18.99092 0.00
+improper_coeff 204 39.98089 0.00
+improper_coeff 205 59.97133 0.00
+improper_coeff 206 59.97133 0.00
+improper_coeff 207 39.98089 0.00
+improper_coeff 208 39.98089 0.00
+improper_coeff 209 39.98089 0.00
+improper_coeff 210 39.98089 0.00
+improper_coeff 211 39.98089 0.00
+improper_coeff 212 39.98089 0.00
+improper_coeff 213 47.97707 0.00
+improper_coeff 214 49.97611 0.00
+improper_coeff 215 39.98089 0.00
+improper_coeff 216 53.57439 0.00
+improper_coeff 217 50.77573 0.00
+improper_coeff 218 -2.49881 0.00
+improper_coeff 219 8.99570 0.00
+improper_coeff 220 2.99857 0.00
+improper_coeff 221 99.95222 0.00
+improper_coeff 222 95.95413 0.00
+improper_coeff 223 95.95413 0.00
