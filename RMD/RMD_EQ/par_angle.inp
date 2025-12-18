@@ -1,0 +1,2443 @@
+angle_coeff       1               52            112.3                0                0  # C    CP1  CP2 
+angle_coeff       2               50              112                0                0  # C    CP1  HB1 
+angle_coeff       3               50            108.2                0                0  # C    CP1  N   
+angle_coeff       4               50              106                0                0  # C    CP1  NP  
+angle_coeff       5               52              108                0                0  # C    CT1  CT1 
+angle_coeff       6               52              108                0                0  # C    CT1  CT2 
+angle_coeff       7               52              108                0                0  # C    CT1  CT2A
+angle_coeff       8               52              108                0                0  # C    CT1  CT3 
+angle_coeff       9               50            109.5                0                0  # C    CT1  HB1 
+angle_coeff      10               50              107                0                0  # C    CT1  NH1 
+angle_coeff      11             43.7              110                0                0  # C    CT1  NH3 
+angle_coeff      12               50            109.5                0                0  # C    CT2  HB2 
+angle_coeff      13               50              107                0                0  # C    CT2  NH1 
+angle_coeff      14             43.7              110                0                0  # C    CT2  NH3 
+angle_coeff      15               33            109.5               30            2.163  # C    CT3  HA3 
+angle_coeff      16               60              117                0                0  # C    N    CP1 
+angle_coeff      17               60              117                0                0  # C    N    CP3 
+angle_coeff      18             62.3              120                0                0  # C    NC2  CT2 
+angle_coeff      19               49              120                0                0  # C    NC2  HC  
+angle_coeff      20               50              120                0                0  # C    NH1  CT1 
+angle_coeff      21               50              120                0                0  # C    NH1  CT2 
+angle_coeff      22               50              120                0                0  # C    NH1  CT3 
+angle_coeff      23               34              123                0                0  # C    NH1  H   
+angle_coeff      24               40              120               35           2.4162  # CA   CA   CA  
+angle_coeff      25               40              120               35           2.4162  # CA   CA   CAI 
+angle_coeff      26             45.8            122.3                0                0  # CA   CA   CT2 
+angle_coeff      27               30              120               22           2.1525  # CA   CA   HP  
+angle_coeff      28             45.2              120                0                0  # CA   CA   OH1 
+angle_coeff      29               50            113.2                0                0  # CA   CAI  CPT 
+angle_coeff      30               30              120               22           2.1525  # CA   CAI  HP  
+angle_coeff      31             51.8            107.5                0                0  # CA   CT2  CT1 
+angle_coeff      32             49.3            107.5                0                0  # CA   CT2  HA2 
+angle_coeff      33               85            106.4               25            2.261  # CA   CY   CPT 
+angle_coeff      34               30              127                0                0  # CA   CY   CT2 
+angle_coeff      35               85              112                0                0  # CA   NY   CPT 
+angle_coeff      36               28              126                0                0  # CA   NY   H   
+angle_coeff      37               65              108                0                0  # CA   OH1  H   
+angle_coeff      38               30              120               22           2.1525  # CAI  CA   HP  
+angle_coeff      39               50              110                0                0  # CAI  CPT  CPT 
+angle_coeff      40              130            133.5                0                0  # CAI  CPT  CY  
+angle_coeff      41              130            129.5                0                0  # CAI  CPT  NY  
+angle_coeff      42               52            112.3                0                0  # CC   CP1  CP2 
+angle_coeff      43               50              112                0                0  # CC   CP1  HB1 
+angle_coeff      44               50            108.2                0                0  # CC   CP1  N   
+angle_coeff      45               52              108                0                0  # CC   CT1  CT1 
+angle_coeff      46               52              108                0                0  # CC   CT1  CT2 
+angle_coeff      47               52              108                0                0  # CC   CT1  CT2A
+angle_coeff      48               52              108                0                0  # CC   CT1  CT3 
+angle_coeff      49               50            109.5                0                0  # CC   CT1  HB1 
+angle_coeff      50               50              107                0                0  # CC   CT1  NH1 
+angle_coeff      51               52              108                0                0  # CC   CT2  CT1 
+angle_coeff      52               52              108                0                0  # CC   CT2  CT2 
+angle_coeff      53               52              108                0                0  # CC   CT2  CT2A
+angle_coeff      54               33            109.5               30            2.163  # CC   CT2  HA2 
+angle_coeff      55               52              108                0                0  # CC   CT2A CT1 
+angle_coeff      56               33            109.5               30            2.163  # CC   CT2A HA2 
+angle_coeff      57               50              120                0                0  # CC   NH2  H   
+angle_coeff      58               52              108                0                0  # CD   CT2  CT1 
+angle_coeff      59               52              108                0                0  # CD   CT2  CT2A
+angle_coeff      60               33            109.5               30            2.163  # CD   CT2  HA2 
+angle_coeff      61               55              115                0                0  # CD   OH1  H   
+angle_coeff      62               48            123.5                0                0  # CEL1 CEL1 CTL2
+angle_coeff      63               52            119.5                0                0  # CEL1 CEL1 HEL1
+angle_coeff      64               32            112.2                0                0  # CEL1 CTL2 CTL2
+angle_coeff      65               45            111.5                0                0  # CEL1 CTL2 HAL2
+angle_coeff      66               52              108                0                0  # CL   CTL2 CTL2
+angle_coeff      67               33            109.5               30            2.163  # CL   CTL2 HAL2
+angle_coeff      68               40            109.6               30           2.2651  # CL   OSL  CTL1
+angle_coeff      69               40            109.6               30           2.2651  # CL   OSL  CTL2
+angle_coeff      70               20            112.5                0                0  # CP1  C    N   
+angle_coeff      71               80            116.5                0                0  # CP1  C    NH1 
+angle_coeff      72               80              118                0                0  # CP1  C    O   
+angle_coeff      73               40              118               50            2.388  # CP1  CC   OC  
+angle_coeff      74               70            108.5                0                0  # CP1  CP2  CP2 
+angle_coeff      75            33.43            110.1            22.53            2.179  # CP1  CP2  HA2 
+angle_coeff      76              100            114.2                0                0  # CP1  N    CP3 
+angle_coeff      77              100              111                0                0  # CP1  NP   CP3 
+angle_coeff      78               33            109.5                4            2.056  # CP1  NP   HC  
+angle_coeff      79               35              118                0                0  # CP2  CP1  HB1 
+angle_coeff      80               70            110.8                0                0  # CP2  CP1  N   
+angle_coeff      81               70            108.5                0                0  # CP2  CP1  NP  
+angle_coeff      82               70            108.5                0                0  # CP2  CP2  CP3 
+angle_coeff      83             26.5            110.1            22.53            2.179  # CP2  CP2  HA2 
+angle_coeff      84             26.5            110.1            22.53            2.179  # CP2  CP3  HA2 
+angle_coeff      85               70            110.5                0                0  # CP2  CP3  N   
+angle_coeff      86               70            108.5                0                0  # CP2  CP3  NP  
+angle_coeff      87             26.5            110.1            22.53            2.179  # CP3  CP2  HA2 
+angle_coeff      88               33            109.5                4            2.056  # CP3  NP   HC  
+angle_coeff      89             45.8              130                0                0  # CPH1 CPH1 CT2 
+angle_coeff      90               25              130               20              2.2  # CPH1 CPH1 HR3 
+angle_coeff      91              130              106                0                0  # CPH1 CPH1 NR1 
+angle_coeff      92              130              110                0                0  # CPH1 CPH1 NR2 
+angle_coeff      93            58.35              113                0                0  # CPH1 CT2  CT1 
+angle_coeff      94            33.43            109.5                0                0  # CPH1 CT2  HA2 
+angle_coeff      95              130            107.5                0                0  # CPH1 NR1  CPH2
+angle_coeff      96               30            125.5               20             2.15  # CPH1 NR1  H   
+angle_coeff      97              130              104                0                0  # CPH1 NR2  CPH2
+angle_coeff      98               30              127               20             2.14  # CPH2 NR1  H   
+angle_coeff      99               30              122               22            2.146  # CPT  CAI  HP  
+angle_coeff     100               85              108                0                0  # CPT  CPT  CY  
+angle_coeff     101               95            107.4                0                0  # CPT  CPT  NY  
+angle_coeff     102               30            126.7                0                0  # CPT  CY   CT2 
+angle_coeff     103               28              126                0                0  # CPT  NY   H   
+angle_coeff     104               20            112.5                0                0  # CT1  C    N   
+angle_coeff     105               80            116.5                0                0  # CT1  C    NH1 
+angle_coeff     106               80              121                0                0  # CT1  C    O   
+angle_coeff     107               40              118               50            2.388  # CT1  CC   OC  
+angle_coeff     108            53.35              111                8            2.561  # CT1  CT1  CT2 
+angle_coeff     109            53.35            108.5                8            2.561  # CT1  CT1  CT3 
+angle_coeff     110             34.5            110.1            22.53            2.179  # CT1  CT1  HA1 
+angle_coeff     111               35              111                0                0  # CT1  CT1  HB1 
+angle_coeff     112               70            113.5                0                0  # CT1  CT1  NH1 
+angle_coeff     113             67.7              110                0                0  # CT1  CT1  NH3 
+angle_coeff     114             75.7            110.1                0                0  # CT1  CT1  OH1 
+angle_coeff     115            58.35            113.5            11.16            2.561  # CT1  CT2  CT1 
+angle_coeff     116            58.35            113.5            11.16            2.561  # CT1  CT2  CT2 
+angle_coeff     117            58.35            113.5            11.16            2.561  # CT1  CT2  CT3 
+angle_coeff     118            58.35              114                0                0  # CT1  CT2  CY  
+angle_coeff     119             26.5            110.1            22.53            2.179  # CT1  CT2  HA2 
+angle_coeff     120             75.7            110.1                0                0  # CT1  CT2  OH1 
+angle_coeff     121               58            112.5                0                0  # CT1  CT2  S   
+angle_coeff     122            58.35            113.5            11.16            2.561  # CT1  CT2A CT2 
+angle_coeff     123             26.5            110.1            22.53            2.179  # CT1  CT2A HA2 
+angle_coeff     124            33.43            110.1            22.53            2.179  # CT1  CT3  HA3 
+angle_coeff     125               35              117                0                0  # CT1  NH1  H   
+angle_coeff     126               30            109.5               20            2.074  # CT1  NH3  HC  
+angle_coeff     127             57.5              106                0                0  # CT1  OH1  H   
+angle_coeff     128               20            112.5                0                0  # CT2  C    N   
+angle_coeff     129               80            116.5                0                0  # CT2  C    NH1 
+angle_coeff     130               80              121                0                0  # CT2  C    O   
+angle_coeff     131               50            116.5               50             2.45  # CT2  CC   NH2 
+angle_coeff     132               15              121               50             2.44  # CT2  CC   O   
+angle_coeff     133               40              118               50            2.388  # CT2  CC   OC  
+angle_coeff     134               70              125               20            2.442  # CT2  CD   OB  
+angle_coeff     135               55            110.5                0                0  # CT2  CD   OH1 
+angle_coeff     136             45.8              124                0                0  # CT2  CPH1 NR1 
+angle_coeff     137            53.35              114                8            2.561  # CT2  CT1  CT3 
+angle_coeff     138             34.5            110.1            22.53            2.179  # CT2  CT1  HA1 
+angle_coeff     139               35              111                0                0  # CT2  CT1  HB1 
+angle_coeff     140               70            113.5                0                0  # CT2  CT1  NH1 
+angle_coeff     141             67.7              110                0                0  # CT2  CT1  NH3 
+angle_coeff     142            58.35            113.6            11.16            2.561  # CT2  CT2  CT2 
+angle_coeff     143             26.5            110.1            22.53            2.179  # CT2  CT2  HA2 
+angle_coeff     144             67.7            107.5                0                0  # CT2  CT2  NC2 
+angle_coeff     145             67.7              110                0                0  # CT2  CT2  NH3 
+angle_coeff     146               58            114.5                0                0  # CT2  CT2  S   
+angle_coeff     147             26.5            110.1            22.53            2.179  # CT2  CT2A HA2 
+angle_coeff     148             34.6            110.1            22.53            2.179  # CT2  CT3  HA3 
+angle_coeff     149             40.4              120                0                0  # CT2  NC2  HC  
+angle_coeff     150               35              117                0                0  # CT2  NH1  H   
+angle_coeff     151               30            109.5               20            2.074  # CT2  NH3  HC  
+angle_coeff     152             57.5              106                0                0  # CT2  OH1  H   
+angle_coeff     153               34               95                0                0  # CT2  S    CT3 
+angle_coeff     154             38.8               95                0                0  # CT2  S    HS  
+angle_coeff     155               40              118               50            2.388  # CT2A CC   OC  
+angle_coeff     156               35              111                0                0  # CT2A CT1  HB1 
+angle_coeff     157               70            113.5                0                0  # CT2A CT1  NH1 
+angle_coeff     158             67.7              110                0                0  # CT2A CT1  NH3 
+angle_coeff     159             26.5            110.1            22.53            2.179  # CT2A CT2  HA2 
+angle_coeff     160               80            116.5                0                0  # CT3  C    NH1 
+angle_coeff     161               80              121                0                0  # CT3  C    O   
+angle_coeff     162            53.35              114                8            2.561  # CT3  CT1  CT3 
+angle_coeff     163             34.5            110.1            22.53            2.179  # CT3  CT1  HA1 
+angle_coeff     164               35              111                0                0  # CT3  CT1  HB1 
+angle_coeff     165               70            113.5                0                0  # CT3  CT1  NH1 
+angle_coeff     166             67.7              110                0                0  # CT3  CT1  NH3 
+angle_coeff     167             75.7            110.1                0                0  # CT3  CT1  OH1 
+angle_coeff     168             34.6            110.1            22.53            2.179  # CT3  CT2  HA2 
+angle_coeff     169               35              117                0                0  # CT3  NH1  H   
+angle_coeff     170             26.5            110.1            22.53            2.179  # CTL1 CTL2 HAL2
+angle_coeff     171             75.7            110.1                0                0  # CTL1 CTL2 OSL 
+angle_coeff     172             75.7            110.1                0                0  # CTL1 CTL2 OSLP
+angle_coeff     173             57.5              106                0                0  # CTL1 OHL  HOL 
+angle_coeff     174               40              116                0                0  # CTL2 CEL1 HEL1
+angle_coeff     175               70              125               20            2.442  # CTL2 CL   OBL 
+angle_coeff     176               55              109               20            2.326  # CTL2 CL   OSL 
+angle_coeff     177            58.35            113.5            11.16            2.561  # CTL2 CTL1 CTL2
+angle_coeff     178             34.5            110.1            22.53            2.179  # CTL2 CTL1 HAL1
+angle_coeff     179             75.7            110.1                0                0  # CTL2 CTL1 OHL 
+angle_coeff     180             75.7            110.1                0                0  # CTL2 CTL1 OSL 
+angle_coeff     181            58.35            113.6            11.16            2.561  # CTL2 CTL2 CTL2
+angle_coeff     182               58              115                8            2.561  # CTL2 CTL2 CTL3
+angle_coeff     183             26.5            110.1            22.53            2.179  # CTL2 CTL2 HAL2
+angle_coeff     184            33.43            110.1            22.53            2.179  # CTL2 CTL2 HL  
+angle_coeff     185             67.7              110                0                0  # CTL2 CTL2 NH3L
+angle_coeff     186             67.7              115                0                0  # CTL2 CTL2 NTL 
+angle_coeff     187             75.7            110.1                0                0  # CTL2 CTL2 OSLP
+angle_coeff     188             34.6            110.1            22.53            2.179  # CTL2 CTL3 HAL3
+angle_coeff     189               33            109.5                4            2.056  # CTL2 NH3L HCL 
+angle_coeff     190               60            109.5               26            2.466  # CTL2 NTL  CTL5
+angle_coeff     191               20              120               35             2.33  # CTL2 OSLP PL  
+angle_coeff     192             34.6            110.1            22.53            2.179  # CTL3 CTL2 HAL2
+angle_coeff     193               60            109.5               26            2.466  # CTL5 NTL  CTL5
+angle_coeff     194               32              125               25            2.173  # CY   CA   HP  
+angle_coeff     195               85            110.5               25             2.24  # CY   CA   NY  
+angle_coeff     196               55            109.5                0                0  # CY   CT2  HA2 
+angle_coeff     197               23              120                0                0  # H    NH2  H   
+angle_coeff     198             45.9           108.89                0                0  # HA1  CT1  OH1 
+angle_coeff     199             35.5              109              5.4            1.802  # HA2  CP2  HA2 
+angle_coeff     200             35.5              109              5.4            1.802  # HA2  CP3  HA2 
+angle_coeff     201               48              108                0                0  # HA2  CP3  N   
+angle_coeff     202             51.5           109.15                0                0  # HA2  CP3  NP  
+angle_coeff     203             35.5              109              5.4            1.802  # HA2  CT2  HA2 
+angle_coeff     204             56.5            107.5                0                0  # HA2  CT2  NC2 
+angle_coeff     205               45            107.5               35            2.101  # HA2  CT2  NH3 
+angle_coeff     206             45.9           108.89                0                0  # HA2  CT2  OH1 
+angle_coeff     207             46.1            111.3                0                0  # HA2  CT2  S   
+angle_coeff     208             35.5              109              5.4            1.802  # HA2  CT2A HA2 
+angle_coeff     209             35.5            108.4              5.4            1.802  # HA3  CT3  HA3 
+angle_coeff     210             51.5            109.5                0                0  # HA3  CT3  NH1 
+angle_coeff     211             46.1            111.3                0                0  # HA3  CT3  S   
+angle_coeff     212             45.9           108.89                0                0  # HAL1 CTL1 OHL 
+angle_coeff     213               60            109.5                0                0  # HAL1 CTL1 OSL 
+angle_coeff     214             35.5              109              5.4            1.802  # HAL2 CTL2 HAL2
+angle_coeff     215               45            107.5               35           2.0836  # HAL2 CTL2 NH3L
+angle_coeff     216               60            109.5                0                0  # HAL2 CTL2 OSL 
+angle_coeff     217               60            109.5                0                0  # HAL2 CTL2 OSLP
+angle_coeff     218             35.5            108.4              5.4            1.802  # HAL3 CTL3 HAL3
+angle_coeff     219               48              112                0                0  # HB1  CP1  N   
+angle_coeff     220             51.5            107.5                0                0  # HB1  CP1  NP  
+angle_coeff     221               48              108                0                0  # HB1  CT1  NH1 
+angle_coeff     222             51.5            107.5                0                0  # HB1  CT1  NH3 
+angle_coeff     223               36              115                0                0  # HB2  CT2  HB2 
+angle_coeff     224               48              108                0                0  # HB2  CT2  NH1 
+angle_coeff     225             51.5            107.5                0                0  # HB2  CT2  NH3 
+angle_coeff     226               25              120                0                0  # HC   NC2  HC  
+angle_coeff     227               44            109.5                0                0  # HC   NH3  HC  
+angle_coeff     228               51            107.5                0                0  # HC   NP   HC  
+angle_coeff     229               41            109.5                0                0  # HCL  NH3L HCL 
+angle_coeff     230               24            109.5               28            1.767  # HL   CTL2 HL  
+angle_coeff     231               40            109.5               27             2.13  # HL   CTL2 NTL 
+angle_coeff     232               24            109.5               28            1.767  # HL   CTL5 HL  
+angle_coeff     233               40            109.5               27             2.13  # HL   CTL5 NTL 
+angle_coeff     234               32              125               25            2.177  # HP   CA   NY  
+angle_coeff     235               25            122.5               20             2.14  # HR1  CPH2 NR1 
+angle_coeff     236               25              125               20             2.12  # HR1  CPH2 NR2 
+angle_coeff     237               25              120               20             2.14  # HR3  CPH1 NR2 
+angle_coeff     238          38.7434         111.7269                0                0  # HTH  OTH  HTH 
+angle_coeff     239            37.95           113.24                0                0  # HW   OW   HW  
+angle_coeff     240               80            122.5                0                0  # N    C    O   
+angle_coeff     241               40              120               70             2.31  # NC2  C    NC2 
+angle_coeff     242               80            122.5                0                0  # NH1  C    O   
+angle_coeff     243               75            122.5               50             2.37  # NH2  CC   O   
+angle_coeff     244              130            112.5                0                0  # NR1  CPH2 NR2 
+angle_coeff     245              120              120                0                0  # O2L  PL   O2L 
+angle_coeff     246             98.9            111.6                0                0  # O2L  PL   OSLP
+angle_coeff     247               50              123              210            2.262  # OB   CD   OH1 
+angle_coeff     248               90            125.9              160           2.2576  # OBL  CL   OSL 
+angle_coeff     249              100              124               70            2.225  # OC   CC   OC  
+angle_coeff     250               80            104.3                0                0  # OSLP PL   OSLP
+angle_coeff     251            0.713               60                0                0  # FEJO FEJO FEJO
+angle_coeff     252             2.29           100.49                0                0  # FEJO FEJO SJO
+angle_coeff     253            2.725            74.35                0                0  # FEJO SJO  FEJO
+angle_coeff     254            10.26            75.58                0                0  # FEKO SKO  FEKO
+angle_coeff     255            4.313           103.69                0                0  # SJO  FEJO SJO
+angle_coeff     256             11.3           104.42                0                0  # SKO  FEKO SKO
+angle_coeff 257 36.98232 121.20000 0.00000 0.00000
+angle_coeff 258 84.95939 119.10000 0.00000 0.00000
+angle_coeff 259 84.95939 119.30000 0.00000 0.00000
+angle_coeff 260 37.98184 120.10000 0.00000 0.00000
+angle_coeff 261 37.98184 122.10000 0.00000 0.00000
+angle_coeff 262 33.41403 110.10000 22.51923 2.17900
+angle_coeff 263 45.77812 122.30000 0.00000 0.00000
+angle_coeff 264 69.96656 116.20000 0.00000 0.00000
+angle_coeff 265 69.96656 109.30000 0.00000 0.00000
+angle_coeff 266 69.96656 110.90000 0.00000 0.00000
+angle_coeff 267 124.94028 121.60000 0.00000 0.00000
+angle_coeff 268 69.96656 118.50000 0.00000 0.00000
+angle_coeff 269 69.96656 116.00000 0.00000 0.00000
+angle_coeff 270 124.94028 129.00000 0.00000 0.00000
+angle_coeff 271 49.97611 125.00000 0.00000 0.00000
+angle_coeff 272 69.96656 119.60000 0.00000 0.00000
+angle_coeff 273 59.97133 123.00000 0.00000 0.00000
+angle_coeff 274 49.97611 110.90000 0.00000 0.00000
+angle_coeff 275 99.95222 116.00000 0.00000 0.00000
+angle_coeff 276 49.97611 124.70000 0.00000 0.00000
+angle_coeff 277 39.98089 121.10000 0.00000 0.00000
+angle_coeff 278 59.97133 121.00000 0.00000 0.00000
+angle_coeff 279 69.96656 120.50000 0.00000 0.00000
+angle_coeff 280 89.95700 119.40000 0.00000 0.00000
+angle_coeff 281 69.96656 125.90000 0.00000 0.00000
+angle_coeff 282 89.95700 122.00000 0.00000 0.00000
+angle_coeff 283 99.95222 125.70000 0.00000 0.00000
+angle_coeff 284 69.96656 108.40000 0.00000 0.00000
+angle_coeff 285 45.87807 108.80000 0.00000 0.00000
+angle_coeff 286 57.47253 106.00000 0.00000 0.00000
+angle_coeff 287 75.66383 110.10000 0.00000 0.00000
+angle_coeff 288 84.95939 121.30000 0.00000 0.00000
+angle_coeff 289 75.66383 110.10000 0.00000 0.00000
+angle_coeff 290 53.27453 111.00000 0.00000 0.00000
+angle_coeff 291 39.98089 120.00000 0.00000 0.00000
+angle_coeff 292 109.94744 111.00000 0.00000 0.00000
+angle_coeff 293 69.96656 122.20000 0.00000 0.00000
+angle_coeff 294 49.97611 119.50000 0.00000 0.00000
+angle_coeff 295 129.93789 121.50000 0.00000 0.00000
+angle_coeff 296 129.93789 123.80000 0.00000 0.00000
+angle_coeff 297 69.96656 120.50000 0.00000 0.00000
+angle_coeff 298 69.96656 110.80000 0.00000 0.00000
+angle_coeff 299 29.98567 118.50000 0.00000 0.00000
+angle_coeff 300 39.98089 120.70000 0.00000 0.00000
+angle_coeff 301 64.96894 123.50000 0.00000 0.00000
+angle_coeff 302 64.96894 123.50000 0.00000 0.00000
+angle_coeff 303 39.98089 117.20000 0.00000 0.00000
+angle_coeff 304 47.97707 123.50000 0.00000 0.00000
+angle_coeff 305 45.77812 120.00000 0.00000 0.00000
+angle_coeff 306 45.77812 120.00000 0.00000 0.00000
+angle_coeff 307 39.98089 120.00000 34.98328 2.41620
+angle_coeff 308 99.95222 124.60000 0.00000 0.00000
+angle_coeff 309 47.97707 123.50000 0.00000 0.00000
+angle_coeff 310 49.27645 107.50000 0.00000 0.00000
+angle_coeff 311 45.77812 120.00000 0.00000 0.00000
+angle_coeff 312 45.77812 120.00000 0.00000 0.00000
+angle_coeff 313 49.27645 107.50000 0.00000 0.00000
+angle_coeff 314 41.97993 111.50000 0.00000 0.00000
+angle_coeff 315 47.97707 123.50000 0.00000 0.00000
+angle_coeff 316 47.97707 123.50000 0.00000 0.00000
+angle_coeff 317 47.97707 123.50000 0.00000 0.00000
+angle_coeff 318 47.97707 123.50000 0.00000 0.00000
+angle_coeff 319 47.97707 123.50000 0.00000 0.00000
+angle_coeff 320 31.98471 112.20000 0.00000 0.00000
+angle_coeff 321 44.97850 111.50000 0.00000 0.00000
+angle_coeff 322 47.97707 123.50000 0.00000 0.00000
+angle_coeff 323 51.97516 119.50000 0.00000 0.00000
+angle_coeff 324 45.87807 108.89000 0.00000 0.00000
+angle_coeff 325 52.97468 109.00000 0.00000 0.00000
+angle_coeff 326 64.96894 123.50000 0.00000 0.00000
+angle_coeff 327 39.98089 180.00000 0.00000 0.00000
+angle_coeff 328 39.98089 180.00000 0.00000 0.00000
+angle_coeff 329 21.18987 180.00000 0.00000 0.00000
+angle_coeff 330 21.18987 180.00000 0.00000 0.00000
+angle_coeff 331 18.99092 180.00000 0.00000 0.00000
+angle_coeff 332 10.99474 180.00000 0.00000 0.00000
+angle_coeff 333 10.99474 180.00000 0.00000 0.00000
+angle_coeff 334 10.99474 180.00000 0.00000 0.00000
+angle_coeff 335 7.99618 180.00000 0.00000 0.00000
+angle_coeff 336 39.98089 125.00000 0.00000 0.00000
+angle_coeff 337 39.98089 124.00000 0.00000 0.00000
+angle_coeff 338 39.98089 124.00000 0.00000 0.00000
+angle_coeff 339 39.98089 119.00000 0.00000 0.00000
+angle_coeff 340 39.98089 130.00000 0.00000 0.00000
+angle_coeff 341 39.98089 130.00000 0.00000 0.00000
+angle_coeff 342 115.94458 111.00000 0.00000 0.00000
+angle_coeff 343 109.94744 111.00000 0.00000 0.00000
+angle_coeff 344 39.98089 125.00000 0.00000 0.00000
+angle_coeff 345 39.98089 124.00000 0.00000 0.00000
+angle_coeff 346 39.98089 124.00000 0.00000 0.00000
+angle_coeff 347 39.98089 119.00000 0.00000 0.00000
+angle_coeff 348 39.98089 130.00000 0.00000 0.00000
+angle_coeff 349 39.98089 130.00000 0.00000 0.00000
+angle_coeff 350 115.94458 111.00000 0.00000 0.00000
+angle_coeff 351 109.94744 111.00000 0.00000 0.00000
+angle_coeff 352 32.98423 113.00000 0.00000 0.00000
+angle_coeff 353 32.98423 131.50000 0.00000 0.00000
+angle_coeff 354 32.98423 115.50000 0.00000 0.00000
+angle_coeff 355 32.98423 130.00000 0.00000 0.00000
+angle_coeff 356 44.97850 114.50000 0.00000 0.00000
+angle_coeff 357 32.98423 113.00000 0.00000 0.00000
+angle_coeff 358 32.98423 131.50000 0.00000 0.00000
+angle_coeff 359 32.98423 115.50000 0.00000 0.00000
+angle_coeff 360 32.98423 130.00000 0.00000 0.00000
+angle_coeff 361 44.97850 114.50000 0.00000 0.00000
+angle_coeff 362 47.97707 126.00000 0.00000 0.00000
+angle_coeff 363 39.98089 116.00000 0.00000 0.00000
+angle_coeff 364 47.97707 123.50000 0.00000 0.00000
+angle_coeff 365 47.97707 123.50000 0.00000 0.00000
+angle_coeff 366 38.98137 122.50000 0.00000 0.00000
+angle_coeff 367 47.97707 123.50000 0.00000 0.00000
+angle_coeff 368 51.97516 119.50000 0.00000 0.00000
+angle_coeff 369 39.98089 127.50000 0.00000 0.00000
+angle_coeff 370 51.97516 119.50000 0.00000 0.00000
+angle_coeff 371 47.97707 126.00000 0.00000 0.00000
+angle_coeff 372 46.97754 125.20000 0.00000 0.00000
+angle_coeff 373 41.97993 118.00000 0.00000 0.00000
+angle_coeff 374 39.98089 127.50000 0.00000 0.00000
+angle_coeff 375 51.97516 119.50000 0.00000 0.00000
+angle_coeff 376 49.97611 113.00000 0.00000 0.00000
+angle_coeff 377 47.97707 123.50000 0.00000 0.00000
+angle_coeff 378 47.97707 123.50000 0.00000 0.00000
+angle_coeff 379 39.98089 116.00000 0.00000 0.00000
+angle_coeff 380 36.98232 118.00000 0.00000 0.00000
+angle_coeff 381 54.97372 119.00000 0.00000 0.00000
+angle_coeff 382 79.96178 123.00000 0.00000 0.00000
+angle_coeff 383 46.97754 125.60000 0.00000 0.00000
+angle_coeff 384 21.98949 117.00000 0.00000 0.00000
+angle_coeff 385 41.97993 120.40000 0.00000 0.00000
+angle_coeff 386 48.97659 119.50000 0.00000 0.00000
+angle_coeff 387 38.98137 114.00000 0.00000 0.00000
+angle_coeff 388 59.97133 122.00000 0.00000 0.00000
+angle_coeff 389 59.97133 122.00000 0.00000 0.00000
+angle_coeff 390 39.98089 126.00000 0.00000 0.00000
+angle_coeff 391 51.97516 122.00000 0.00000 0.00000
+angle_coeff 392 79.96178 128.00000 0.00000 0.00000
+angle_coeff 393 64.96894 123.50000 0.00000 0.00000
+angle_coeff 394 43.97898 121.00000 0.00000 0.00000
+angle_coeff 395 89.95700 125.00000 0.00000 0.00000
+angle_coeff 396 59.97133 122.00000 0.00000 0.00000
+angle_coeff 397 59.97133 122.00000 0.00000 0.00000
+angle_coeff 398 55.97324 124.50000 0.00000 0.00000
+angle_coeff 399 39.98089 128.00000 0.00000 0.00000
+angle_coeff 400 41.97993 120.00000 0.00000 0.00000
+angle_coeff 401 48.97659 119.50000 0.00000 0.00000
+angle_coeff 402 41.97993 119.00000 0.00000 0.00000
+angle_coeff 403 41.97993 119.00000 0.00000 0.00000
+angle_coeff 404 29.98567 113.00000 0.00000 0.00000
+angle_coeff 405 29.98567 115.50000 0.00000 0.00000
+angle_coeff 406 29.98567 112.00000 0.00000 0.00000
+angle_coeff 407 44.97850 120.50000 0.00000 0.00000
+angle_coeff 408 34.98328 120.50000 0.00000 0.00000
+angle_coeff 409 55.47348 120.50000 0.00000 0.00000
+angle_coeff 410 34.98328 120.50000 0.00000 0.00000
+angle_coeff 411 18.99092 119.00000 0.00000 0.00000
+angle_coeff 412 59.97133 122.00000 0.00000 0.00000
+angle_coeff 413 59.97133 122.00000 0.00000 0.00000
+angle_coeff 414 39.98089 126.00000 0.00000 0.00000
+angle_coeff 415 51.97516 122.00000 0.00000 0.00000
+angle_coeff 416 79.96178 128.00000 0.00000 0.00000
+angle_coeff 417 64.96894 123.50000 0.00000 0.00000
+angle_coeff 418 43.97898 121.00000 0.00000 0.00000
+angle_coeff 419 89.95700 125.00000 0.00000 0.00000
+angle_coeff 420 59.97133 122.00000 0.00000 0.00000
+angle_coeff 421 59.97133 122.00000 0.00000 0.00000
+angle_coeff 422 55.97324 124.50000 0.00000 0.00000
+angle_coeff 423 39.98089 128.00000 0.00000 0.00000
+angle_coeff 424 41.97993 120.00000 0.00000 0.00000
+angle_coeff 425 48.97659 119.50000 0.00000 0.00000
+angle_coeff 426 41.97993 119.00000 0.00000 0.00000
+angle_coeff 427 41.97993 119.00000 0.00000 0.00000
+angle_coeff 428 29.98567 113.00000 0.00000 0.00000
+angle_coeff 429 29.98567 115.50000 0.00000 0.00000
+angle_coeff 430 29.98567 112.00000 0.00000 0.00000
+angle_coeff 431 47.97707 120.00000 0.00000 0.00000
+angle_coeff 432 64.96894 113.00000 0.00000 0.00000
+angle_coeff 433 43.47922 126.50000 0.00000 0.00000
+angle_coeff 434 41.97993 122.00000 0.00000 0.00000
+angle_coeff 435 47.97707 123.00000 0.00000 0.00000
+angle_coeff 436 47.97707 123.50000 0.00000 0.00000
+angle_coeff 437 47.97707 123.50000 0.00000 0.00000
+angle_coeff 438 59.97133 120.00000 0.00000 0.00000
+angle_coeff 439 47.97707 123.50000 0.00000 0.00000
+angle_coeff 440 47.97707 123.50000 0.00000 0.00000
+angle_coeff 441 47.97707 123.50000 0.00000 0.00000
+angle_coeff 442 41.97993 119.00000 0.00000 0.00000
+angle_coeff 443 47.97707 123.50000 0.00000 0.00000
+angle_coeff 444 47.97707 123.50000 0.00000 0.00000
+angle_coeff 445 47.97707 113.00000 0.00000 0.00000
+angle_coeff 446 39.98089 125.60000 0.00000 0.00000
+angle_coeff 447 41.97993 118.00000 0.00000 0.00000
+angle_coeff 448 41.97993 120.40000 0.00000 0.00000
+angle_coeff 449 39.98089 119.00000 34.98328 2.52670
+angle_coeff 450 59.97133 120.00000 0.00000 0.00000
+angle_coeff 451 34.98328 118.60000 0.00000 0.00000
+angle_coeff 452 28.98614 122.00000 0.00000 0.00000
+angle_coeff 453 47.97707 123.50000 0.00000 0.00000
+angle_coeff 454 41.97993 118.00000 0.00000 0.00000
+angle_coeff 455 64.96894 123.50000 0.00000 0.00000
+angle_coeff 456 51.97516 119.50000 0.00000 0.00000
+angle_coeff 457 51.97516 119.50000 0.00000 0.00000
+angle_coeff 458 31.98471 122.00000 0.00000 0.00000
+angle_coeff 459 31.98471 123.40000 0.00000 0.00000
+angle_coeff 460 55.97324 117.00000 0.00000 0.00000
+angle_coeff 461 31.98471 120.00000 0.00000 0.00000
+angle_coeff 462 47.97707 123.50000 0.00000 0.00000
+angle_coeff 463 39.98089 116.00000 0.00000 0.00000
+angle_coeff 464 46.97754 113.00000 0.00000 0.00000
+angle_coeff 465 41.97993 117.50000 0.00000 0.00000
+angle_coeff 466 37.98184 123.00000 0.00000 0.00000
+angle_coeff 467 37.98184 114.00000 0.00000 0.00000
+angle_coeff 468 47.97707 120.00000 0.00000 0.00000
+angle_coeff 469 64.96894 113.00000 0.00000 0.00000
+angle_coeff 470 43.47922 126.50000 0.00000 0.00000
+angle_coeff 471 41.97993 122.00000 0.00000 0.00000
+angle_coeff 472 47.97707 123.00000 0.00000 0.00000
+angle_coeff 473 47.97707 123.50000 0.00000 0.00000
+angle_coeff 474 47.97707 123.50000 0.00000 0.00000
+angle_coeff 475 47.97707 113.00000 0.00000 0.00000
+angle_coeff 476 39.98089 125.60000 0.00000 0.00000
+angle_coeff 477 41.97993 118.00000 0.00000 0.00000
+angle_coeff 478 41.97993 120.40000 0.00000 0.00000
+angle_coeff 479 47.97707 123.50000 0.00000 0.00000
+angle_coeff 480 47.97707 123.50000 0.00000 0.00000
+angle_coeff 481 59.97133 120.00000 0.00000 0.00000
+angle_coeff 482 47.97707 123.50000 0.00000 0.00000
+angle_coeff 483 47.97707 123.50000 0.00000 0.00000
+angle_coeff 484 47.97707 123.50000 0.00000 0.00000
+angle_coeff 485 41.97993 119.00000 0.00000 0.00000
+angle_coeff 486 39.98089 119.00000 34.98328 2.52670
+angle_coeff 487 59.97133 120.00000 0.00000 0.00000
+angle_coeff 488 34.98328 118.60000 0.00000 0.00000
+angle_coeff 489 28.98614 122.00000 0.00000 0.00000
+angle_coeff 490 47.97707 123.50000 0.00000 0.00000
+angle_coeff 491 41.97993 118.00000 0.00000 0.00000
+angle_coeff 492 64.96894 123.50000 0.00000 0.00000
+angle_coeff 493 51.97516 119.50000 0.00000 0.00000
+angle_coeff 494 51.97516 119.50000 0.00000 0.00000
+angle_coeff 495 31.98471 122.00000 0.00000 0.00000
+angle_coeff 496 31.98471 123.40000 0.00000 0.00000
+angle_coeff 497 55.97324 117.00000 0.00000 0.00000
+angle_coeff 498 31.98471 120.00000 0.00000 0.00000
+angle_coeff 499 47.97707 123.50000 0.00000 0.00000
+angle_coeff 500 39.98089 116.00000 0.00000 0.00000
+angle_coeff 501 46.97754 113.00000 0.00000 0.00000
+angle_coeff 502 41.97993 117.50000 0.00000 0.00000
+angle_coeff 503 37.98184 123.00000 0.00000 0.00000
+angle_coeff 504 37.98184 114.00000 0.00000 0.00000
+angle_coeff 505 34.98328 120.50000 0.00000 0.00000
+angle_coeff 506 34.98328 120.50000 0.00000 0.00000
+angle_coeff 507 44.97850 120.50000 0.00000 0.00000
+angle_coeff 508 44.97850 120.50000 0.00000 0.00000
+angle_coeff 509 44.97850 120.50000 0.00000 0.00000
+angle_coeff 510 44.97850 120.50000 0.00000 0.00000
+angle_coeff 511 18.99092 119.00000 0.00000 0.00000
+angle_coeff 512 49.97611 125.00000 0.00000 0.00000
+angle_coeff 513 99.95222 125.00000 0.00000 0.00000
+angle_coeff 514 51.97516 120.00000 89.95700 2.36420
+angle_coeff 515 49.97611 113.00000 0.00000 0.00000
+angle_coeff 516 74.96417 113.00000 0.00000 0.00000
+angle_coeff 517 62.96990 118.50000 0.00000 0.00000
+angle_coeff 518 79.96178 118.50000 0.00000 0.00000
+angle_coeff 519 51.97516 118.50000 0.00000 0.00000
+angle_coeff 520 69.96656 132.00000 0.00000 0.00000
+angle_coeff 521 84.95939 127.00000 0.00000 0.00000
+angle_coeff 522 36.98232 116.40000 0.00000 0.00000
+angle_coeff 523 51.97516 123.00000 89.95700 2.36420
+angle_coeff 524 55.97324 116.60000 0.00000 0.00000
+angle_coeff 525 99.95222 107.50000 0.00000 0.00000
+angle_coeff 526 79.96178 116.50000 0.00000 0.00000
+angle_coeff 527 84.95939 113.00000 79.96178 2.46000
+angle_coeff 528 79.96178 122.50000 0.00000 0.00000
+angle_coeff 529 99.95222 107.50000 0.00000 0.00000
+angle_coeff 530 79.96178 116.50000 0.00000 0.00000
+angle_coeff 531 84.95939 113.00000 79.96178 2.46000
+angle_coeff 532 79.96178 122.50000 0.00000 0.00000
+angle_coeff 533 51.97516 115.50000 0.00000 0.00000
+angle_coeff 534 44.97850 122.00000 0.00000 0.00000
+angle_coeff 535 79.96178 117.00000 0.00000 0.00000
+angle_coeff 536 79.96178 116.50000 0.00000 0.00000
+angle_coeff 537 49.97611 110.23000 0.00000 0.00000
+angle_coeff 538 29.98567 121.00000 0.00000 0.00000
+angle_coeff 539 84.95939 113.00000 79.96178 2.46000
+angle_coeff 540 84.95939 118.50000 19.99044 2.43000
+angle_coeff 541 19.99044 112.50000 0.00000 0.00000
+angle_coeff 542 79.96178 116.50000 0.00000 0.00000
+angle_coeff 543 49.97611 116.50000 49.97611 2.45000
+angle_coeff 544 79.96178 121.00000 0.00000 0.00000
+angle_coeff 545 19.99044 112.50000 0.00000 0.00000
+angle_coeff 546 79.96178 116.50000 0.00000 0.00000
+angle_coeff 547 49.97611 116.50000 49.97611 2.45000
+angle_coeff 548 79.96178 121.00000 0.00000 0.00000
+angle_coeff 549 19.99044 112.50000 0.00000 0.00000
+angle_coeff 550 79.96178 116.50000 0.00000 0.00000
+angle_coeff 551 49.97611 116.50000 49.97611 2.45000
+angle_coeff 552 79.96178 121.00000 0.00000 0.00000
+angle_coeff 553 19.99044 112.50000 0.00000 0.00000
+angle_coeff 554 79.96178 116.50000 0.00000 0.00000
+angle_coeff 555 49.97611 116.50000 49.97611 2.45000
+angle_coeff 556 79.96178 121.00000 0.00000 0.00000
+angle_coeff 557 109.94744 117.90000 0.00000 0.00000
+angle_coeff 558 39.98089 115.00000 0.00000 0.00000
+angle_coeff 559 79.96178 116.50000 0.00000 0.00000
+angle_coeff 560 49.97611 116.50000 49.97611 2.45000
+angle_coeff 561 79.96178 121.00000 0.00000 0.00000
+angle_coeff 562 19.99044 112.50000 0.00000 0.00000
+angle_coeff 563 79.96178 116.50000 0.00000 0.00000
+angle_coeff 564 79.96178 112.50000 0.00000 0.00000
+angle_coeff 565 79.96178 118.00000 0.00000 0.00000
+angle_coeff 566 19.99044 112.50000 0.00000 0.00000
+angle_coeff 567 79.96178 116.50000 0.00000 0.00000
+angle_coeff 568 79.96178 112.50000 0.00000 0.00000
+angle_coeff 569 79.96178 118.00000 0.00000 0.00000
+angle_coeff 570 89.95700 126.80000 0.00000 0.00000
+angle_coeff 571 79.96178 124.00000 0.00000 0.00000
+angle_coeff 572 42.97946 115.00000 0.00000 0.00000
+angle_coeff 573 79.96178 122.50000 0.00000 0.00000
+angle_coeff 574 43.97898 111.00000 49.97611 1.98000
+angle_coeff 575 74.96417 122.50000 49.97611 2.37000
+angle_coeff 576 43.97898 111.00000 49.97611 1.98000
+angle_coeff 577 43.97898 122.00000 0.00000 0.00000
+angle_coeff 578 69.96656 123.10000 19.99044 2.44200
+angle_coeff 579 49.97611 111.00000 19.99044 2.36000
+angle_coeff 580 39.98089 113.90000 29.98567 2.37000
+angle_coeff 581 69.96656 125.00000 19.99044 2.44200
+angle_coeff 582 54.97372 109.00000 19.99044 2.32600
+angle_coeff 583 54.97372 110.50000 0.00000 0.00000
+angle_coeff 584 69.96656 125.00000 19.99044 2.44200
+angle_coeff 585 54.97372 109.00000 19.99044 2.32600
+angle_coeff 586 54.97372 110.50000 0.00000 0.00000
+angle_coeff 587 69.96656 125.00000 19.99044 2.44200
+angle_coeff 588 54.97372 109.00000 19.99044 2.32600
+angle_coeff 589 54.97372 110.50000 0.00000 0.00000
+angle_coeff 590 89.95700 125.90000 159.92355 2.25760
+angle_coeff 591 49.97611 123.00000 209.89967 2.26200
+angle_coeff 592 38.98137 119.00000 0.00000 0.00000
+angle_coeff 593 46.97754 105.00000 0.00000 0.00000
+angle_coeff 594 39.98089 116.00000 49.97611 2.35300
+angle_coeff 595 39.98089 116.00000 49.97611 2.35300
+angle_coeff 596 94.95461 116.00000 0.00000 0.00000
+angle_coeff 597 39.98089 116.00000 49.97611 2.35300
+angle_coeff 598 39.98089 116.00000 49.97611 2.35300
+angle_coeff 599 39.98089 116.00000 49.97611 2.35300
+angle_coeff 600 39.98089 116.00000 49.97611 2.35300
+angle_coeff 601 39.98089 116.00000 49.97611 2.35300
+angle_coeff 602 39.98089 116.00000 49.97611 2.35300
+angle_coeff 603 39.98089 116.00000 49.97611 2.35300
+angle_coeff 604 39.98089 116.00000 49.97611 2.35300
+angle_coeff 605 39.98089 116.00000 49.97611 2.35300
+angle_coeff 606 99.95222 128.00000 69.96656 2.25870
+angle_coeff 607 44.97850 116.00000 0.00000 0.00000
+angle_coeff 608 74.96417 126.00000 0.00000 0.00000
+angle_coeff 609 14.99283 116.00000 0.00000 0.00000
+angle_coeff 610 74.96417 126.00000 0.00000 0.00000
+angle_coeff 611 14.99283 116.00000 0.00000 0.00000
+angle_coeff 612 74.96417 126.00000 0.00000 0.00000
+angle_coeff 613 14.99283 116.00000 0.00000 0.00000
+angle_coeff 614 74.96417 126.00000 0.00000 0.00000
+angle_coeff 615 21.98949 114.00000 0.00000 0.00000
+angle_coeff 616 44.97850 126.00000 0.00000 0.00000
+angle_coeff 617 64.96894 116.00000 0.00000 0.00000
+angle_coeff 618 44.97850 126.00000 0.00000 0.00000
+angle_coeff 619 64.96894 116.00000 0.00000 0.00000
+angle_coeff 620 44.97850 126.00000 0.00000 0.00000
+angle_coeff 621 64.96894 116.00000 0.00000 0.00000
+angle_coeff 622 88.95748 98.00000 0.00000 0.00000
+angle_coeff 623 69.96656 134.00000 0.00000 0.00000
+angle_coeff 624 79.96178 134.00000 0.00000 0.00000
+angle_coeff 625 88.95748 99.00000 0.00000 0.00000
+angle_coeff 626 69.96656 127.00000 0.00000 0.00000
+angle_coeff 627 64.96894 118.00000 0.00000 0.00000
+angle_coeff 628 34.98328 116.00000 0.00000 0.00000
+angle_coeff 629 69.96656 121.80000 0.00000 0.00000
+angle_coeff 630 34.98328 116.00000 0.00000 0.00000
+angle_coeff 631 69.96656 121.80000 0.00000 0.00000
+angle_coeff 632 39.98089 117.20000 0.00000 0.00000
+angle_coeff 633 94.95461 121.50000 0.00000 0.00000
+angle_coeff 634 39.98089 117.20000 0.00000 0.00000
+angle_coeff 635 19.99044 116.50000 0.00000 0.00000
+angle_coeff 636 59.97133 116.50000 0.00000 0.00000
+angle_coeff 637 69.96656 121.30000 0.00000 0.00000
+angle_coeff 638 94.95461 121.50000 0.00000 0.00000
+angle_coeff 639 34.98328 115.60000 0.00000 0.00000
+angle_coeff 640 34.98328 115.60000 0.00000 0.00000
+angle_coeff 641 74.96417 122.20000 0.00000 0.00000
+angle_coeff 642 34.98328 115.60000 0.00000 0.00000
+angle_coeff 643 74.96417 122.20000 0.00000 0.00000
+angle_coeff 644 71.56579 112.50000 0.00000 0.00000
+angle_coeff 645 87.56814 125.44000 0.00000 0.00000
+angle_coeff 646 49.97611 112.30000 0.00000 0.00000
+angle_coeff 647 69.96656 122.00000 0.00000 0.00000
+angle_coeff 648 70.46632 112.90000 0.00000 0.00000
+angle_coeff 649 62.67004 125.70000 0.00000 0.00000
+angle_coeff 650 69.96656 115.00000 0.00000 0.00000
+angle_coeff 651 59.97133 125.70000 0.00000 0.00000
+angle_coeff 652 89.95700 110.30000 0.00000 0.00000
+angle_coeff 653 69.96656 115.00000 0.00000 0.00000
+angle_coeff 654 74.96417 122.50000 49.97611 2.37000
+angle_coeff 655 69.96656 123.50000 0.00000 0.00000
+angle_coeff 656 39.98089 120.00000 99.45246 2.24127
+angle_coeff 657 78.96226 120.00000 0.00000 0.00000
+angle_coeff 658 84.95939 105.00000 0.00000 0.00000
+angle_coeff 659 69.96656 124.00000 0.00000 0.00000
+angle_coeff 660 39.98089 112.00000 0.00000 0.00000
+angle_coeff 661 41.97993 172.00000 0.00000 0.00000
+angle_coeff 662 44.97850 180.00000 0.00000 0.00000
+angle_coeff 663 44.97850 128.70000 0.00000 0.00000
+angle_coeff 664 39.98089 126.70000 0.00000 0.00000
+angle_coeff 665 14.99283 125.30000 0.00000 0.00000
+angle_coeff 666 14.99283 128.00000 0.00000 0.00000
+angle_coeff 667 34.98328 130.00000 0.00000 0.00000
+angle_coeff 668 34.98328 124.00000 0.00000 0.00000
+angle_coeff 669 89.95700 107.20000 0.00000 0.00000
+angle_coeff 670 89.95700 106.00000 0.00000 0.00000
+angle_coeff 671 99.95222 116.50000 0.00000 0.00000
+angle_coeff 672 89.95700 107.20000 0.00000 0.00000
+angle_coeff 673 84.95939 105.70000 24.98806 2.26100
+angle_coeff 674 69.96656 106.90000 0.00000 0.00000
+angle_coeff 675 45.77812 130.00000 0.00000 0.00000
+angle_coeff 676 45.77812 130.00000 0.00000 0.00000
+angle_coeff 677 45.77812 130.00000 0.00000 0.00000
+angle_coeff 678 114.94505 109.00000 0.00000 0.00000
+angle_coeff 679 114.94505 109.00000 0.00000 0.00000
+angle_coeff 680 114.94505 109.00000 0.00000 0.00000
+angle_coeff 681 114.94505 109.00000 0.00000 0.00000
+angle_coeff 682 129.93789 110.00000 0.00000 0.00000
+angle_coeff 683 129.93789 106.00000 0.00000 0.00000
+angle_coeff 684 144.93072 108.00000 0.00000 0.00000
+angle_coeff 685 129.93789 106.00000 0.00000 0.00000
+angle_coeff 686 129.93789 108.20000 0.00000 0.00000
+angle_coeff 687 104.94983 111.80000 0.00000 0.00000
+angle_coeff 688 119.94267 111.00000 0.00000 0.00000
+angle_coeff 689 129.93789 111.70000 0.00000 0.00000
+angle_coeff 690 134.93550 113.20000 0.00000 0.00000
+angle_coeff 691 104.94983 109.00000 0.00000 0.00000
+angle_coeff 692 26.98710 129.00000 0.00000 0.00000
+angle_coeff 693 31.98471 126.40000 24.98806 2.17300
+angle_coeff 694 21.98949 130.00000 14.99283 2.21500
+angle_coeff 695 19.99044 130.00000 0.00000 0.00000
+angle_coeff 696 14.99283 127.60000 0.00000 0.00000
+angle_coeff 697 9.99522 117.10000 0.00000 0.00000
+angle_coeff 698 129.93789 106.00000 0.00000 0.00000
+angle_coeff 699 31.98471 126.40000 24.98806 2.17300
+angle_coeff 700 21.98949 130.00000 14.99283 2.21500
+angle_coeff 701 29.98567 126.70000 0.00000 0.00000
+angle_coeff 702 29.98567 126.70000 0.00000 0.00000
+angle_coeff 703 29.98567 126.70000 0.00000 0.00000
+angle_coeff 704 99.95222 107.50000 0.00000 0.00000
+angle_coeff 705 31.98471 126.40000 24.98806 2.25500
+angle_coeff 706 30.98519 128.50000 0.00000 0.00000
+angle_coeff 707 31.98471 126.70000 0.00000 0.00000
+angle_coeff 708 45.77812 120.00000 0.00000 0.00000
+angle_coeff 709 45.77812 124.00000 0.00000 0.00000
+angle_coeff 710 45.77812 122.00000 0.00000 0.00000
+angle_coeff 711 59.97133 126.70000 0.00000 0.00000
+angle_coeff 712 45.77812 120.00000 0.00000 0.00000
+angle_coeff 713 45.77812 124.00000 0.00000 0.00000
+angle_coeff 714 59.97133 126.70000 0.00000 0.00000
+angle_coeff 715 28.98614 124.60000 0.00000 0.00000
+angle_coeff 716 28.98614 124.60000 0.00000 0.00000
+angle_coeff 717 12.99379 124.60000 0.00000 0.00000
+angle_coeff 718 12.99379 124.60000 0.00000 0.00000
+angle_coeff 719 24.98806 120.00000 19.99044 2.14000
+angle_coeff 720 24.98806 124.00000 19.99044 2.14000
+angle_coeff 721 21.98949 122.00000 14.99283 2.18000
+angle_coeff 722 24.98806 124.00000 19.99044 2.14000
+angle_coeff 723 30.98519 121.80000 0.00000 0.00000
+angle_coeff 724 34.98328 118.20000 0.00000 0.00000
+angle_coeff 725 34.98328 119.00000 0.00000 0.00000
+angle_coeff 726 49.97611 118.30000 0.00000 0.00000
+angle_coeff 727 38.98137 116.80000 0.00000 0.00000
+angle_coeff 728 26.98710 122.00000 0.00000 0.00000
+angle_coeff 729 44.97850 121.00000 0.00000 0.00000
+angle_coeff 730 31.98471 130.00000 0.00000 0.00000
+angle_coeff 731 109.94744 110.50000 0.00000 0.00000
+angle_coeff 732 120.94219 110.00000 0.00000 0.00000
+angle_coeff 733 31.98471 126.50000 0.00000 0.00000
+angle_coeff 734 69.96656 106.00000 0.00000 0.00000
+angle_coeff 735 29.98567 131.00000 0.00000 0.00000
+angle_coeff 736 149.92833 110.40000 0.00000 0.00000
+angle_coeff 737 31.98471 126.60000 0.00000 0.00000
+angle_coeff 738 44.97850 120.00000 0.00000 0.00000
+angle_coeff 739 169.91878 112.00000 0.00000 0.00000
+angle_coeff 740 46.97754 125.00000 0.00000 0.00000
+angle_coeff 741 31.98471 123.00000 0.00000 0.00000
+angle_coeff 742 34.98328 123.50000 0.00000 0.00000
+angle_coeff 743 54.97372 108.50000 0.00000 0.00000
+angle_coeff 744 54.97372 124.50000 0.00000 0.00000
+angle_coeff 745 54.97372 108.50000 0.00000 0.00000
+angle_coeff 746 54.97372 124.50000 0.00000 0.00000
+angle_coeff 747 49.97611 107.00000 0.00000 0.00000
+angle_coeff 748 54.97372 125.50000 0.00000 0.00000
+angle_coeff 749 49.97611 107.00000 0.00000 0.00000
+angle_coeff 750 54.97372 125.50000 0.00000 0.00000
+angle_coeff 751 60.77095 127.50000 0.00000 0.00000
+angle_coeff 752 65.46871 105.00000 0.00000 0.00000
+angle_coeff 753 24.98806 124.50000 0.00000 0.00000
+angle_coeff 754 24.98806 118.30000 0.00000 0.00000
+angle_coeff 755 45.77812 123.00000 0.00000 0.00000
+angle_coeff 756 45.77812 120.00000 0.00000 0.00000
+angle_coeff 757 45.77812 123.00000 0.00000 0.00000
+angle_coeff 758 45.77812 120.00000 0.00000 0.00000
+angle_coeff 759 119.94267 104.50000 0.00000 0.00000
+angle_coeff 760 59.97133 135.70000 0.00000 0.00000
+angle_coeff 761 79.96178 106.00000 0.00000 0.00000
+angle_coeff 762 54.97372 126.20000 0.00000 0.00000
+angle_coeff 763 119.94267 105.50000 0.00000 0.00000
+angle_coeff 764 64.96894 126.70000 0.00000 0.00000
+angle_coeff 765 89.95700 105.80000 0.00000 0.00000
+angle_coeff 766 59.97133 134.30000 0.00000 0.00000
+angle_coeff 767 99.95222 111.00000 0.00000 0.00000
+angle_coeff 768 99.95222 113.00000 0.00000 0.00000
+angle_coeff 769 159.92355 117.40000 0.00000 0.00000
+angle_coeff 770 119.94267 115.70000 0.00000 0.00000
+angle_coeff 771 109.94744 117.20000 0.00000 0.00000
+angle_coeff 772 38.98137 124.80000 0.00000 0.00000
+angle_coeff 773 69.96656 127.50000 0.00000 0.00000
+angle_coeff 774 39.98089 122.20000 0.00000 0.00000
+angle_coeff 775 144.93072 108.00000 0.00000 0.00000
+angle_coeff 776 31.98471 126.00000 24.98806 2.14000
+angle_coeff 777 74.96417 104.40000 0.00000 0.00000
+angle_coeff 778 64.96894 127.80000 0.00000 0.00000
+angle_coeff 779 44.97850 127.00000 0.00000 0.00000
+angle_coeff 780 69.96656 109.00000 0.00000 0.00000
+angle_coeff 781 31.98471 117.80000 0.00000 0.00000
+angle_coeff 782 63.96942 127.50000 0.00000 0.00000
+angle_coeff 783 54.97372 125.00000 0.00000 0.00000
+angle_coeff 784 24.98806 119.50000 19.99044 2.14000
+angle_coeff 785 44.97850 124.00000 0.00000 0.00000
+angle_coeff 786 29.98567 118.00000 0.00000 0.00000
+angle_coeff 787 89.95700 107.20000 0.00000 0.00000
+angle_coeff 788 32.98423 126.40000 0.00000 0.00000
+angle_coeff 789 42.47969 126.40000 0.00000 0.00000
+angle_coeff 790 34.98328 120.00000 0.00000 0.00000
+angle_coeff 791 35.98280 120.00000 0.00000 0.00000
+angle_coeff 792 35.98280 120.00000 0.00000 0.00000
+angle_coeff 793 24.98806 120.00000 0.00000 0.00000
+angle_coeff 794 44.97850 119.00000 0.00000 0.00000
+angle_coeff 795 62.48013 126.95000 0.00000 0.00000
+angle_coeff 796 59.97133 120.00000 0.00000 0.00000
+angle_coeff 797 69.71667 115.90000 0.00000 0.00000
+angle_coeff 798 44.97850 120.00000 0.00000 0.00000
+angle_coeff 799 44.97850 119.00000 0.00000 0.00000
+angle_coeff 800 44.97850 119.80000 0.00000 0.00000
+angle_coeff 801 44.97850 120.00000 0.00000 0.00000
+angle_coeff 802 31.98471 120.00000 0.00000 0.00000
+angle_coeff 803 39.98089 120.00000 34.98328 2.41620
+angle_coeff 804 39.98089 119.00000 34.98328 2.41620
+angle_coeff 805 39.98089 120.00000 34.98328 2.41620
+angle_coeff 806 39.98089 115.50000 34.98328 2.41620
+angle_coeff 807 39.98089 119.00000 34.98328 2.41620
+angle_coeff 808 39.98089 120.00000 0.00000 0.00000
+angle_coeff 809 49.97611 120.00000 0.00000 0.00000
+angle_coeff 810 45.77812 120.00000 0.00000 0.00000
+angle_coeff 811 45.77812 120.00000 0.00000 0.00000
+angle_coeff 812 45.77812 120.00000 0.00000 0.00000
+angle_coeff 813 45.77812 120.00000 0.00000 0.00000
+angle_coeff 814 45.77812 120.00000 0.00000 0.00000
+angle_coeff 815 79.96178 125.50000 0.00000 0.00000
+angle_coeff 816 19.99044 120.00000 0.00000 0.00000
+angle_coeff 817 38.98137 121.20000 42.97946 2.19000
+angle_coeff 818 59.97133 121.00000 0.00000 0.00000
+angle_coeff 819 19.99044 124.00000 0.00000 0.00000
+angle_coeff 820 124.94028 120.00000 0.00000 0.00000
+angle_coeff 821 19.99044 124.00000 0.00000 0.00000
+angle_coeff 822 99.95222 121.40000 0.00000 0.00000
+angle_coeff 823 39.98089 120.00000 34.98328 2.41620
+angle_coeff 824 39.98089 120.00000 34.98328 2.41620
+angle_coeff 825 59.97133 121.00000 0.00000 0.00000
+angle_coeff 826 41.97993 120.00000 0.00000 0.00000
+angle_coeff 827 39.98089 120.00000 0.00000 0.00000
+angle_coeff 828 47.97707 122.00000 0.00000 0.00000
+angle_coeff 829 109.94744 120.00000 0.00000 0.00000
+angle_coeff 830 74.96417 120.00000 0.00000 0.00000
+angle_coeff 831 45.17840 120.00000 0.00000 0.00000
+angle_coeff 832 39.98089 120.00000 0.00000 0.00000
+angle_coeff 833 39.98089 120.00000 0.00000 0.00000
+angle_coeff 834 39.98089 120.00000 0.00000 0.00000
+angle_coeff 835 9.99522 122.30000 0.00000 0.00000
+angle_coeff 836 34.98328 119.00000 0.00000 0.00000
+angle_coeff 837 59.97133 120.00000 0.00000 0.00000
+angle_coeff 838 44.97850 120.00000 0.00000 0.00000
+angle_coeff 839 44.97850 120.00000 0.00000 0.00000
+angle_coeff 840 41.97993 120.00000 0.00000 0.00000
+angle_coeff 841 29.98567 120.00000 21.98949 2.15250
+angle_coeff 842 29.98567 120.00000 21.98949 2.15250
+angle_coeff 843 19.99044 121.00000 21.98949 2.15250
+angle_coeff 844 17.99140 120.00000 21.98949 2.15250
+angle_coeff 845 19.99044 123.40000 0.00000 0.00000
+angle_coeff 846 45.17840 120.00000 0.00000 0.00000
+angle_coeff 847 29.98567 120.00000 21.98949 2.15250
+angle_coeff 848 37.98184 120.10000 0.00000 0.00000
+angle_coeff 849 39.98089 117.00000 34.98328 2.41620
+angle_coeff 850 45.77812 120.00000 0.00000 0.00000
+angle_coeff 851 19.99044 124.00000 0.00000 0.00000
+angle_coeff 852 39.98089 120.00000 34.98328 2.41620
+angle_coeff 853 29.98567 121.50000 21.98949 2.15250
+angle_coeff 854 19.99044 124.00000 0.00000 0.00000
+angle_coeff 855 29.98567 120.00000 0.00000 0.00000
+angle_coeff 856 29.98567 120.00000 0.00000 0.00000
+angle_coeff 857 19.99044 119.00000 0.00000 0.00000
+angle_coeff 858 45.17840 120.00000 0.00000 0.00000
+angle_coeff 859 29.98567 120.00000 21.98949 2.14600
+angle_coeff 860 29.98567 121.50000 0.00000 0.00000
+angle_coeff 861 45.77812 122.30000 0.00000 0.00000
+angle_coeff 862 45.77812 122.30000 0.00000 0.00000
+angle_coeff 863 34.98328 113.00000 0.00000 0.00000
+angle_coeff 864 44.97850 120.00000 0.00000 0.00000
+angle_coeff 865 29.98567 116.00000 34.98328 2.10000
+angle_coeff 866 32.98423 115.00000 0.00000 0.00000
+angle_coeff 867 45.17840 120.00000 0.00000 0.00000
+angle_coeff 868 29.98567 116.00000 34.98328 2.10000
+angle_coeff 869 29.98567 118.60000 0.00000 0.00000
+angle_coeff 870 9.99522 131.80000 0.00000 0.00000
+angle_coeff 871 49.97611 120.00000 0.00000 0.00000
+angle_coeff 872 64.96894 122.20000 0.00000 0.00000
+angle_coeff 873 39.98089 121.00000 0.00000 0.00000
+angle_coeff 874 119.94267 122.30000 0.00000 0.00000
+angle_coeff 875 22.98901 116.10000 0.00000 0.00000
+angle_coeff 876 29.98567 118.00000 0.00000 0.00000
+angle_coeff 877 39.98089 119.70000 0.00000 0.00000
+angle_coeff 878 39.98089 118.00000 0.00000 0.00000
+angle_coeff 879 119.94267 116.70000 0.00000 0.00000
+angle_coeff 880 84.95939 117.80000 0.00000 0.00000
+angle_coeff 881 39.98089 121.00000 0.00000 0.00000
+angle_coeff 882 39.98089 124.20000 0.00000 0.00000
+angle_coeff 883 39.98089 123.00000 0.00000 0.00000
+angle_coeff 884 45.77812 125.80000 0.00000 0.00000
+angle_coeff 885 39.98089 124.20000 0.00000 0.00000
+angle_coeff 886 84.95939 122.90000 0.00000 0.00000
+angle_coeff 887 19.99044 121.00000 0.00000 0.00000
+angle_coeff 888 84.95939 122.90000 0.00000 0.00000
+angle_coeff 889 119.94267 120.30000 0.00000 0.00000
+angle_coeff 890 50.97563 123.80000 0.00000 0.00000
+angle_coeff 891 9.99522 119.30000 0.00000 0.00000
+angle_coeff 892 41.97993 119.00000 0.00000 0.00000
+angle_coeff 893 79.96178 120.50000 0.00000 0.00000
+angle_coeff 894 4.44787 116.76000 0.00000 0.00000
+angle_coeff 895 119.94267 122.30000 0.00000 0.00000
+angle_coeff 896 42.97946 121.20000 0.00000 0.00000
+angle_coeff 897 60.97086 119.10000 0.00000 0.00000
+angle_coeff 898 41.97993 117.50000 0.00000 0.00000
+angle_coeff 899 37.98184 118.70000 0.00000 0.00000
+angle_coeff 900 42.73957 109.62000 0.00000 0.00000
+angle_coeff 901 109.94744 123.00000 0.00000 0.00000
+angle_coeff 902 48.97659 117.50000 0.00000 0.00000
+angle_coeff 903 29.98567 120.30000 0.00000 0.00000
+angle_coeff 904 45.97802 118.50000 0.00000 0.00000
+angle_coeff 905 45.97802 118.90000 0.00000 0.00000
+angle_coeff 906 24.46830 120.35000 0.00000 0.00000
+angle_coeff 907 37.98184 120.10000 0.00000 0.00000
+angle_coeff 908 22.98901 116.10000 0.00000 0.00000
+angle_coeff 909 29.98567 118.00000 0.00000 0.00000
+angle_coeff 910 41.97993 119.00000 0.00000 0.00000
+angle_coeff 911 79.96178 120.50000 0.00000 0.00000
+angle_coeff 912 49.97611 124.00000 0.00000 0.00000
+angle_coeff 913 43.97898 115.00000 0.00000 0.00000
+angle_coeff 914 79.96178 117.50000 0.00000 0.00000
+angle_coeff 915 88.95748 121.00000 89.95700 2.30800
+angle_coeff 916 23.48877 120.00000 34.98328 2.10000
+angle_coeff 917 50.47587 118.50000 0.00000 0.00000
+angle_coeff 918 43.97898 118.10000 0.00000 0.00000
+angle_coeff 919 58.97181 111.90000 0.00000 0.00000
+angle_coeff 920 58.97181 113.40000 0.00000 0.00000
+angle_coeff 921 37.98184 125.10000 0.00000 0.00000
+angle_coeff 922 9.99522 120.80000 0.00000 0.00000
+angle_coeff 923 69.96656 113.50000 0.00000 0.00000
+angle_coeff 924 79.96178 117.80000 0.00000 0.00000
+angle_coeff 925 69.96656 115.70000 0.00000 0.00000
+angle_coeff 926 99.95222 124.60000 0.00000 0.00000
+angle_coeff 927 9.99522 121.50000 0.00000 0.00000
+angle_coeff 928 51.97516 123.50000 0.00000 0.00000
+angle_coeff 929 69.96656 107.80000 0.00000 0.00000
+angle_coeff 930 69.96656 108.00000 0.00000 0.00000
+angle_coeff 931 49.97611 124.70000 0.00000 0.00000
+angle_coeff 932 60.97086 115.60000 0.00000 0.00000
+angle_coeff 933 79.96178 125.00000 0.00000 0.00000
+angle_coeff 934 49.97611 114.00000 0.00000 0.00000
+angle_coeff 935 49.97611 116.80000 0.00000 0.00000
+angle_coeff 936 49.97611 114.00000 0.00000 0.00000
+angle_coeff 937 129.93789 119.40000 0.00000 0.00000
+angle_coeff 938 55.97324 123.00000 0.00000 0.00000
+angle_coeff 939 64.96894 122.50000 0.00000 0.00000
+angle_coeff 940 129.93789 123.80000 0.00000 0.00000
+angle_coeff 941 69.96656 123.70000 0.00000 0.00000
+angle_coeff 942 129.93789 119.70000 0.00000 0.00000
+angle_coeff 943 55.97324 123.00000 0.00000 0.00000
+angle_coeff 944 96.95366 122.10000 0.00000 0.00000
+angle_coeff 945 19.99044 113.90000 0.00000 0.00000
+angle_coeff 946 47.97707 119.00000 59.97133 2.58300
+angle_coeff 947 59.97133 110.00000 50.97563 2.56000
+angle_coeff 948 39.98089 120.00000 0.00000 0.00000
+angle_coeff 949 19.99044 124.00000 0.00000 0.00000
+angle_coeff 950 33.47400 115.66000 0.00000 0.00000
+angle_coeff 951 19.99044 128.00000 0.00000 0.00000
+angle_coeff 952 39.98089 120.00000 34.98328 2.41620
+angle_coeff 953 59.97133 118.50000 0.00000 0.00000
+angle_coeff 954 62.96990 121.00000 0.00000 0.00000
+angle_coeff 955 47.97707 124.50000 42.97946 2.51200
+angle_coeff 956 51.97516 120.30000 34.98328 2.36000
+angle_coeff 957 79.96178 120.20000 0.00000 0.00000
+angle_coeff 958 84.95939 119.30000 0.00000 0.00000
+angle_coeff 959 39.98089 118.00000 34.98328 2.24200
+angle_coeff 960 80.96130 118.40000 0.00000 0.00000
+angle_coeff 961 66.96799 120.70000 0.00000 0.00000
+angle_coeff 962 60.97086 119.00000 0.00000 0.00000
+angle_coeff 963 47.97707 124.50000 42.97946 2.51200
+angle_coeff 964 51.97516 119.00000 34.98328 2.36000
+angle_coeff 965 79.96178 120.20000 0.00000 0.00000
+angle_coeff 966 59.97133 110.70000 0.00000 0.00000
+angle_coeff 967 34.98328 126.00000 14.99283 2.38000
+angle_coeff 968 39.98089 118.00000 34.98328 2.24200
+angle_coeff 969 49.97611 118.60000 0.00000 0.00000
+angle_coeff 970 39.98089 120.00000 0.00000 0.00000
+angle_coeff 971 60.97086 119.00000 0.00000 0.00000
+angle_coeff 972 63.46966 116.00000 0.00000 0.00000
+angle_coeff 973 62.96990 121.00000 31.98471 2.48300
+angle_coeff 974 89.95700 116.80000 0.00000 0.00000
+angle_coeff 975 40.98041 124.00000 84.95939 2.56200
+angle_coeff 976 49.97611 118.00000 39.98089 2.27500
+angle_coeff 977 69.96656 122.00000 0.00000 0.00000
+angle_coeff 978 47.97707 112.60000 0.00000 0.00000
+angle_coeff 979 39.98089 116.00000 0.00000 0.00000
+angle_coeff 980 39.98089 120.00000 34.98328 2.41620
+angle_coeff 981 77.96273 119.70000 0.00000 0.00000
+angle_coeff 982 69.96656 122.20000 0.00000 0.00000
+angle_coeff 983 94.95461 115.40000 0.00000 0.00000
+angle_coeff 984 24.86811 119.60000 0.00000 0.00000
+angle_coeff 985 72.96512 120.00000 0.00000 0.00000
+angle_coeff 986 19.99044 121.80000 0.00000 0.00000
+angle_coeff 987 79.96178 119.00000 0.00000 0.00000
+angle_coeff 988 59.97133 128.00000 0.00000 0.00000
+angle_coeff 989 69.96656 125.00000 0.00000 0.00000
+angle_coeff 990 34.98328 120.00000 9.99522 2.25000
+angle_coeff 991 43.97898 122.70000 34.98328 2.41620
+angle_coeff 992 94.95461 122.40000 0.00000 0.00000
+angle_coeff 993 77.96273 120.00000 0.00000 0.00000
+angle_coeff 994 65.96847 121.70000 0.00000 0.00000
+angle_coeff 995 53.97420 116.00000 0.00000 0.00000
+angle_coeff 996 37.98184 116.00000 0.00000 0.00000
+angle_coeff 997 79.96178 119.00000 0.00000 0.00000
+angle_coeff 998 39.98089 122.50000 34.98328 2.41620
+angle_coeff 999 39.98089 122.50000 34.98328 2.41620
+angle_coeff 1000 59.97133 118.75000 0.00000 0.00000
+angle_coeff 1001 59.97133 118.75000 0.00000 0.00000
+angle_coeff 1002 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1003 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1004 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1005 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1006 57.97229 126.80000 0.00000 0.00000
+angle_coeff 1007 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1008 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1009 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1010 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1011 54.97372 110.00000 0.00000 0.00000
+angle_coeff 1012 43.97898 113.20000 0.00000 0.00000
+angle_coeff 1013 29.98567 128.60000 0.00000 0.00000
+angle_coeff 1014 89.95700 129.30000 0.00000 0.00000
+angle_coeff 1015 36.98232 115.70000 0.00000 0.00000
+angle_coeff 1016 31.98471 115.00000 0.00000 0.00000
+angle_coeff 1017 39.98089 125.00000 0.00000 0.00000
+angle_coeff 1018 19.99044 107.00000 0.00000 0.00000
+angle_coeff 1019 39.98089 125.00000 0.00000 0.00000
+angle_coeff 1020 19.99044 107.00000 0.00000 0.00000
+angle_coeff 1021 129.93789 132.00000 0.00000 0.00000
+angle_coeff 1022 129.93789 132.00000 0.00000 0.00000
+angle_coeff 1023 84.95939 108.00000 0.00000 0.00000
+angle_coeff 1024 89.95700 109.20000 0.00000 0.00000
+angle_coeff 1025 59.97133 134.10000 0.00000 0.00000
+angle_coeff 1026 89.95700 105.90000 0.00000 0.00000
+angle_coeff 1027 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1028 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1029 49.97611 130.00000 0.00000 0.00000
+angle_coeff 1030 59.97133 130.00000 0.00000 0.00000
+angle_coeff 1031 129.93789 130.00000 0.00000 0.00000
+angle_coeff 1032 129.93789 132.60000 0.00000 0.00000
+angle_coeff 1033 129.93789 130.00000 0.00000 0.00000
+angle_coeff 1034 49.97611 130.00000 0.00000 0.00000
+angle_coeff 1035 79.96178 118.80000 0.00000 0.00000
+angle_coeff 1036 34.98328 130.70000 0.00000 0.00000
+angle_coeff 1037 99.95222 129.40000 0.00000 0.00000
+angle_coeff 1038 49.97611 125.30000 0.00000 0.00000
+angle_coeff 1039 44.97850 123.70000 0.00000 0.00000
+angle_coeff 1040 34.98328 130.70000 0.00000 0.00000
+angle_coeff 1041 69.96656 119.60000 0.00000 0.00000
+angle_coeff 1042 124.94028 129.00000 0.00000 0.00000
+angle_coeff 1043 84.95939 126.50000 0.00000 0.00000
+angle_coeff 1044 59.97133 121.00000 0.00000 0.00000
+angle_coeff 1045 99.95222 129.00000 0.00000 0.00000
+angle_coeff 1046 109.94744 110.00000 0.00000 0.00000
+angle_coeff 1047 99.95222 105.70000 0.00000 0.00000
+angle_coeff 1048 69.96656 110.00000 0.00000 0.00000
+angle_coeff 1049 109.94744 110.00000 0.00000 0.00000
+angle_coeff 1050 99.95222 110.00000 0.00000 0.00000
+angle_coeff 1051 99.95222 105.70000 0.00000 0.00000
+angle_coeff 1052 71.96560 106.90000 0.00000 0.00000
+angle_coeff 1053 69.96656 110.00000 0.00000 0.00000
+angle_coeff 1054 58.97181 127.40000 0.00000 0.00000
+angle_coeff 1055 59.97133 127.40000 0.00000 0.00000
+angle_coeff 1056 99.95222 109.30000 0.00000 0.00000
+angle_coeff 1057 109.94744 110.60000 0.00000 0.00000
+angle_coeff 1058 79.96178 114.70000 0.00000 0.00000
+angle_coeff 1059 69.96656 116.30000 0.00000 0.00000
+angle_coeff 1060 99.95222 109.30000 0.00000 0.00000
+angle_coeff 1061 19.99044 131.00000 0.00000 0.00000
+angle_coeff 1062 19.99044 122.60000 0.00000 0.00000
+angle_coeff 1063 139.93311 112.60000 0.00000 0.00000
+angle_coeff 1064 99.95222 126.90000 0.00000 0.00000
+angle_coeff 1065 99.95222 126.90000 0.00000 0.00000
+angle_coeff 1066 71.96560 126.90000 0.00000 0.00000
+angle_coeff 1067 67.96751 116.40000 0.00000 0.00000
+angle_coeff 1068 29.98567 122.70000 0.00000 0.00000
+angle_coeff 1069 109.94744 109.50000 0.00000 0.00000
+angle_coeff 1070 29.98567 127.80000 0.00000 0.00000
+angle_coeff 1071 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1072 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1073 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1074 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1075 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1076 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1077 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1078 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1079 44.97850 109.00000 0.00000 0.00000
+angle_coeff 1080 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1081 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1082 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1083 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1084 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1085 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1086 45.47826 114.50000 0.00000 0.00000
+angle_coeff 1087 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1088 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1089 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1090 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1091 96.95366 111.20000 0.00000 0.00000
+angle_coeff 1092 97.95318 111.20000 0.00000 0.00000
+angle_coeff 1093 70.45632 107.00000 0.00000 0.00000
+angle_coeff 1094 44.97850 116.50000 0.00000 0.00000
+angle_coeff 1095 94.95461 109.00000 0.00000 0.00000
+angle_coeff 1096 89.95700 110.50000 0.00000 0.00000
+angle_coeff 1097 41.97993 112.00000 29.98567 2.35700
+angle_coeff 1098 41.97993 112.00000 29.98567 2.35700
+angle_coeff 1099 117.94362 107.00000 29.98567 2.15500
+angle_coeff 1100 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1101 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1102 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1103 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1104 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1105 39.98089 107.50000 0.00000 0.00000
+angle_coeff 1106 39.98089 107.50000 0.00000 0.00000
+angle_coeff 1107 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1108 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1109 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1110 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1111 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1112 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1113 109.94744 106.70000 0.00000 0.00000
+angle_coeff 1114 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1115 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1116 57.97229 104.50000 0.00000 0.00000
+angle_coeff 1117 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1118 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1119 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1120 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1121 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1122 44.97850 109.00000 0.00000 0.00000
+angle_coeff 1123 79.96178 107.00000 0.00000 0.00000
+angle_coeff 1124 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1125 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1126 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1127 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1128 111.94649 111.00000 0.00000 0.00000
+angle_coeff 1129 129.93789 111.00000 0.00000 0.00000
+angle_coeff 1130 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1131 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1132 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1133 81.96082 112.80000 0.00000 0.00000
+angle_coeff 1134 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1135 81.96082 112.80000 0.00000 0.00000
+angle_coeff 1136 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1137 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1138 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1139 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1140 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1141 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1142 53.32451 108.50000 7.99618 2.56100
+angle_coeff 1143 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1144 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1145 72.96512 111.20000 0.00000 0.00000
+angle_coeff 1146 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1147 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1148 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1149 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1150 53.32451 108.50000 7.99618 2.56100
+angle_coeff 1151 75.66383 112.10000 0.00000 0.00000
+angle_coeff 1152 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1153 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1154 58.32212 110.50000 11.15467 2.56100
+angle_coeff 1155 53.32451 114.00000 7.99618 2.56100
+angle_coeff 1156 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1157 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1158 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1159 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1160 43.67912 112.20000 0.00000 0.00000
+angle_coeff 1161 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1162 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1163 75.66383 110.00000 0.00000 0.00000
+angle_coeff 1164 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1165 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1166 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1167 75.66383 112.10000 0.00000 0.00000
+angle_coeff 1168 26.48734 111.80000 22.51923 2.17900
+angle_coeff 1169 53.32451 114.00000 7.99618 2.56100
+angle_coeff 1170 53.32451 108.50000 7.99618 2.56100
+angle_coeff 1171 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1172 72.96512 113.20000 0.00000 0.00000
+angle_coeff 1173 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1174 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1175 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1176 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1177 87.95796 111.20000 0.00000 0.00000
+angle_coeff 1178 74.96417 111.00000 0.00000 0.00000
+angle_coeff 1179 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1180 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1181 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1182 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1183 47.97707 108.00000 0.00000 0.00000
+angle_coeff 1184 47.97707 108.00000 0.00000 0.00000
+angle_coeff 1185 32.38452 109.50000 49.97611 2.14000
+angle_coeff 1186 89.95700 112.00000 0.00000 0.00000
+angle_coeff 1187 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1188 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1189 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1190 111.84654 111.00000 99.95222 2.35000
+angle_coeff 1191 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1192 65.86851 117.80000 0.00000 0.00000
+angle_coeff 1193 44.97850 109.50000 0.00000 0.00000
+angle_coeff 1194 94.95461 109.00000 0.00000 0.00000
+angle_coeff 1195 43.97898 108.50000 0.00000 0.00000
+angle_coeff 1196 94.95461 110.00000 0.00000 0.00000
+angle_coeff 1197 35.98280 107.00000 0.00000 0.00000
+angle_coeff 1198 89.95700 117.00000 19.99044 2.30000
+angle_coeff 1199 89.95700 117.00000 19.99044 2.30000
+angle_coeff 1200 49.97611 115.00000 29.98567 2.35700
+angle_coeff 1201 49.97611 112.00000 29.98567 2.35700
+angle_coeff 1202 31.98471 112.00000 2.99857 2.16800
+angle_coeff 1203 49.97611 122.00000 29.98567 2.35700
+angle_coeff 1204 49.97611 122.00000 29.98567 2.35700
+angle_coeff 1205 149.92833 107.00000 9.99522 2.17000
+angle_coeff 1206 41.87998 108.89000 4.99761 1.98000
+angle_coeff 1207 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1208 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1209 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1210 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1211 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1212 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1213 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1214 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1215 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1216 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1217 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1218 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1219 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1220 39.98089 110.00000 0.00000 0.00000
+angle_coeff 1221 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1222 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1223 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1224 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1225 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1226 51.47539 107.50000 0.00000 0.00000
+angle_coeff 1227 56.97277 112.00000 0.00000 0.00000
+angle_coeff 1228 56.97277 112.00000 0.00000 0.00000
+angle_coeff 1229 49.97611 109.00000 0.00000 0.00000
+angle_coeff 1230 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1231 69.96656 120.00000 0.00000 0.00000
+angle_coeff 1232 46.97754 111.50000 0.00000 0.00000
+angle_coeff 1233 29.98567 114.00000 0.00000 0.00000
+angle_coeff 1234 124.94028 108.00000 0.00000 0.00000
+angle_coeff 1235 124.94028 108.00000 0.00000 0.00000
+angle_coeff 1236 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1237 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1238 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1239 77.96273 110.00000 0.00000 0.00000
+angle_coeff 1240 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1241 46.97754 109.80000 0.00000 0.00000
+angle_coeff 1242 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1243 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1244 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1245 19.99044 99.00000 0.00000 0.00000
+angle_coeff 1246 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1247 31.98471 112.20000 0.00000 0.00000
+angle_coeff 1248 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1249 19.99044 99.00000 0.00000 0.00000
+angle_coeff 1250 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1251 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1252 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1253 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1254 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1255 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1256 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1257 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1258 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1259 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1260 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1261 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1262 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1263 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1264 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1265 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1266 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1267 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1268 69.96656 109.00000 0.00000 0.00000
+angle_coeff 1269 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1270 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1271 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1272 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1273 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1274 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1275 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1276 49.97611 107.00000 0.00000 0.00000
+angle_coeff 1277 62.96990 109.00000 0.00000 0.00000
+angle_coeff 1278 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1279 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1280 59.97133 113.80000 0.00000 0.00000
+angle_coeff 1281 64.96894 111.82000 0.00000 0.00000
+angle_coeff 1282 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1283 59.97133 113.80000 0.00000 0.00000
+angle_coeff 1284 59.97133 111.50000 0.00000 0.00000
+angle_coeff 1285 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1286 58.32212 114.00000 0.00000 0.00000
+angle_coeff 1287 58.32212 114.00000 0.00000 0.00000
+angle_coeff 1288 58.32212 114.00000 0.00000 0.00000
+angle_coeff 1289 58.32212 114.00000 0.00000 0.00000
+angle_coeff 1290 56.97277 107.00000 0.00000 0.00000
+angle_coeff 1291 69.96656 111.50000 0.00000 0.00000
+angle_coeff 1292 69.96656 110.00000 0.00000 0.00000
+angle_coeff 1293 54.97372 109.50000 0.00000 0.00000
+angle_coeff 1294 57.97229 111.00000 0.00000 0.00000
+angle_coeff 1295 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1296 58.97181 111.00000 0.00000 0.00000
+angle_coeff 1297 54.97372 109.50000 0.00000 0.00000
+angle_coeff 1298 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1299 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1300 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1301 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1302 51.77525 107.50000 0.00000 0.00000
+angle_coeff 1303 52.97468 115.20000 0.00000 0.00000
+angle_coeff 1304 72.96512 109.00000 0.00000 0.00000
+angle_coeff 1305 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1306 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1307 89.95700 111.00000 19.99044 2.30000
+angle_coeff 1308 89.95700 111.00000 19.99044 2.30000
+angle_coeff 1309 49.27645 107.50000 0.00000 0.00000
+angle_coeff 1310 77.96273 107.00000 0.00000 0.00000
+angle_coeff 1311 77.96273 107.00000 0.00000 0.00000
+angle_coeff 1312 75.66383 109.70000 0.00000 0.00000
+angle_coeff 1313 49.27645 107.50000 0.00000 0.00000
+angle_coeff 1314 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1315 65.31878 113.50000 0.00000 0.00000
+angle_coeff 1316 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1317 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1318 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1319 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1320 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1321 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1322 58.32212 110.50000 11.15467 2.56100
+angle_coeff 1323 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1324 67.31782 112.23000 0.00000 0.00000
+angle_coeff 1325 84.95939 111.50000 0.00000 0.00000
+angle_coeff 1326 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1327 60.60103 115.77000 0.00000 0.00000
+angle_coeff 1328 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1329 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1330 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1331 57.97229 112.50000 0.00000 0.00000
+angle_coeff 1332 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1333 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1334 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1335 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1336 57.97229 112.50000 0.00000 0.00000
+angle_coeff 1337 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1338 58.32212 113.60000 11.15467 2.56100
+angle_coeff 1339 58.32212 110.50000 11.15467 2.56100
+angle_coeff 1340 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1341 52.97468 112.00000 7.99618 2.56100
+angle_coeff 1342 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1343 102.95079 112.00000 0.00000 0.00000
+angle_coeff 1344 66.96799 112.00000 0.00000 0.00000
+angle_coeff 1345 69.96656 111.00000 0.00000 0.00000
+angle_coeff 1346 69.96656 113.50000 0.00000 0.00000
+angle_coeff 1347 56.97277 107.00000 0.00000 0.00000
+angle_coeff 1348 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1349 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1350 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1351 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1352 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1353 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1354 57.97229 114.50000 0.00000 0.00000
+angle_coeff 1355 42.97946 105.50000 0.00000 0.00000
+angle_coeff 1356 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1357 58.32212 110.50000 11.15467 2.56100
+angle_coeff 1358 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1359 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1360 75.66383 112.10000 0.00000 0.00000
+angle_coeff 1361 49.97611 106.50000 0.00000 0.00000
+angle_coeff 1362 69.96656 110.00000 0.00000 0.00000
+angle_coeff 1363 34.98328 104.50000 0.00000 0.00000
+angle_coeff 1364 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1365 53.32451 114.00000 7.99618 2.56100
+angle_coeff 1366 53.32451 111.00000 0.00000 0.00000
+angle_coeff 1367 61.97038 114.00000 0.00000 0.00000
+angle_coeff 1368 69.96656 120.00000 0.00000 0.00000
+angle_coeff 1369 67.31782 112.23000 0.00000 0.00000
+angle_coeff 1370 69.96656 120.00000 0.00000 0.00000
+angle_coeff 1371 27.28696 109.70000 0.00000 0.00000
+angle_coeff 1372 60.60103 115.77000 0.00000 0.00000
+angle_coeff 1373 43.67912 112.20000 0.00000 0.00000
+angle_coeff 1374 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1375 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1376 69.96656 108.40000 0.00000 0.00000
+angle_coeff 1377 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1378 64.96894 122.00000 0.00000 0.00000
+angle_coeff 1379 57.97229 112.50000 0.00000 0.00000
+angle_coeff 1380 57.97229 114.50000 0.00000 0.00000
+angle_coeff 1381 49.97611 105.50000 0.00000 0.00000
+angle_coeff 1382 44.97850 105.00000 0.00000 0.00000
+angle_coeff 1383 44.97850 105.00000 0.00000 0.00000
+angle_coeff 1384 70.96608 112.20000 0.00000 0.00000
+angle_coeff 1385 70.96608 111.00000 0.00000 0.00000
+angle_coeff 1386 79.96178 112.00000 0.00000 0.00000
+angle_coeff 1387 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1388 41.97993 109.00000 0.00000 0.00000
+angle_coeff 1389 31.98471 109.00000 22.51923 2.17900
+angle_coeff 1390 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1391 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1392 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1393 57.97229 112.50000 0.00000 0.00000
+angle_coeff 1394 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1395 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1396 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1397 44.97850 107.50000 0.00000 0.00000
+angle_coeff 1398 33.41403 110.10000 0.00000 0.00000
+angle_coeff 1399 51.23551 98.71000 0.00000 0.00000
+angle_coeff 1400 53.97420 109.50000 0.00000 0.00000
+angle_coeff 1401 51.47539 109.50000 0.00000 0.00000
+angle_coeff 1402 38.28170 105.20000 0.00000 0.00000
+angle_coeff 1403 32.38452 109.00000 0.00000 0.00000
+angle_coeff 1404 89.95700 113.00000 0.00000 0.00000
+angle_coeff 1405 32.38452 109.50000 49.97611 2.13000
+angle_coeff 1406 32.38452 109.50000 49.97611 2.14000
+angle_coeff 1407 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1408 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1409 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1410 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1411 64.96894 118.30000 0.00000 0.00000
+angle_coeff 1412 44.97850 110.50000 0.00000 0.00000
+angle_coeff 1413 44.97850 109.50000 0.00000 0.00000
+angle_coeff 1414 54.97372 111.50000 0.00000 0.00000
+angle_coeff 1415 89.95700 110.00000 5.39742 1.80200
+angle_coeff 1416 89.95700 110.00000 5.39742 1.80200
+angle_coeff 1417 37.98184 111.00000 0.00000 0.00000
+angle_coeff 1418 99.95222 117.00000 0.00000 0.00000
+angle_coeff 1419 46.07797 111.30000 0.00000 0.00000
+angle_coeff 1420 48.97659 109.00000 0.00000 0.00000
+angle_coeff 1421 44.97850 107.00000 0.00000 0.00000
+angle_coeff 1422 44.97850 107.00000 0.00000 0.00000
+angle_coeff 1423 41.97993 107.00000 0.00000 0.00000
+angle_coeff 1424 35.98280 106.00000 0.00000 0.00000
+angle_coeff 1425 49.97611 109.00000 0.00000 0.00000
+angle_coeff 1426 35.48304 109.00000 5.39742 1.80200
+angle_coeff 1427 43.97898 112.00000 29.98567 2.36900
+angle_coeff 1428 30.98519 112.00000 2.99857 2.16800
+angle_coeff 1429 57.47253 108.89000 4.99761 1.99700
+angle_coeff 1430 35.48304 108.40000 10.39503 1.74600
+angle_coeff 1431 54.97372 118.00000 0.00000 0.00000
+angle_coeff 1432 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1433 39.98089 112.30000 0.00000 0.00000
+angle_coeff 1434 39.98089 112.30000 0.00000 0.00000
+angle_coeff 1435 35.48304 108.40000 13.99331 1.77500
+angle_coeff 1436 35.48304 108.40000 13.99331 1.77500
+angle_coeff 1437 49.97611 110.50000 30.98519 2.48500
+angle_coeff 1438 44.97850 110.00000 0.00000 0.00000
+angle_coeff 1439 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1440 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1441 69.96656 104.00000 0.00000 0.00000
+angle_coeff 1442 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1443 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1444 51.97516 109.00000 37.98184 2.45100
+angle_coeff 1445 24.98806 102.30000 0.00000 0.00000
+angle_coeff 1446 54.97372 109.50000 0.00000 0.00000
+angle_coeff 1447 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1448 53.97420 108.50000 36.98232 2.43000
+angle_coeff 1449 44.97850 107.00000 0.00000 0.00000
+angle_coeff 1450 49.27645 107.50000 0.00000 0.00000
+angle_coeff 1451 53.97420 107.00000 36.98232 2.21000
+angle_coeff 1452 53.97420 108.50000 36.98232 2.43000
+angle_coeff 1453 49.27645 107.50000 0.00000 0.00000
+angle_coeff 1454 99.95222 110.00000 0.00000 0.00000
+angle_coeff 1455 39.98089 110.00000 0.00000 0.00000
+angle_coeff 1456 26.48734 111.80000 22.51923 2.17900
+angle_coeff 1457 56.77286 109.00000 0.00000 0.00000
+angle_coeff 1458 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1459 67.66765 115.00000 0.00000 0.00000
+angle_coeff 1460 99.95222 110.00000 0.00000 0.00000
+angle_coeff 1461 39.98089 110.00000 0.00000 0.00000
+angle_coeff 1462 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1463 26.48734 111.80000 22.51923 2.17900
+angle_coeff 1464 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1465 67.66765 115.00000 0.00000 0.00000
+angle_coeff 1466 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1467 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1468 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1469 67.66765 110.00000 0.00000 0.00000
+angle_coeff 1470 34.58347 110.10000 0.00000 0.00000
+angle_coeff 1471 59.97133 106.30000 0.00000 0.00000
+angle_coeff 1472 41.97993 110.10000 0.00000 0.00000
+angle_coeff 1473 39.98089 109.50000 26.98710 2.13000
+angle_coeff 1474 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1475 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1476 44.97850 107.50000 34.98328 2.10100
+angle_coeff 1477 35.48304 109.00000 5.39742 1.80200
+angle_coeff 1478 23.98853 109.50000 27.98662 1.76700
+angle_coeff 1479 49.97611 110.50000 0.00000 0.00000
+angle_coeff 1480 46.97754 111.50000 0.00000 0.00000
+angle_coeff 1481 41.97993 111.50000 0.00000 0.00000
+angle_coeff 1482 41.97993 111.50000 0.00000 0.00000
+angle_coeff 1483 41.97993 111.50000 0.00000 0.00000
+angle_coeff 1484 32.98423 109.50000 29.98567 2.13000
+angle_coeff 1485 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1486 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1487 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1488 32.98423 109.50000 29.98567 2.16300
+angle_coeff 1489 49.97611 109.50000 0.00000 0.00000
+angle_coeff 1490 54.97372 109.50000 0.00000 0.00000
+angle_coeff 1491 54.97372 109.50000 0.00000 0.00000
+angle_coeff 1492 49.27645 107.50000 0.00000 0.00000
+angle_coeff 1493 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1494 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1495 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1496 32.98423 110.50000 38.98137 2.15500
+angle_coeff 1497 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1498 32.98423 110.50000 36.98232 2.16800
+angle_coeff 1499 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1500 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1501 32.98423 110.50000 37.98184 2.18100
+angle_coeff 1502 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1503 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1504 37.48208 110.10000 22.51923 2.17900
+angle_coeff 1505 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1506 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1507 41.97993 113.50000 0.00000 0.00000
+angle_coeff 1508 33.41403 110.10000 0.00000 0.00000
+angle_coeff 1509 38.98137 109.00000 0.00000 0.00000
+angle_coeff 1510 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1511 49.97611 105.00000 0.00000 0.00000
+angle_coeff 1512 51.47539 109.50000 0.00000 0.00000
+angle_coeff 1513 51.47539 107.50000 0.00000 0.00000
+angle_coeff 1514 30.48543 109.70000 49.97611 2.14000
+angle_coeff 1515 30.48543 109.70000 49.97611 2.14000
+angle_coeff 1516 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1517 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1518 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1519 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1520 64.96894 118.30000 0.00000 0.00000
+angle_coeff 1521 37.98184 111.00000 0.00000 0.00000
+angle_coeff 1522 46.07797 111.30000 0.00000 0.00000
+angle_coeff 1523 41.97993 110.60000 0.00000 0.00000
+angle_coeff 1524 44.97850 108.50000 0.00000 0.00000
+angle_coeff 1525 46.07797 111.30000 0.00000 0.00000
+angle_coeff 1526 110.44720 111.00000 0.00000 0.00000
+angle_coeff 1527 35.48304 108.40000 5.39742 1.80200
+angle_coeff 1528 47.77716 108.00000 0.00000 0.00000
+angle_coeff 1529 41.97993 110.10000 0.00000 0.00000
+angle_coeff 1530 41.97993 107.00000 0.00000 0.00000
+angle_coeff 1531 39.98089 109.50000 26.98710 2.13000
+angle_coeff 1532 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1533 44.97850 102.30000 34.98328 2.10100
+angle_coeff 1534 44.97850 107.50000 34.98328 2.10100
+angle_coeff 1535 35.48304 108.40000 5.39742 1.80200
+angle_coeff 1536 23.98853 109.50000 27.98662 1.76700
+angle_coeff 1537 34.98328 109.50000 49.97611 2.14000
+angle_coeff 1538 35.48304 108.40000 5.39742 1.80200
+angle_coeff 1539 30.48543 109.70000 49.97611 2.14000
+angle_coeff 1540 35.78290 109.00000 5.39742 1.80200
+angle_coeff 1541 32.38452 109.50000 49.97611 2.14000
+angle_coeff 1542 34.98328 109.47000 5.39742 1.80200
+angle_coeff 1543 67.31782 116.70000 0.00000 0.00000
+angle_coeff 1544 60.32117 115.50000 0.00000 0.00000
+angle_coeff 1545 29.98567 115.40000 0.00000 0.00000
+angle_coeff 1546 58.32212 120.00000 0.00000 0.00000
+angle_coeff 1547 34.58347 110.10000 0.00000 0.00000
+angle_coeff 1548 77.31304 111.00000 7.99618 2.56100
+angle_coeff 1549 29.98567 103.00000 0.00000 0.00000
+angle_coeff 1550 22.98901 117.10000 22.51923 2.17900
+angle_coeff 1551 22.98901 117.10000 22.51923 2.17900
+angle_coeff 1552 53.32451 58.50000 0.00000 0.00000
+angle_coeff 1553 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1554 63.96942 118.50000 0.00000 0.00000
+angle_coeff 1555 68.46727 115.00000 0.00000 0.00000
+angle_coeff 1556 22.98901 117.00000 5.39742 1.80200
+angle_coeff 1557 94.95461 101.00000 0.00000 0.00000
+angle_coeff 1558 84.95939 90.00000 0.00000 0.00000
+angle_coeff 1559 71.96560 113.00000 0.00000 0.00000
+angle_coeff 1560 89.95700 106.00000 0.00000 0.00000
+angle_coeff 1561 45.97802 112.30000 0.00000 0.00000
+angle_coeff 1562 69.96656 106.00000 0.00000 0.00000
+angle_coeff 1563 89.95700 104.50000 0.00000 0.00000
+angle_coeff 1564 88.95748 99.49000 0.00000 0.00000
+angle_coeff 1565 45.97802 110.50000 0.00000 0.00000
+angle_coeff 1566 50.97563 110.80000 0.00000 0.00000
+angle_coeff 1567 54.97372 112.00000 0.00000 0.00000
+angle_coeff 1568 27.98662 105.00000 5.39742 1.80670
+angle_coeff 1569 44.97850 103.00000 0.00000 0.00000
+angle_coeff 1570 44.97850 103.00000 0.00000 0.00000
+angle_coeff 1571 44.97850 105.00000 0.00000 0.00000
+angle_coeff 1572 57.97229 110.00000 11.15467 2.56100
+angle_coeff 1573 51.97516 112.30000 0.00000 0.00000
+angle_coeff 1574 49.97611 108.20000 0.00000 0.00000
+angle_coeff 1575 49.97611 112.00000 0.00000 0.00000
+angle_coeff 1576 51.97516 112.30000 0.00000 0.00000
+angle_coeff 1577 49.97611 108.20000 0.00000 0.00000
+angle_coeff 1578 49.97611 112.00000 0.00000 0.00000
+angle_coeff 1579 111.94649 102.70000 0.00000 0.00000
+angle_coeff 1580 111.94649 102.70000 0.00000 0.00000
+angle_coeff 1581 68.46727 105.00000 0.00000 0.00000
+angle_coeff 1582 59.97133 115.50000 0.00000 0.00000
+angle_coeff 1583 47.97707 110.10000 0.00000 0.00000
+angle_coeff 1584 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1585 51.97516 108.00000 0.00000 0.00000
+angle_coeff 1586 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1587 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1588 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1589 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1590 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1591 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1592 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1593 57.97229 115.00000 7.99618 2.56100
+angle_coeff 1594 53.32451 108.50000 7.99618 2.56100
+angle_coeff 1595 44.97850 111.50000 0.00000 0.00000
+angle_coeff 1596 34.58347 110.10000 22.51923 2.17900
+angle_coeff 1597 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1598 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1599 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1600 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1601 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1602 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1603 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1604 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1605 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1606 67.66765 107.50000 0.00000 0.00000
+angle_coeff 1607 57.97229 106.50000 7.99618 2.56100
+angle_coeff 1608 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1609 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1610 44.97850 111.10000 0.00000 0.00000
+angle_coeff 1611 43.97898 112.00000 29.98567 2.36900
+angle_coeff 1612 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1613 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1614 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1615 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1616 139.93311 113.70000 0.00000 0.00000
+angle_coeff 1617 109.94744 113.70000 0.00000 0.00000
+angle_coeff 1618 69.96656 110.80000 0.00000 0.00000
+angle_coeff 1619 43.67912 110.00000 0.00000 0.00000
+angle_coeff 1620 109.94744 113.00000 0.00000 0.00000
+angle_coeff 1621 67.66765 107.50000 0.00000 0.00000
+angle_coeff 1622 57.97229 106.50000 7.99618 2.56100
+angle_coeff 1623 114.94505 109.70000 0.00000 0.00000
+angle_coeff 1624 75.66383 110.00000 0.00000 0.00000
+angle_coeff 1625 44.97850 111.10000 0.00000 0.00000
+angle_coeff 1626 43.97898 112.00000 29.98567 2.36900
+angle_coeff 1627 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1628 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1629 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1630 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1631 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1632 109.94744 108.00000 0.00000 0.00000
+angle_coeff 1633 109.94744 108.00000 0.00000 0.00000
+angle_coeff 1634 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1635 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1636 75.66383 110.10000 0.00000 0.00000
+angle_coeff 1637 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1638 139.93311 108.00000 0.00000 0.00000
+angle_coeff 1639 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1640 109.94744 108.00000 0.00000 0.00000
+angle_coeff 1641 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1642 47.97707 112.00000 0.00000 0.00000
+angle_coeff 1643 47.97707 110.00000 0.00000 0.00000
+angle_coeff 1644 109.94744 112.00000 0.00000 0.00000
+angle_coeff 1645 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1646 42.97946 106.00000 0.00000 0.00000
+angle_coeff 1647 32.38452 109.50000 49.97611 2.14000
+angle_coeff 1648 99.95222 112.00000 0.00000 0.00000
+angle_coeff 1649 45.87807 108.50000 0.00000 0.00000
+angle_coeff 1650 59.97133 109.50000 0.00000 0.00000
+angle_coeff 1651 45.87807 108.89000 0.00000 0.00000
+angle_coeff 1652 69.96656 107.30000 0.00000 0.00000
+angle_coeff 1653 57.47253 108.89000 4.99761 1.99700
+angle_coeff 1654 75.96369 107.60000 0.00000 0.00000
+angle_coeff 1655 83.95987 106.00000 0.00000 0.00000
+angle_coeff 1656 44.97850 108.00000 0.00000 0.00000
+angle_coeff 1657 39.98089 107.30000 0.00000 0.00000
+angle_coeff 1658 51.97516 106.00000 0.00000 0.00000
+angle_coeff 1659 51.97516 106.00000 0.00000 0.00000
+angle_coeff 1660 51.97516 103.30000 0.00000 0.00000
+angle_coeff 1661 104.94983 111.60000 0.00000 0.00000
+angle_coeff 1662 69.96656 105.10000 0.00000 0.00000
+angle_coeff 1663 74.96417 102.40000 0.00000 0.00000
+angle_coeff 1664 51.97516 112.60000 0.00000 0.00000
+angle_coeff 1665 69.96656 105.00000 0.00000 0.00000
+angle_coeff 1666 79.96178 99.00000 0.00000 0.00000
+angle_coeff 1667 57.97229 112.20000 0.00000 0.00000
+angle_coeff 1668 69.96656 106.50000 0.00000 0.00000
+angle_coeff 1669 57.97229 111.00000 0.00000 0.00000
+angle_coeff 1670 39.98089 95.00000 0.00000 0.00000
+angle_coeff 1671 64.96894 108.20000 0.00000 0.00000
+angle_coeff 1672 74.96417 105.40000 0.00000 0.00000
+angle_coeff 1673 37.98184 114.00000 0.00000 0.00000
+angle_coeff 1674 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1675 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1676 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1677 79.96178 105.50000 7.99618 2.56100
+angle_coeff 1678 83.95987 107.60000 0.00000 0.00000
+angle_coeff 1679 44.97850 111.10000 0.00000 0.00000
+angle_coeff 1680 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1681 57.97229 109.50000 11.15467 2.56100
+angle_coeff 1682 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1683 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1684 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1685 39.98089 107.10000 0.00000 0.00000
+angle_coeff 1686 89.95700 104.50000 0.00000 0.00000
+angle_coeff 1687 69.96656 110.50000 0.00000 0.00000
+angle_coeff 1688 83.95987 107.60000 0.00000 0.00000
+angle_coeff 1689 44.97850 111.10000 0.00000 0.00000
+angle_coeff 1690 34.98328 111.40000 22.51923 2.17900
+angle_coeff 1691 33.41403 110.10000 22.51923 2.17900
+angle_coeff 1692 86.95843 110.40000 0.00000 0.00000
+angle_coeff 1693 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1694 57.97229 105.30000 0.00000 0.00000
+angle_coeff 1695 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1696 43.97898 109.80000 0.00000 0.00000
+angle_coeff 1697 58.97181 111.00000 0.00000 0.00000
+angle_coeff 1698 47.97707 108.00000 0.00000 0.00000
+angle_coeff 1699 53.97420 109.00000 0.00000 0.00000
+angle_coeff 1700 84.95939 108.10000 0.00000 0.00000
+angle_coeff 1701 69.96656 107.30000 0.00000 0.00000
+angle_coeff 1702 38.48161 106.80000 5.39742 1.80200
+angle_coeff 1703 51.97516 112.30000 0.00000 0.00000
+angle_coeff 1704 49.97611 106.00000 0.00000 0.00000
+angle_coeff 1705 49.97611 112.00000 0.00000 0.00000
+angle_coeff 1706 51.97516 112.30000 0.00000 0.00000
+angle_coeff 1707 49.97611 106.00000 0.00000 0.00000
+angle_coeff 1708 49.97611 112.00000 0.00000 0.00000
+angle_coeff 1709 104.94983 106.00000 0.00000 0.00000
+angle_coeff 1710 104.94983 106.00000 0.00000 0.00000
+angle_coeff 1711 76.96321 109.50000 0.00000 0.00000
+angle_coeff 1712 76.96321 109.50000 0.00000 0.00000
+angle_coeff 1713 45.97802 114.80000 0.00000 0.00000
+angle_coeff 1714 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1715 109.94744 111.00000 0.00000 0.00000
+angle_coeff 1716 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1717 119.94267 106.25000 0.00000 0.00000
+angle_coeff 1718 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1719 53.32451 103.70000 7.99618 2.56100
+angle_coeff 1720 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1721 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1722 34.98328 118.00000 0.00000 0.00000
+angle_coeff 1723 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1724 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1725 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1726 109.94744 108.00000 0.00000 0.00000
+angle_coeff 1727 42.97946 111.00000 0.00000 0.00000
+angle_coeff 1728 51.47539 107.50000 0.00000 0.00000
+angle_coeff 1729 51.47539 107.50000 0.00000 0.00000
+angle_coeff 1730 45.17840 107.24000 0.00000 0.00000
+angle_coeff 1731 137.93407 103.10000 0.00000 0.00000
+angle_coeff 1732 61.97038 103.00000 0.00000 0.00000
+angle_coeff 1733 40.98041 114.80000 0.00000 0.00000
+angle_coeff 1734 69.96656 108.50000 0.00000 0.00000
+angle_coeff 1735 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1736 67.96751 106.00000 0.00000 0.00000
+angle_coeff 1737 26.48734 110.10000 22.51923 2.17900
+angle_coeff 1738 53.97420 107.00000 0.00000 0.00000
+angle_coeff 1739 85.95891 119.00000 0.00000 0.00000
+angle_coeff 1740 52.97468 114.60000 0.00000 0.00000
+angle_coeff 1741 51.47539 109.15000 0.00000 0.00000
+angle_coeff 1742 35.48304 109.00000 5.39742 1.80200
+angle_coeff 1743 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1744 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1745 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1746 53.32451 108.00000 7.99618 2.56100
+angle_coeff 1747 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1748 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1749 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1750 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1751 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1752 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1753 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1754 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1755 58.32212 113.50000 11.15467 2.56100
+angle_coeff 1756 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1757 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1758 53.32451 62.50000 0.00000 0.00000
+angle_coeff 1759 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1760 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1761 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1762 69.96656 109.00000 0.00000 0.00000
+angle_coeff 1763 53.32451 108.00000 7.99618 2.56100
+angle_coeff 1764 94.95461 112.00000 0.00000 0.00000
+angle_coeff 1765 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1766 55.97324 109.40000 0.00000 0.00000
+angle_coeff 1767 53.32451 111.00000 7.99618 2.56100
+angle_coeff 1768 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1769 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1770 94.95461 112.00000 0.00000 0.00000
+angle_coeff 1771 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1772 102.95079 107.00000 44.97850 2.38300
+angle_coeff 1773 92.95557 105.80000 0.00000 0.00000
+angle_coeff 1774 17.49164 105.70000 43.97898 2.01000
+angle_coeff 1775 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1776 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1777 69.96656 113.70000 0.00000 0.00000
+angle_coeff 1778 53.97420 59.60000 7.99618 1.42500
+angle_coeff 1779 49.97611 109.00000 0.00000 0.00000
+angle_coeff 1780 34.48352 110.10000 22.51923 2.17900
+angle_coeff 1781 69.96656 117.00000 0.00000 0.00000
+angle_coeff 1782 58.97181 111.00000 0.00000 0.00000
+angle_coeff 1783 72.96512 112.50000 0.00000 0.00000
+angle_coeff 1784 69.96656 105.00000 0.00000 0.00000
+angle_coeff 1785 54.97372 106.00000 0.00000 0.00000
+angle_coeff 1786 74.46441 111.00000 0.00000 0.00000
+angle_coeff 1787 66.96799 111.00000 0.00000 0.00000
+angle_coeff 1788 99.95222 115.00000 0.00000 0.00000
+angle_coeff 1789 99.95222 107.00000 0.00000 0.00000
+angle_coeff 1790 99.95222 107.00000 0.00000 0.00000
+angle_coeff 1791 99.95222 115.00000 0.00000 0.00000
+angle_coeff 1792 99.95222 115.00000 0.00000 0.00000
+angle_coeff 1793 49.97611 108.00000 0.00000 0.00000
+angle_coeff 1794 48.97659 113.00000 0.00000 0.00000
+angle_coeff 1795 69.96656 114.80000 0.00000 0.00000
+angle_coeff 1796 44.97850 103.80000 0.00000 0.00000
+angle_coeff 1797 89.95700 118.02000 0.00000 0.00000
+angle_coeff 1798 69.96656 105.80000 0.00000 0.00000
+angle_coeff 1799 69.96656 105.80000 0.00000 0.00000
+angle_coeff 1800 37.60203 105.64000 0.00000 0.00000
+angle_coeff 1801 8.99570 136.00000 0.00000 0.00000
+angle_coeff 1802 57.97229 111.00000 0.00000 0.00000
+angle_coeff 1803 64.96894 116.00000 0.00000 0.00000
+angle_coeff 1804 55.97324 117.00000 0.00000 0.00000
+angle_coeff 1805 59.97133 120.00000 0.00000 0.00000
+angle_coeff 1806 104.94983 128.00000 0.00000 0.00000
+angle_coeff 1807 66.96799 123.60000 0.00000 0.00000
+angle_coeff 1808 37.98184 118.80000 0.00000 0.00000
+angle_coeff 1809 66.96799 123.60000 0.00000 0.00000
+angle_coeff 1810 37.98184 118.80000 0.00000 0.00000
+angle_coeff 1811 66.96799 123.60000 0.00000 0.00000
+angle_coeff 1812 37.98184 118.80000 0.00000 0.00000
+angle_coeff 1813 62.27023 120.00000 0.00000 0.00000
+angle_coeff 1814 62.27023 120.00000 0.00000 0.00000
+angle_coeff 1815 48.97659 120.00000 0.00000 0.00000
+angle_coeff 1816 39.98089 120.00000 0.00000 0.00000
+angle_coeff 1817 47.27740 121.40000 0.00000 0.00000
+angle_coeff 1818 52.97468 120.00000 0.00000 0.00000
+angle_coeff 1819 46.97754 120.00000 0.00000 0.00000
+angle_coeff 1820 49.97611 126.40000 0.00000 0.00000
+angle_coeff 1821 59.97133 115.50000 0.00000 0.00000
+angle_coeff 1822 37.98184 118.70000 0.00000 0.00000
+angle_coeff 1823 42.77955 125.00000 77.96273 2.67000
+angle_coeff 1824 59.97133 118.10000 0.00000 0.00000
+angle_coeff 1825 59.97133 118.10000 0.00000 0.00000
+angle_coeff 1826 39.98089 120.70000 0.00000 0.00000
+angle_coeff 1827 40.38070 120.00000 0.00000 0.00000
+angle_coeff 1828 40.38070 120.00000 0.00000 0.00000
+angle_coeff 1829 24.98806 120.00000 0.00000 0.00000
+angle_coeff 1830 84.95939 111.50000 0.00000 0.00000
+angle_coeff 1831 33.98376 129.70000 0.00000 0.00000
+angle_coeff 1832 33.98376 125.30000 0.00000 0.00000
+angle_coeff 1833 57.97229 103.00000 0.00000 0.00000
+angle_coeff 1834 129.93789 103.50000 0.00000 0.00000
+angle_coeff 1835 59.97133 103.00000 0.00000 0.00000
+angle_coeff 1836 109.94744 106.80000 0.00000 0.00000
+angle_coeff 1837 59.97133 103.00000 0.00000 0.00000
+angle_coeff 1838 114.94505 102.90000 0.00000 0.00000
+angle_coeff 1839 159.92355 103.50000 0.00000 0.00000
+angle_coeff 1840 159.92355 105.50000 0.00000 0.00000
+angle_coeff 1841 149.92833 103.30000 0.00000 0.00000
+angle_coeff 1842 149.92833 111.00000 0.00000 0.00000
+angle_coeff 1843 99.95222 101.00000 0.00000 0.00000
+angle_coeff 1844 119.94267 103.80000 0.00000 0.00000
+angle_coeff 1845 159.92355 101.90000 0.00000 0.00000
+angle_coeff 1846 109.94744 105.90000 0.00000 0.00000
+angle_coeff 1847 99.95222 101.00000 0.00000 0.00000
+angle_coeff 1848 49.97611 103.00000 0.00000 0.00000
+angle_coeff 1849 159.92355 108.20000 0.00000 0.00000
+angle_coeff 1850 159.92355 102.20000 0.00000 0.00000
+angle_coeff 1851 109.94744 103.00000 0.00000 0.00000
+angle_coeff 1852 29.98567 127.00000 19.99044 2.14000
+angle_coeff 1853 29.98567 125.50000 19.99044 2.15000
+angle_coeff 1854 29.98567 125.50000 0.00000 0.00000
+angle_coeff 1855 99.95222 109.00000 0.00000 0.00000
+angle_coeff 1856 129.93789 107.50000 0.00000 0.00000
+angle_coeff 1857 39.98089 127.00000 0.00000 0.00000
+angle_coeff 1858 34.98328 128.00000 0.00000 0.00000
+angle_coeff 1859 84.95939 110.00000 0.00000 0.00000
+angle_coeff 1860 69.96656 127.10000 0.00000 0.00000
+angle_coeff 1861 69.96656 127.80000 0.00000 0.00000
+angle_coeff 1862 129.93789 126.00000 0.00000 0.00000
+angle_coeff 1863 159.92355 115.00000 0.00000 0.00000
+angle_coeff 1864 29.98567 125.50000 19.99044 2.15000
+angle_coeff 1865 99.95222 107.20000 0.00000 0.00000
+angle_coeff 1866 69.96656 127.80000 0.00000 0.00000
+angle_coeff 1867 44.97850 126.30000 0.00000 0.00000
+angle_coeff 1868 44.97850 127.60000 0.00000 0.00000
+angle_coeff 1869 129.93789 114.00000 0.00000 0.00000
+angle_coeff 1870 29.98567 127.00000 19.99044 2.14000
+angle_coeff 1871 39.98089 118.00000 0.00000 0.00000
+angle_coeff 1872 34.98328 117.00000 0.00000 0.00000
+angle_coeff 1873 84.95939 110.00000 0.00000 0.00000
+angle_coeff 1874 69.96656 125.90000 0.00000 0.00000
+angle_coeff 1875 44.97850 126.50000 0.00000 0.00000
+angle_coeff 1876 44.97850 126.50000 0.00000 0.00000
+angle_coeff 1877 189.90922 114.50000 0.00000 0.00000
+angle_coeff 1878 27.98662 126.00000 0.00000 0.00000
+angle_coeff 1879 69.96656 117.90000 0.00000 0.00000
+angle_coeff 1880 39.98089 118.00000 0.00000 0.00000
+angle_coeff 1881 89.95700 121.00000 0.00000 0.00000
+angle_coeff 1882 31.98471 119.50000 0.00000 0.00000
+angle_coeff 1883 144.93072 108.00000 0.00000 0.00000
+angle_coeff 1884 24.98806 124.90000 14.99283 2.13000
+angle_coeff 1885 100.95174 111.90000 0.00000 0.00000
+angle_coeff 1886 28.98614 123.20000 0.00000 0.00000
+angle_coeff 1887 102.95079 108.00000 0.00000 0.00000
+angle_coeff 1888 43.97898 126.30000 22.98901 2.43000
+angle_coeff 1889 139.93311 108.00000 0.00000 0.00000
+angle_coeff 1890 24.98806 127.10000 14.99283 2.09000
+angle_coeff 1891 43.97898 124.90000 0.00000 0.00000
+angle_coeff 1892 38.98137 126.90000 0.00000 0.00000
+angle_coeff 1893 28.98614 124.90000 0.00000 0.00000
+angle_coeff 1894 115.94458 117.50000 0.00000 0.00000
+angle_coeff 1895 37.98184 123.00000 0.00000 0.00000
+angle_coeff 1896 115.94458 117.50000 0.00000 0.00000
+angle_coeff 1897 37.98184 123.00000 0.00000 0.00000
+angle_coeff 1898 54.97372 120.50000 0.00000 0.00000
+angle_coeff 1899 34.98328 111.00000 0.00000 0.00000
+angle_coeff 1900 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1901 29.98567 124.00000 0.00000 0.00000
+angle_coeff 1902 74.96417 111.00000 0.00000 0.00000
+angle_coeff 1903 74.96417 112.00000 0.00000 0.00000
+angle_coeff 1904 37.98184 119.50000 0.00000 0.00000
+angle_coeff 1905 29.98567 125.00000 0.00000 0.00000
+angle_coeff 1906 37.98184 116.00000 0.00000 0.00000
+angle_coeff 1907 37.98184 116.00000 0.00000 0.00000
+angle_coeff 1908 99.95222 109.00000 0.00000 0.00000
+angle_coeff 1909 41.97993 125.50000 0.00000 0.00000
+angle_coeff 1910 53.97420 125.50000 0.00000 0.00000
+angle_coeff 1911 19.99044 112.00000 0.00000 0.00000
+angle_coeff 1912 19.99044 112.00000 0.00000 0.00000
+angle_coeff 1913 19.99044 109.20000 0.00000 0.00000
+angle_coeff 1914 28.27648 114.58000 0.00000 0.00000
+angle_coeff 1915 9.99522 123.90000 0.00000 0.00000
+angle_coeff 1916 68.84709 132.07000 0.00000 0.00000
+angle_coeff 1917 26.69724 117.66000 0.00000 0.00000
+angle_coeff 1918 69.96656 120.50000 0.00000 0.00000
+angle_coeff 1919 32.98423 120.70000 0.00000 0.00000
+angle_coeff 1920 29.98567 120.00000 0.00000 0.00000
+angle_coeff 1921 69.96656 122.00000 0.00000 0.00000
+angle_coeff 1922 69.96656 122.00000 0.00000 0.00000
+angle_coeff 1923 69.96656 120.50000 0.00000 0.00000
+angle_coeff 1924 44.97850 118.40000 0.00000 0.00000
+angle_coeff 1925 44.97850 118.40000 0.00000 0.00000
+angle_coeff 1926 44.97850 115.90000 0.00000 0.00000
+angle_coeff 1927 31.98471 117.40000 0.00000 0.00000
+angle_coeff 1928 31.98471 117.40000 0.00000 0.00000
+angle_coeff 1929 49.97611 130.20000 0.00000 0.00000
+angle_coeff 1930 69.96656 131.10000 0.00000 0.00000
+angle_coeff 1931 69.96656 115.40000 0.00000 0.00000
+angle_coeff 1932 69.96656 115.40000 0.00000 0.00000
+angle_coeff 1933 44.97850 118.40000 0.00000 0.00000
+angle_coeff 1934 44.97850 120.00000 0.00000 0.00000
+angle_coeff 1935 40.48065 115.40000 0.00000 0.00000
+angle_coeff 1936 69.96656 131.10000 0.00000 0.00000
+angle_coeff 1937 64.23929 114.87000 0.00000 0.00000
+angle_coeff 1938 49.97611 115.40000 0.00000 0.00000
+angle_coeff 1939 44.97850 115.60000 0.00000 0.00000
+angle_coeff 1940 29.98567 120.00000 0.00000 0.00000
+angle_coeff 1941 23.98853 120.50000 0.00000 0.00000
+angle_coeff 1942 31.98471 117.40000 0.00000 0.00000
+angle_coeff 1943 39.98089 110.50000 0.00000 0.00000
+angle_coeff 1944 9.99522 120.00000 0.00000 0.00000
+angle_coeff 1945 24.98806 114.10000 0.00000 0.00000
+angle_coeff 1946 39.98089 110.50000 0.00000 0.00000
+angle_coeff 1947 69.96656 115.50000 0.00000 0.00000
+angle_coeff 1948 84.95939 119.10000 0.00000 0.00000
+angle_coeff 1949 89.95700 117.80000 0.00000 0.00000
+angle_coeff 1950 89.95700 115.10000 0.00000 0.00000
+angle_coeff 1951 64.96894 121.00000 0.00000 0.00000
+angle_coeff 1952 29.98567 120.00000 0.00000 0.00000
+angle_coeff 1953 69.96656 128.70000 0.00000 0.00000
+angle_coeff 1954 51.97516 120.00000 0.00000 0.00000
+angle_coeff 1955 49.97611 128.70000 0.00000 0.00000
+angle_coeff 1956 69.96656 126.10000 0.00000 0.00000
+angle_coeff 1957 32.98423 111.30000 0.00000 0.00000
+angle_coeff 1958 54.97372 121.00000 0.00000 0.00000
+angle_coeff 1959 14.99283 130.50000 0.00000 0.00000
+angle_coeff 1960 54.97372 122.50000 0.00000 0.00000
+angle_coeff 1961 99.95222 109.70000 0.00000 0.00000
+angle_coeff 1962 14.99283 119.80000 0.00000 0.00000
+angle_coeff 1963 59.97133 127.80000 0.00000 0.00000
+angle_coeff 1964 59.97133 118.00000 0.00000 0.00000
+angle_coeff 1965 41.97993 119.50000 0.00000 0.00000
+angle_coeff 1966 59.97133 117.00000 0.00000 0.00000
+angle_coeff 1967 59.97133 117.00000 0.00000 0.00000
+angle_coeff 1968 59.97133 115.00000 0.00000 0.00000
+angle_coeff 1969 59.97133 118.00000 0.00000 0.00000
+angle_coeff 1970 39.48113 117.00000 0.00000 0.00000
+angle_coeff 1971 37.98184 116.00000 0.00000 0.00000
+angle_coeff 1972 44.97850 115.50000 0.00000 0.00000
+angle_coeff 1973 44.97850 117.50000 0.00000 0.00000
+angle_coeff 1974 39.98089 121.00000 0.00000 0.00000
+angle_coeff 1975 44.97850 121.00000 0.00000 0.00000
+angle_coeff 1976 99.95222 114.20000 0.00000 0.00000
+angle_coeff 1977 46.77764 124.60000 0.00000 0.00000
+angle_coeff 1978 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1979 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1980 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1981 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1982 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1983 49.97611 115.00000 0.00000 0.00000
+angle_coeff 1984 33.98376 123.00000 0.00000 0.00000
+angle_coeff 1985 49.97611 119.00000 0.00000 0.00000
+angle_coeff 1986 49.97611 119.00000 0.00000 0.00000
+angle_coeff 1987 59.97133 120.00000 0.00000 0.00000
+angle_coeff 1988 59.97133 120.00000 0.00000 0.00000
+angle_coeff 1989 59.97133 120.00000 0.00000 0.00000
+angle_coeff 1990 39.98089 121.50000 0.00000 0.00000
+angle_coeff 1991 33.98376 117.00000 0.00000 0.00000
+angle_coeff 1992 33.98376 117.00000 0.00000 0.00000
+angle_coeff 1993 34.98328 117.00000 0.00000 0.00000
+angle_coeff 1994 34.98328 117.00000 0.00000 0.00000
+angle_coeff 1995 34.98328 117.00000 0.00000 0.00000
+angle_coeff 1996 33.98376 122.00000 0.00000 0.00000
+angle_coeff 1997 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1998 49.97611 120.00000 0.00000 0.00000
+angle_coeff 1999 22.98901 120.00000 0.00000 0.00000
+angle_coeff 2000 59.97133 111.60000 0.00000 0.00000
+angle_coeff 2001 39.98089 121.50000 0.00000 0.00000
+angle_coeff 2002 58.67195 104.90000 0.00000 0.00000
+angle_coeff 2003 51.77525 109.50000 0.00000 0.00000
+angle_coeff 2004 109.94744 118.30000 34.98328 2.33000
+angle_coeff 2005 39.48113 103.10000 0.00000 0.00000
+angle_coeff 2006 34.98328 109.00000 0.00000 0.00000
+angle_coeff 2007 49.97611 120.00000 0.00000 0.00000
+angle_coeff 2008 109.94744 118.30000 34.98328 2.33000
+angle_coeff 2009 34.98328 109.00000 0.00000 0.00000
+angle_coeff 2010 29.98567 123.60000 39.98089 2.35000
+angle_coeff 2011 46.97754 113.10000 0.00000 0.00000
+angle_coeff 2012 30.98519 117.00000 0.00000 0.00000
+angle_coeff 2013 19.99044 114.00000 0.00000 0.00000
+angle_coeff 2014 69.96656 121.70000 0.00000 0.00000
+angle_coeff 2015 19.99044 114.00000 0.00000 0.00000
+angle_coeff 2016 69.96656 121.70000 0.00000 0.00000
+angle_coeff 2017 47.32738 107.73000 0.00000 0.00000
+angle_coeff 2018 56.58295 114.00000 0.00000 0.00000
+angle_coeff 2019 47.97707 113.50000 0.00000 0.00000
+angle_coeff 2020 35.24315 111.39000 0.00000 0.00000
+angle_coeff 2021 47.97707 113.50000 0.00000 0.00000
+angle_coeff 2022 69.96656 112.00000 0.00000 0.00000
+angle_coeff 2023 34.98328 111.00000 0.00000 0.00000
+angle_coeff 2024 42.47969 116.00000 0.00000 0.00000
+angle_coeff 2025 52.97468 110.90000 0.00000 0.00000
+angle_coeff 2026 19.99044 114.00000 0.00000 0.00000
+angle_coeff 2027 38.98137 123.00000 0.00000 0.00000
+angle_coeff 2028 19.99044 114.00000 0.00000 0.00000
+angle_coeff 2029 38.98137 123.00000 0.00000 0.00000
+angle_coeff 2030 42.97946 106.00000 0.00000 0.00000
+angle_coeff 2031 44.97850 106.00000 0.00000 0.00000
+angle_coeff 2032 39.98089 109.00000 0.00000 0.00000
+angle_coeff 2033 34.76338 114.44000 0.00000 0.00000
+angle_coeff 2034 54.97372 113.00000 0.00000 0.00000
+angle_coeff 2035 34.98328 115.00000 0.00000 0.00000
+angle_coeff 2036 39.98089 114.00000 0.00000 0.00000
+angle_coeff 2037 44.97850 115.00000 0.00000 0.00000
+angle_coeff 2038 43.86903 111.49000 0.00000 0.00000
+angle_coeff 2039 45.97802 114.00000 0.00000 0.00000
+angle_coeff 2040 45.97802 114.00000 0.00000 0.00000
+angle_coeff 2041 43.47922 113.50000 0.00000 0.00000
+angle_coeff 2042 40.48065 109.60000 0.00000 0.00000
+angle_coeff 2043 47.97707 112.20000 37.98184 2.35000
+angle_coeff 2044 69.96656 111.00000 39.98089 2.31000
+angle_coeff 2045 59.97133 115.00000 0.00000 0.00000
+angle_coeff 2046 45.97802 111.00000 0.00000 0.00000
+angle_coeff 2047 34.98328 111.00000 0.00000 0.00000
+angle_coeff 2048 89.95700 112.20000 34.98328 2.36000
+angle_coeff 2049 67.96751 114.00000 0.00000 0.00000
+angle_coeff 2050 42.27979 111.50000 0.00000 0.00000
+angle_coeff 2051 44.97850 104.00000 0.00000 0.00000
+angle_coeff 2052 40.48065 112.20000 4.99761 2.42170
+angle_coeff 2053 42.07989 108.90000 4.99761 2.02920
+angle_coeff 2054 49.97611 111.00000 0.00000 0.00000
+angle_coeff 2055 42.27979 113.20000 0.00000 0.00000
+angle_coeff 2056 54.97372 113.00000 0.00000 0.00000
+angle_coeff 2057 54.97372 113.00000 0.00000 0.00000
+angle_coeff 2058 54.97372 108.00000 0.00000 0.00000
+angle_coeff 2059 49.97611 115.80000 0.00000 0.00000
+angle_coeff 2060 40.98041 112.10000 0.00000 0.00000
+angle_coeff 2061 40.98041 112.10000 0.00000 0.00000
+angle_coeff 2062 40.98041 112.10000 0.00000 0.00000
+angle_coeff 2063 40.98041 112.10000 0.00000 0.00000
+angle_coeff 2064 48.97659 115.00000 0.00000 0.00000
+angle_coeff 2065 37.98184 110.00000 0.00000 0.00000
+angle_coeff 2066 41.97993 105.85000 0.00000 0.00000
+angle_coeff 2067 41.48017 107.10000 0.00000 0.00000
+angle_coeff 2068 44.97850 104.80000 0.00000 0.00000
+angle_coeff 2069 42.97946 113.90000 0.00000 0.00000
+angle_coeff 2070 39.98089 107.00000 0.00000 0.00000
+angle_coeff 2071 42.97946 115.60000 0.00000 0.00000
+angle_coeff 2072 59.97133 106.90000 0.00000 0.00000
+angle_coeff 2073 40.98041 114.50000 0.00000 0.00000
+angle_coeff 2074 139.93311 103.70000 0.00000 0.00000
+angle_coeff 2075 66.96799 104.10000 0.00000 0.00000
+angle_coeff 2076 46.97754 109.00000 0.00000 0.00000
+angle_coeff 2077 46.97754 103.90000 0.00000 0.00000
+angle_coeff 2078 42.97946 112.00000 0.00000 0.00000
+angle_coeff 2079 49.97611 109.25000 0.00000 0.00000
+angle_coeff 2080 49.97611 103.60000 0.00000 0.00000
+angle_coeff 2081 55.97324 100.60000 0.00000 0.00000
+angle_coeff 2082 59.97133 112.00000 0.00000 0.00000
+angle_coeff 2083 51.97516 115.00000 0.00000 0.00000
+angle_coeff 2084 54.97372 102.00000 0.00000 0.00000
+angle_coeff 2085 49.97611 102.00000 0.00000 0.00000
+angle_coeff 2086 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2087 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2088 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2089 68.96703 100.00000 0.00000 0.00000
+angle_coeff 2090 79.96178 112.00000 0.00000 0.00000
+angle_coeff 2091 44.97850 115.20000 0.00000 0.00000
+angle_coeff 2092 44.97850 109.50000 0.00000 0.00000
+angle_coeff 2093 29.98567 110.80000 26.98710 2.07400
+angle_coeff 2094 44.97850 109.50000 0.00000 0.00000
+angle_coeff 2095 29.98567 110.80000 26.98710 2.07400
+angle_coeff 2096 84.95939 107.00000 0.00000 0.00000
+angle_coeff 2097 37.98184 112.00000 0.00000 0.00000
+angle_coeff 2098 44.97850 115.20000 0.00000 0.00000
+angle_coeff 2099 29.98567 110.80000 26.98710 2.07400
+angle_coeff 2100 39.98089 115.20000 0.00000 0.00000
+angle_coeff 2101 49.97611 115.20000 0.00000 0.00000
+angle_coeff 2102 45.97802 115.20000 0.00000 0.00000
+angle_coeff 2103 29.98567 110.80000 26.98710 2.07400
+angle_coeff 2104 39.98089 115.20000 0.00000 0.00000
+angle_coeff 2105 45.97802 115.20000 0.00000 0.00000
+angle_coeff 2106 29.98567 110.80000 26.98710 2.07400
+angle_coeff 2107 99.95222 111.00000 0.00000 0.00000
+angle_coeff 2108 32.98423 109.50000 3.99809 2.05600
+angle_coeff 2109 103.95031 113.00000 0.00000 0.00000
+angle_coeff 2110 134.93550 114.20000 0.00000 0.00000
+angle_coeff 2111 32.98423 109.50000 3.99809 2.05600
+angle_coeff 2112 41.97993 106.30000 0.00000 0.00000
+angle_coeff 2113 50.97563 107.50000 0.00000 0.00000
+angle_coeff 2114 29.98567 109.50000 19.99044 2.07400
+angle_coeff 2115 29.98567 109.50000 19.99044 2.07400
+angle_coeff 2116 29.98567 109.50000 19.99044 2.07400
+angle_coeff 2117 29.98567 109.50000 19.99044 2.07400
+angle_coeff 2118 43.97898 109.50000 0.00000 0.00000
+angle_coeff 2119 99.95222 106.00000 0.00000 0.00000
+angle_coeff 2120 139.93311 104.00000 0.00000 0.00000
+angle_coeff 2121 49.97611 104.00000 0.00000 0.00000
+angle_coeff 2122 149.92833 108.50000 0.00000 0.00000
+angle_coeff 2123 164.92117 109.30000 0.00000 0.00000
+angle_coeff 2124 52.97468 109.00000 0.00000 0.00000
+angle_coeff 2125 52.97468 109.00000 0.00000 0.00000
+angle_coeff 2126 184.91161 120.00000 0.00000 0.00000
+angle_coeff 2127 64.96894 108.00000 0.00000 0.00000
+angle_coeff 2128 64.96894 108.00000 0.00000 0.00000
+angle_coeff 2129 64.96894 108.00000 0.00000 0.00000
+angle_coeff 2130 64.96894 104.00000 0.00000 0.00000
+angle_coeff 2131 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2132 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2133 64.96894 107.00000 0.00000 0.00000
+angle_coeff 2134 71.96560 104.00000 0.00000 0.00000
+angle_coeff 2135 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2136 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2137 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2138 64.96894 107.00000 0.00000 0.00000
+angle_coeff 2139 71.96560 104.00000 0.00000 0.00000
+angle_coeff 2140 54.97372 107.00000 0.00000 0.00000
+angle_coeff 2141 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2142 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2143 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2144 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2145 39.98089 111.00000 0.00000 0.00000
+angle_coeff 2146 39.98089 111.00000 0.00000 0.00000
+angle_coeff 2147 89.95700 120.00000 19.99044 2.30000
+angle_coeff 2148 32.98423 108.00000 0.00000 0.00000
+angle_coeff 2149 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2150 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2151 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2152 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2153 14.99283 109.00000 26.98710 1.90000
+angle_coeff 2154 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2155 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2156 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2157 14.99283 109.00000 26.98710 1.90000
+angle_coeff 2158 47.97707 113.00000 0.00000 0.00000
+angle_coeff 2159 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2160 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2161 44.97850 143.00000 39.98089 3.25000
+angle_coeff 2162 44.97850 143.00000 39.98089 3.25000
+angle_coeff 2163 44.97850 139.50000 39.98089 3.05000
+angle_coeff 2164 54.97372 115.00000 0.00000 0.00000
+angle_coeff 2165 60.97086 116.00000 0.00000 0.00000
+angle_coeff 2166 64.96894 108.00000 0.00000 0.00000
+angle_coeff 2167 65.96847 108.00000 39.98089 1.92800
+angle_coeff 2168 49.97611 106.00000 0.00000 0.00000
+angle_coeff 2169 49.97611 106.00000 0.00000 0.00000
+angle_coeff 2170 49.97611 106.00000 0.00000 0.00000
+angle_coeff 2171 57.47253 106.00000 0.00000 0.00000
+angle_coeff 2172 49.97611 109.00000 0.00000 0.00000
+angle_coeff 2173 59.97133 101.50000 0.00000 0.00000
+angle_coeff 2174 60.97086 98.30000 0.00000 0.00000
+angle_coeff 2175 29.98567 115.00000 39.98089 2.35000
+angle_coeff 2176 29.98567 115.00000 39.98089 2.35000
+angle_coeff 2177 81.96082 110.00000 0.00000 0.00000
+angle_coeff 2178 50.32594 97.00000 0.00000 0.00000
+angle_coeff 2179 89.95700 60.80000 0.00000 0.00000
+angle_coeff 2180 88.95748 95.00000 0.00000 0.00000
+angle_coeff 2181 84.95939 104.00000 0.00000 0.00000
+angle_coeff 2182 124.94028 104.40000 0.00000 0.00000
+angle_coeff 2183 89.95700 107.10000 0.00000 0.00000
+angle_coeff 2184 75.96369 108.05000 0.00000 0.00000
+angle_coeff 2185 54.97372 89.12000 0.00000 0.00000
+angle_coeff 2186 94.95461 111.00000 0.00000 0.00000
+angle_coeff 2187 94.95461 111.00000 0.00000 0.00000
+angle_coeff 2188 109.94744 108.00000 0.00000 0.00000
+angle_coeff 2189 94.95461 111.00000 0.00000 0.00000
+angle_coeff 2190 169.91878 109.00000 0.00000 0.00000
+angle_coeff 2191 94.95461 111.00000 0.00000 0.00000
+angle_coeff 2192 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2193 94.95461 109.70000 0.00000 0.00000
+angle_coeff 2194 39.98089 99.00000 0.00000 0.00000
+angle_coeff 2195 19.99044 99.00000 0.00000 0.00000
+angle_coeff 2196 39.98089 99.00000 0.00000 0.00000
+angle_coeff 2197 19.99044 99.00000 0.00000 0.00000
+angle_coeff 2198 39.98089 115.00000 0.00000 0.00000
+angle_coeff 2199 101.95127 126.50000 0.00000 0.00000
+angle_coeff 2200 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2201 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2202 98.85275 108.23000 0.00000 0.00000
+angle_coeff 2203 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2204 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2205 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2206 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2207 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2208 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2209 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2210 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2211 96.75375 112.84000 0.00000 0.00000
+angle_coeff 2212 96.75375 112.84000 0.00000 0.00000
+angle_coeff 2213 98.85275 104.00000 0.00000 0.00000
+angle_coeff 2214 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2215 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2216 92.35585 128.47000 0.00000 0.00000
+angle_coeff 2217 98.85275 94.00000 0.00000 0.00000
+angle_coeff 2218 90.05695 90.00000 0.00000 0.00000
+angle_coeff 2219 98.85275 103.00000 0.00000 0.00000
+angle_coeff 2220 90.05695 94.00000 0.00000 0.00000
+angle_coeff 2221 139.93311 110.60000 0.00000 0.00000
+angle_coeff 2222 59.97133 103.20000 0.00000 0.00000
+angle_coeff 2223 103.95031 120.00000 0.00000 0.00000
+angle_coeff 2224 98.85275 107.50000 0.00000 0.00000
+angle_coeff 2225 88.85753 111.60000 0.00000 0.00000
+angle_coeff 2226 98.85275 111.00000 0.00000 0.00000
+angle_coeff 2227 79.96178 104.30000 0.00000 0.00000
+angle_coeff 2228 48.07702 105.00000 0.00000 0.00000
+angle_coeff 2229 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2230 48.07702 107.50000 0.00000 0.00000
+angle_coeff 2231 48.07702 111.00000 0.00000 0.00000
+angle_coeff 2232 98.85275 94.00000 0.00000 0.00000
+angle_coeff 2233 98.85275 103.00000 0.00000 0.00000
+angle_coeff 2234 103.95031 121.00000 0.00000 0.00000
+angle_coeff 2235 88.85753 111.00000 0.00000 0.00000
+angle_coeff 2236 88.85753 111.60000 0.00000 0.00000
+angle_coeff 2237 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2238 103.95031 121.00000 0.00000 0.00000
+angle_coeff 2239 88.85753 111.00000 0.00000 0.00000
+angle_coeff 2240 88.85753 111.60000 0.00000 0.00000
+angle_coeff 2241 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2242 74.96417 131.03000 0.00000 0.00000
+angle_coeff 2243 88.85753 111.00000 0.00000 0.00000
+angle_coeff 2244 88.85753 111.00000 0.00000 0.00000
+angle_coeff 2245 96.75375 112.84000 0.00000 0.00000
+angle_coeff 2246 96.75375 112.84000 0.00000 0.00000
+angle_coeff 2247 92.35585 128.47000 0.00000 0.00000
+angle_coeff 2248 104.94983 95.00000 0.00000 0.00000
+angle_coeff 2249 109.94744 97.00000 0.00000 0.00000
+angle_coeff 2250 69.96656 99.50000 0.00000 0.00000
+angle_coeff 2251 149.92833 103.00000 0.00000 0.00000
+angle_coeff 2252 109.94744 97.00000 0.00000 0.00000
+angle_coeff 2253 72.46536 103.30000 0.00000 0.00000
+angle_coeff 2254 72.46536 103.30000 0.00000 0.00000
+angle_coeff 2255 74.96417 92.00000 0.00000 0.00000
+angle_coeff 2256 74.96417 92.00000 0.00000 0.00000
+angle_coeff 2257 58.97181 94.70000 0.00000 0.00000
+angle_coeff 2258 58.97181 94.70000 0.00000 0.00000
+angle_coeff 2259 59.97133 96.00000 0.00000 0.00000
+angle_coeff 2260 49.97611 109.00000 0.00000 0.00000
+angle_coeff 2261 45.97802 97.00000 0.00000 0.00000
+angle_coeff 2262 65.96847 91.00000 0.00000 0.00000
+angle_coeff 2263 33.98376 95.00000 0.00000 0.00000
+angle_coeff 2264 33.98376 95.00000 0.00000 0.00000
+angle_coeff 2265 38.78146 95.00000 0.00000 0.00000
+angle_coeff 2266 42.97946 95.00000 0.00000 0.00000
+angle_coeff 2267 84.95939 98.00000 0.00000 0.00000
+angle_coeff 2268 79.96178 99.00000 0.00000 0.00000
+angle_coeff 2269 84.95939 100.00000 0.00000 0.00000
+angle_coeff 2270 33.18414 94.20000 0.00000 0.00000
+angle_coeff 2271 129.93789 109.47000 34.98328 2.45000
+angle_coeff 2272 84.95939 98.00000 0.00000 0.00000
+angle_coeff 2273 49.97611 97.00000 0.00000 0.00000
+angle_coeff 2274 69.96656 106.50000 0.00000 0.00000
+angle_coeff 2275 49.97611 97.00000 0.00000 0.00000
+angle_coeff 2276 69.96656 97.00000 0.00000 0.00000
+angle_coeff 2277 59.97133 98.00000 0.00000 0.00000
+angle_coeff 2278 59.97133 101.00000 0.00000 0.00000
+angle_coeff 2279 79.96178 102.00000 0.00000 0.00000
+angle_coeff 2280 61.97038 101.00000 0.00000 0.00000
+angle_coeff 2281 74.96417 107.50000 0.00000 0.00000
+angle_coeff 2282 79.96178 102.00000 0.00000 0.00000
+angle_coeff 2283 72.96512 103.00000 0.00000 0.00000
+angle_coeff 2284 82.96034 101.00000 0.00000 0.00000
+angle_coeff 2285 78.96226 108.50000 0.00000 0.00000
+angle_coeff 2286 92.95557 96.00000 0.00000 0.00000
+angle_coeff 2287 69.96656 108.50000 0.00000 0.00000
+angle_coeff 2288 83.06030 102.30000 0.00000 0.00000
+angle_coeff 2289 74.96417 110.50000 0.00000 0.00000
+angle_coeff 2290 79.96178 111.00000 0.00000 0.00000
+angle_coeff 2291 99.95222 102.00000 0.00000 0.00000
+angle_coeff 2292 84.95939 121.00000 0.00000 0.00000
+angle_coeff 2293 89.95700 109.00000 0.00000 0.00000
+angle_coeff 2294 84.95939 95.00000 0.00000 0.00000
+angle_coeff 2295 64.96894 106.50000 0.00000 0.00000
+angle_coeff 2296 33.98376 95.00000 0.00000 0.00000
+angle_coeff 2297 78.96226 106.75000 0.00000 0.00000
+angle_coeff 2298 79.96178 133.00000 0.00000 0.00000
+angle_coeff 2299 39.98089 123.00000 0.00000 0.00000
+angle_coeff 2300 79.96178 126.00000 0.00000 0.00000
+angle_coeff 2301 59.97133 120.90000 0.00000 0.00000
+angle_coeff 2302 59.97133 108.90000 0.00000 0.00000
+angle_coeff 2303 79.96178 133.00000 0.00000 0.00000
+angle_coeff 2304 39.98089 125.00000 0.00000 0.00000
+angle_coeff 2305 79.96178 133.00000 0.00000 0.00000
+angle_coeff 2306 39.98089 125.00000 0.00000 0.00000
+angle_coeff 2307 149.92833 148.00000 0.00000 0.00000
+angle_coeff 2308 109.94744 135.00000 0.00000 0.00000
+angle_coeff 2309 109.94744 126.90000 0.00000 0.00000
+angle_coeff 2310 149.92833 120.00000 0.00000 0.00000
+angle_coeff 2311 109.94744 122.50000 0.00000 0.00000
+angle_coeff 2312 22.98901 109.47000 14.99283 2.81855
+angle_coeff 2313 69.96656 125.00000 19.99044 2.44200
+angle_coeff 2314 69.96656 125.00000 19.99044 2.44200
+angle_coeff 2315 69.96656 125.00000 19.99044 2.44200
+angle_coeff 2316 89.95700 125.90000 159.92355 2.25760
+angle_coeff 2317 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2318 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2319 39.98089 109.60000 29.98567 2.26510
+angle_coeff 2320 32.98423 109.50000 29.98567 2.16300
+angle_coeff 2321 32.98423 109.50000 29.98567 2.16300
+angle_coeff 2322 51.97516 108.00000 0.00000 0.00000
+angle_coeff 2323 51.97516 108.00000 0.00000 0.00000
+angle_coeff 2324 51.97516 108.00000 0.00000 0.00000
+angle_coeff 2325 54.97372 109.00000 19.99044 2.32600
+angle_coeff 2326 54.97372 109.00000 19.99044 2.32600
+angle_coeff 2327 54.97372 109.00000 19.99044 2.32600
+angle_coeff 2328 49.97611 123.00000 209.89967 2.26200
+angle_coeff 2329 39.98089 118.00000 49.97611 2.38800
+angle_coeff 2330 39.98089 118.00000 49.97611 2.38800
+angle_coeff 2331 99.95222 124.00000 69.96656 2.22500
+angle_coeff 2332 99.95222 124.00000 69.96656 2.22500
+angle_coeff 2333 39.98089 118.00000 49.97611 2.38800
+angle_coeff 2334 54.97372 110.50000 0.00000 0.00000
+angle_coeff 2335 54.97372 110.50000 0.00000 0.00000
+angle_coeff 2336 54.97372 115.00000 0.00000 0.00000
+angle_coeff 2337 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2338 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2339 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2340 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2341 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2342 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2343 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2344 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2345 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2346 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2347 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2348 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2349 35.48304 109.00000 5.39742 1.80200
+angle_coeff 2350 35.48304 108.40000 5.39742 1.80200
+angle_coeff 2351 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2352 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2353 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2354 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2355 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2356 59.97133 109.50000 0.00000 0.00000
+angle_coeff 2357 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2358 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2359 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2360 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2361 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2362 19.99044 120.00000 34.98328 2.33000
+angle_coeff 2363 29.98567 115.00000 39.98089 2.30000
+angle_coeff 2364 79.96178 104.30000 0.00000 0.00000
+angle_coeff 2365 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2366 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2367 79.96178 104.30000 0.00000 0.00000
+angle_coeff 2368 98.85275 111.60000 0.00000 0.00000
+angle_coeff 2369 48.07702 108.00000 0.00000 0.00000
+angle_coeff 2370 119.94267 120.00000 0.00000 0.00000
+angle_coeff 2371 98.85275 108.23000 0.00000 0.00000
+angle_coeff 2372 39.98089 109.50000 26.98710 2.13000
+angle_coeff 2373 39.98089 109.50000 26.98710 2.13000
+angle_coeff 2374 23.98853 109.50000 27.98662 1.76700
+angle_coeff 2375 23.98853 109.50000 27.98662 1.76700
+angle_coeff 2376 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2377 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2378 59.97133 109.50000 25.98758 2.46600
+angle_coeff 2379 33.41403 110.10000 22.51923 2.17900
+angle_coeff 2380 33.41403 110.10000 22.51923 2.17900
+angle_coeff 2381 34.48352 110.10000 22.51923 2.17900
+angle_coeff 2382 34.48352 110.10000 22.51923 2.17900
+angle_coeff 2383 34.48352 110.10000 22.51923 2.17900
+angle_coeff 2384 26.48734 110.10000 22.51923 2.17900
+angle_coeff 2385 26.48734 110.10000 22.51923 2.17900
+angle_coeff 2386 34.58347 110.10000 22.51923 2.17900
+angle_coeff 2387 33.41403 110.10000 22.51923 2.17900
+angle_coeff 2388 34.58347 110.10000 22.51923 2.17900
+angle_coeff 2389 37.48208 110.10000 22.51923 2.17900
+angle_coeff 2390 49.97611 109.50000 0.00000 0.00000
+angle_coeff 2391 34.98328 111.00000 0.00000 0.00000
+angle_coeff 2392 67.66765 115.00000 0.00000 0.00000
+angle_coeff 2393 67.66765 115.00000 0.00000 0.00000
+angle_coeff 2394 32.98423 109.50000 3.99809 2.05600
+angle_coeff 2395 29.98567 109.50000 19.99044 2.07400
+angle_coeff 2396 40.98041 109.50000 0.00000 0.00000
+angle_coeff 2397 67.66765 110.00000 0.00000 0.00000
+angle_coeff 2398 44.97850 107.50000 34.98328 2.08360
+angle_coeff 2399 53.32451 111.00000 7.99618 2.56100
+angle_coeff 2400 43.67912 110.00000 0.00000 0.00000
+angle_coeff 2401 67.66765 110.00000 0.00000 0.00000
+angle_coeff 2402 51.47539 107.50000 0.00000 0.00000
+angle_coeff 2403 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2404 53.32451 108.50000 7.99618 2.56100
+angle_coeff 2405 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2406 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2407 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2408 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2409 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2410 58.32212 113.60000 11.15467 2.56100
+angle_coeff 2411 57.97229 115.00000 7.99618 2.56100
+angle_coeff 2412 58.32212 113.50000 11.15467 2.56100
+angle_coeff 2413 57.47253 106.00000 0.00000 0.00000
+angle_coeff 2414 57.47253 106.00000 0.00000 0.00000
+angle_coeff 2415 57.47253 106.00000 0.00000 0.00000
+angle_coeff 2416 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2417 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2418 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2419 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2420 75.66383 110.10000 0.00000 0.00000
+angle_coeff 2421 45.87807 108.89000 0.00000 0.00000
+angle_coeff 2422 45.87807 108.89000 0.00000 0.00000
+angle_coeff 2423 45.87807 108.89000 0.00000 0.00000
+angle_coeff 2424 129.93789 109.47000 34.98328 2.45000
+angle_coeff 2425 84.95939 98.00000 0.00000 0.00000
+angle_coeff 2426 14.99283 109.00000 26.98710 1.90000
+angle_coeff 2427 14.99283 109.00000 26.98710 1.90000
+angle_coeff 2428 47.97707 123.50000 0.00000 0.00000
+angle_coeff 2429 47.97707 123.50000 0.00000 0.00000
+angle_coeff 2430 47.97707 126.00000 0.00000 0.00000
+angle_coeff 2431 46.97754 125.20000 0.00000 0.00000
+angle_coeff 2432 51.97516 119.50000 0.00000 0.00000
+angle_coeff 2433 41.97993 118.00000 0.00000 0.00000
+angle_coeff 2434 39.98089 116.00000 0.00000 0.00000
+angle_coeff 2435 21.98949 117.00000 0.00000 0.00000
+angle_coeff 2436 44.97850 120.50000 0.00000 0.00000
+angle_coeff 2437 55.47348 120.50000 0.00000 0.00000
+angle_coeff 2438 18.99092 119.00000 0.00000 0.00000
+angle_coeff 2439 31.98471 112.20000 0.00000 0.00000
+angle_coeff 2440 31.98471 112.20000 0.00000 0.00000
+angle_coeff 2441 44.97850 111.50000 0.00000 0.00000
+angle_coeff 2442 41.97993 111.50000 0.00000 0.00000
+angle_coeff 2443 29.98567 114.00000 0.00000 0.00000
