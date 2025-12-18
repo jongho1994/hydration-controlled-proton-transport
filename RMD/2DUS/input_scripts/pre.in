@@ -1,0 +1,43 @@
+units           real
+neigh_modify    delay 2 every 1
+
+atom_style      full
+bond_style      hybrid harmonic morse
+angle_style     charmm
+dihedral_style  charmm
+improper_style  harmonic
+
+pair_style      lj/charmm/coul/long 8 10
+pair_modify     mix arithmetic
+kspace_style    pppm 1e-4
+
+# Modify following line to point to the desired CMAP file
+fix             cmap all cmap /jet/home/jchoia/prg/2017raptor/lammps23753/potentials/charmm36.cmap
+fix_modify      cmap energy yes
+#read_data       C1_NoCoeff.data fix cmap crossterm CMAP
+read_restart    US.restart.init
+
+include     par_bond.inp
+include     par_angle.inp
+include     par_dihedral.inp
+include     par_improper.inp
+include     lj.inp
+
+special_bonds   charmm
+thermo          500
+thermo_style    multi
+timestep        1.0
+
+#minimize       1e-6 1e-8 100 1000
+
+fix             1 all nvt temp 310 310 100.0
+fix             evb all evb evb.cfg evb.out evb.top
+fix             plumed all plumed plumedfile plumed_pre.dat outfile pre_plumed.out
+
+
+reset_timestep  0 #Turn off for further restarts, or set to appropriate timestep
+restart         1000 pre.restart1 pre.restart2
+dump            1 all custom 20000 C1_pre.lammpstrj id mol type x y z ix iy iz
+dump_modify     1 sort id
+
+run             40000

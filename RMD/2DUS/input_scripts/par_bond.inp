@@ -1,0 +1,769 @@
+bond_coeff	1	harmonic 250.000000 1.490000	# C	CP1
+bond_coeff	2	harmonic 250.000000 1.490000	# C	CT1
+bond_coeff	3	harmonic 250.000000 1.490000	# C	CT2
+bond_coeff	4	harmonic 250.000000 1.490000	# C	CT3
+bond_coeff	5	harmonic 260.000000 1.300000	# C	N
+bond_coeff	6	harmonic 450.000000 1.365000	# C	NC2
+bond_coeff	7	harmonic 370.000000 1.345000	# C	NH1
+bond_coeff	8	harmonic 620.000000 1.230000	# C	O
+bond_coeff	9	harmonic 305.000000 1.375000	# CA	CA
+bond_coeff	10	harmonic 305.000000 1.375000	# CA	CAI
+bond_coeff	11	harmonic 230.000000 1.490000	# CA	CT2
+bond_coeff	12	harmonic 350.000000 1.365000	# CA	CY
+bond_coeff	13	harmonic 340.000000 1.080000	# CA	HP
+bond_coeff	14	harmonic 270.000000 1.370000	# CA	NY
+bond_coeff	15	harmonic 334.300000 1.411000	# CA	OH1
+bond_coeff	16	harmonic 300.000000 1.360000	# CAI	CPT
+bond_coeff	17	harmonic 340.000000 1.080000	# CAI	HP
+bond_coeff	18	harmonic 250.000000 1.490000	# CC	CP1
+bond_coeff	19	harmonic 200.000000 1.522000	# CC	CT1
+bond_coeff	20	harmonic 200.000000 1.522000	# CC	CT2
+bond_coeff	21	harmonic 200.000000 1.522000	# CC	CT2A
+bond_coeff	22	harmonic 430.000000 1.360000	# CC	NH2
+bond_coeff	23	harmonic 650.000000 1.230000	# CC	O
+bond_coeff	24	harmonic 525.000000 1.260000	# CC	OC
+bond_coeff	25	harmonic 200.000000 1.522000	# CD	CT2
+bond_coeff	26	harmonic 750.000000 1.220000	# CD	OB
+bond_coeff	27	harmonic 230.000000 1.400000	# CD	OH1
+bond_coeff	28	harmonic 440.000000 1.340000	# CEL1	CEL1
+bond_coeff	29	harmonic 365.000000 1.502000	# CEL1	CTL2
+bond_coeff	30	harmonic 360.500000 1.100000	# CEL1	HEL1
+bond_coeff	31	harmonic 200.000000 1.522000	# CL	CTL2
+bond_coeff	32	harmonic 750.000000 1.220000	# CL	OBL
+bond_coeff	33	harmonic 150.000000 1.334000	# CL	OSL
+bond_coeff	34	harmonic 222.500000 1.527000	# CP1	CP2
+bond_coeff	35	harmonic 330.000000 1.080000	# CP1	HB1
+bond_coeff	36	harmonic 320.000000 1.434000	# CP1	N
+bond_coeff	37	harmonic 320.000000 1.485000	# CP1	NP
+bond_coeff	38	harmonic 222.500000 1.537000	# CP2	CP2
+bond_coeff	39	harmonic 222.500000 1.537000	# CP2	CP3
+bond_coeff	40	harmonic 309.000000 1.111000	# CP2	HA2
+bond_coeff	41	harmonic 309.000000 1.111000	# CP3	HA2
+bond_coeff	42	harmonic 320.000000 1.455000	# CP3	N
+bond_coeff	43	harmonic 320.000000 1.502000	# CP3	NP
+bond_coeff	44	harmonic 410.000000 1.360000	# CPH1	CPH1
+bond_coeff	45	harmonic 229.630000 1.500000	# CPH1	CT2
+bond_coeff	46	harmonic 365.000000 1.083000	# CPH1	HR3
+bond_coeff	47	harmonic 400.000000 1.380000	# CPH1	NR1
+bond_coeff	48	harmonic 400.000000 1.380000	# CPH1	NR2
+bond_coeff	49	harmonic 340.000000 1.090000	# CPH2	HR1
+bond_coeff	50	harmonic 400.000000 1.360000	# CPH2	NR1
+bond_coeff	51	harmonic 400.000000 1.320000	# CPH2	NR2
+bond_coeff	52	harmonic 360.000000 1.385000	# CPT	CPT
+bond_coeff	53	harmonic 350.000000 1.430000	# CPT	CY
+bond_coeff	54	harmonic 270.000000 1.370000	# CPT	NY
+bond_coeff	55	harmonic 222.500000 1.500000	# CT1	CT1
+bond_coeff	56	harmonic 222.500000 1.538000	# CT1	CT2
+bond_coeff	57	harmonic 222.500000 1.538000	# CT1	CT2A
+bond_coeff	58	harmonic 222.500000 1.538000	# CT1	CT3
+bond_coeff	59	harmonic 309.000000 1.111000	# CT1	HA1
+bond_coeff	60	harmonic 330.000000 1.080000	# CT1	HB1
+bond_coeff	61	harmonic 320.000000 1.430000	# CT1	NH1
+bond_coeff	62	harmonic 200.000000 1.480000	# CT1	NH3
+bond_coeff	63	harmonic 428.000000 1.420000	# CT1	OH1
+bond_coeff	64	harmonic 222.500000 1.530000	# CT2	CT2
+bond_coeff	65	harmonic 222.500000 1.530000	# CT2	CT2A
+bond_coeff	66	harmonic 222.500000 1.528000	# CT2	CT3
+bond_coeff	67	harmonic 375.000000 1.492000	# CT2	CY
+bond_coeff	68	harmonic 309.000000 1.111000	# CT2	HA2
+bond_coeff	69	harmonic 330.000000 1.080000	# CT2	HB2
+bond_coeff	70	harmonic 390.000000 1.490000	# CT2	NC2
+bond_coeff	71	harmonic 320.000000 1.430000	# CT2	NH1
+bond_coeff	72	harmonic 200.000000 1.480000	# CT2	NH3
+bond_coeff	73	harmonic 428.000000 1.420000	# CT2	OH1
+bond_coeff	74	harmonic 198.000000 1.818000	# CT2	S
+bond_coeff	75	harmonic 309.000000 1.111000	# CT2A	HA2
+bond_coeff	76	harmonic 322.000000 1.111000	# CT3	HA3
+bond_coeff	77	harmonic 320.000000 1.430000	# CT3	NH1
+bond_coeff	78	harmonic 240.000000 1.816000	# CT3	S
+bond_coeff	79	harmonic 222.500000 1.538000	# CTL1	CTL2
+bond_coeff	80	harmonic 309.000000 1.111000	# CTL1	HAL1
+bond_coeff	81	harmonic 428.000000 1.420000	# CTL1	OHL
+bond_coeff	82	harmonic 340.000000 1.430000	# CTL1	OSL
+bond_coeff	83	harmonic 222.500000 1.530000	# CTL2	CTL2
+bond_coeff	84	harmonic 222.500000 1.528000	# CTL2	CTL3
+bond_coeff	85	harmonic 309.000000 1.111000	# CTL2	HAL2
+bond_coeff	86	harmonic 300.000000 1.080000	# CTL2	HL
+bond_coeff	87	harmonic 261.000000 1.510000	# CTL2	NH3L
+bond_coeff	88	harmonic 215.000000 1.510000	# CTL2	NTL
+bond_coeff	89	harmonic 340.000000 1.430000	# CTL2	OSL
+bond_coeff	90	harmonic 340.000000 1.430000	# CTL2	OSLP
+bond_coeff	91	harmonic 322.000000 1.111000	# CTL3	HAL3
+bond_coeff	92	harmonic 300.000000 1.080000	# CTL5	HL
+bond_coeff	93	harmonic 215.000000 1.510000	# CTL5	NTL
+bond_coeff	94	harmonic 440.000000 0.997000	# H	NH1
+bond_coeff	95	harmonic 480.000000 1.000000	# H	NH2
+bond_coeff	96	harmonic 466.000000 1.000000	# H	NR1
+bond_coeff	97	harmonic 537.500000 0.976000	# H	NY
+bond_coeff	98	morse	143.003	1.80	0.975	# H	OH1e
+bond_coeff	99	harmonic 455.000000 1.000000	# HC	NC2
+bond_coeff	100	morse	157.01423801	1.70825411	1.02389384	# HC	NH3
+bond_coeff	101	harmonic 460.000000 1.006000	# HC	NP
+bond_coeff	102	harmonic 410.000000 1.040000	# HCL	NH3L
+bond_coeff	103	harmonic 545.000000 0.960000	# HOL	OHL
+bond_coeff	104	harmonic 275.000000 1.325000	# HS	S
+bond_coeff	105	morse	79.0864	2.0834	0.98	# HTH	OTH
+bond_coeff	106	harmonic 529.581000 1.012000	# HW	OW
+bond_coeff	107	harmonic 580.000000 1.480000	# O2L	PL
+bond_coeff	108	harmonic 270.000000 1.600000	# OSLP	PL
+bond_coeff      109     morse   164.56394284   1.73750554   0.96046205# H       OH1d
+bond_coeff      110     harmonic      38.18            2.628  # FEJO FEJO
+bond_coeff      111     harmonic     115.84            2.175  # FEJO SJO
+bond_coeff      112     harmonic        300            2.234  # FEKO SKO
+bond_coeff 113 harmonic 427.7955 1.4200
+bond_coeff 114 harmonic 199.9044 1.5220
+bond_coeff 115 harmonic 229.8901 1.5100
+bond_coeff 116 harmonic 449.7850 1.3000
+bond_coeff 117 harmonic 379.8184 1.4100
+bond_coeff 118 harmonic 349.8328 1.3850
+bond_coeff 119 harmonic 269.8710 1.3750
+bond_coeff 120 harmonic 301.8557 1.4090
+bond_coeff 121 harmonic 499.7611 1.4000
+bond_coeff 122 harmonic 319.8471 1.4300
+bond_coeff 123 harmonic 399.8089 1.4000
+bond_coeff 124 harmonic 301.8557 1.4300
+bond_coeff 125 harmonic 229.8901 1.4780
+bond_coeff 126 harmonic 659.6847 1.2340
+bond_coeff 127 harmonic 349.8328 1.0900
+bond_coeff 128 harmonic 229.8901 1.4900
+bond_coeff 129 harmonic 229.8901 1.4900
+bond_coeff 130 harmonic 439.7898 1.3400
+bond_coeff 131 harmonic 364.8256 1.5020
+bond_coeff 132 harmonic 382.8170 1.5040
+bond_coeff 133 harmonic 359.8280 1.4150
+bond_coeff 134 harmonic 374.8208 1.4220
+bond_coeff 135 harmonic 344.8352 1.4350
+bond_coeff 136 harmonic 399.8089 1.4700
+bond_coeff 137 harmonic 399.8089 1.4700
+bond_coeff 138 harmonic 1052.4969 1.1800
+bond_coeff 139 harmonic 959.5413 1.2200
+bond_coeff 140 harmonic 979.5318 1.2200
+bond_coeff 141 harmonic 344.8352 1.4350
+bond_coeff 142 harmonic 409.8041 1.4650
+bond_coeff 143 harmonic 409.8041 1.4650
+bond_coeff 144 harmonic 425.7965 1.0700
+bond_coeff 145 harmonic 439.7898 1.3400
+bond_coeff 146 harmonic 569.7277 1.3400
+bond_coeff 147 harmonic 254.8782 1.4800
+bond_coeff 148 harmonic 199.9044 1.4100
+bond_coeff 149 harmonic 199.9044 1.7700
+bond_coeff 150 harmonic 439.7898 1.3400
+bond_coeff 151 harmonic 569.7277 1.3400
+bond_coeff 152 harmonic 254.8782 1.4800
+bond_coeff 153 harmonic 199.9044 1.4100
+bond_coeff 154 harmonic 199.9044 1.7700
+bond_coeff 155 harmonic 499.7611 1.3420
+bond_coeff 156 harmonic 246.8820 1.4900
+bond_coeff 157 harmonic 289.8614 1.4800
+bond_coeff 158 harmonic 499.7611 1.3420
+bond_coeff 159 harmonic 246.8820 1.4900
+bond_coeff 160 harmonic 289.8614 1.4800
+bond_coeff 161 harmonic 439.7898 1.3400
+bond_coeff 162 harmonic 439.7898 1.3180
+bond_coeff 163 harmonic 499.7611 1.3420
+bond_coeff 164 harmonic 439.7898 1.3180
+bond_coeff 165 harmonic 239.8853 1.5020
+bond_coeff 166 harmonic 364.8256 1.5020
+bond_coeff 167 harmonic 369.8232 1.4950
+bond_coeff 168 harmonic 382.8170 1.5040
+bond_coeff 169 harmonic 499.7611 1.2760
+bond_coeff 170 harmonic 469.7754 1.2830
+bond_coeff 171 harmonic 360.3278 1.1000
+bond_coeff 172 harmonic 360.3278 1.1000
+bond_coeff 173 harmonic 599.7133 1.3400
+bond_coeff 174 harmonic 439.7898 1.3400
+bond_coeff 175 harmonic 499.7611 1.3000
+bond_coeff 176 harmonic 419.7993 1.3550
+bond_coeff 177 harmonic 419.7993 1.3550
+bond_coeff 178 harmonic 419.7993 1.4000
+bond_coeff 179 harmonic 384.8161 1.3600
+bond_coeff 180 harmonic 499.7611 1.3470
+bond_coeff 181 harmonic 360.3278 1.1000
+bond_coeff 182 harmonic 509.7563 1.3300
+bond_coeff 183 harmonic 599.7133 1.3400
+bond_coeff 184 harmonic 364.8256 1.1000
+bond_coeff 185 harmonic 439.7898 1.3400
+bond_coeff 186 harmonic 499.7611 1.3000
+bond_coeff 187 harmonic 419.7993 1.3550
+bond_coeff 188 harmonic 419.7993 1.3550
+bond_coeff 189 harmonic 419.7993 1.4000
+bond_coeff 190 harmonic 384.8161 1.3600
+bond_coeff 191 harmonic 499.7611 1.3470
+bond_coeff 192 harmonic 360.3278 1.1000
+bond_coeff 193 harmonic 439.7898 1.3400
+bond_coeff 194 harmonic 299.8567 1.4500
+bond_coeff 195 harmonic 499.7611 1.3420
+bond_coeff 196 harmonic 439.7898 1.4890
+bond_coeff 197 harmonic 439.7898 1.4890
+bond_coeff 198 harmonic 299.8567 1.4798
+bond_coeff 199 harmonic 299.8567 1.4800
+bond_coeff 200 harmonic 364.8256 1.4500
+bond_coeff 201 harmonic 364.8256 1.5020
+bond_coeff 202 harmonic 364.8256 1.5020
+bond_coeff 203 harmonic 382.8170 1.5040
+bond_coeff 204 harmonic 499.7611 1.2760
+bond_coeff 205 harmonic 469.7754 1.2830
+bond_coeff 206 harmonic 360.3278 1.1000
+bond_coeff 207 harmonic 360.3278 1.1000
+bond_coeff 208 harmonic 439.7898 1.3400
+bond_coeff 209 harmonic 499.7611 1.3420
+bond_coeff 210 harmonic 439.7898 1.4890
+bond_coeff 211 harmonic 439.7898 1.4890
+bond_coeff 212 harmonic 299.8567 1.4798
+bond_coeff 213 harmonic 299.8567 1.4800
+bond_coeff 214 harmonic 364.8256 1.4500
+bond_coeff 215 harmonic 364.8256 1.5020
+bond_coeff 216 harmonic 364.8256 1.5020
+bond_coeff 217 harmonic 382.8170 1.5040
+bond_coeff 218 harmonic 499.7611 1.2760
+bond_coeff 219 harmonic 469.7754 1.2830
+bond_coeff 220 harmonic 360.3278 1.1000
+bond_coeff 221 harmonic 360.3278 1.1000
+bond_coeff 222 harmonic 364.8256 1.1000
+bond_coeff 223 harmonic 499.7611 1.3100
+bond_coeff 224 harmonic 462.7788 1.3650
+bond_coeff 225 harmonic 499.7611 1.4400
+bond_coeff 226 harmonic 449.7850 1.4400
+bond_coeff 227 harmonic 324.8447 1.4200
+bond_coeff 228 harmonic 299.8567 1.4400
+bond_coeff 229 harmonic 279.8662 1.5000
+bond_coeff 230 harmonic 620.7033 1.2900
+bond_coeff 231 harmonic 474.7731 1.3200
+bond_coeff 232 harmonic 364.8256 1.4200
+bond_coeff 233 harmonic 186.9107 1.7900
+bond_coeff 234 harmonic 279.8662 1.4750
+bond_coeff 235 harmonic 299.8567 1.4750
+bond_coeff 236 harmonic 301.8557 1.4800
+bond_coeff 237 harmonic 249.8806 1.4900
+bond_coeff 238 harmonic 249.8806 1.4900
+bond_coeff 239 harmonic 249.8806 1.4900
+bond_coeff 240 harmonic 249.8806 1.4900
+bond_coeff 241 harmonic 249.8806 1.4900
+bond_coeff 242 harmonic 249.8806 1.4900
+bond_coeff 243 harmonic 249.8806 1.4900
+bond_coeff 244 harmonic 620.7033 1.3200
+bond_coeff 245 harmonic 429.7946 1.3500
+bond_coeff 246 harmonic 369.8232 1.3450
+bond_coeff 247 harmonic 429.7946 1.3600
+bond_coeff 248 harmonic 619.7038 1.2300
+bond_coeff 249 harmonic 316.9785 1.1000
+bond_coeff 250 harmonic 253.8786 1.4800
+bond_coeff 251 harmonic 199.9044 1.5220
+bond_coeff 252 harmonic 199.9044 1.5220
+bond_coeff 253 harmonic 199.9044 1.5220
+bond_coeff 254 harmonic 749.6417 1.2200
+bond_coeff 255 harmonic 149.9283 1.3340
+bond_coeff 256 harmonic 229.8901 1.4000
+bond_coeff 257 harmonic 347.8337 1.0960
+bond_coeff 258 harmonic 249.8806 1.5200
+bond_coeff 259 harmonic 199.9044 1.5000
+bond_coeff 260 harmonic 199.9044 1.5220
+bond_coeff 261 harmonic 199.9044 1.5220
+bond_coeff 262 harmonic 199.9044 1.5220
+bond_coeff 263 harmonic 199.9044 1.5220
+bond_coeff 264 harmonic 199.9044 1.5220
+bond_coeff 265 harmonic 199.9044 1.5220
+bond_coeff 266 harmonic 249.8806 1.4900
+bond_coeff 267 harmonic 249.8806 1.4900
+bond_coeff 268 harmonic 524.7492 1.2600
+bond_coeff 269 harmonic 237.8863 1.1422
+bond_coeff 270 harmonic 299.8567 1.4798
+bond_coeff 271 harmonic 389.8137 1.4640
+bond_coeff 272 harmonic 249.8806 1.5000
+bond_coeff 273 harmonic 249.8806 1.5000
+bond_coeff 274 harmonic 249.8806 1.5000
+bond_coeff 275 harmonic 188.9097 1.5600
+bond_coeff 276 harmonic 699.6656 1.2150
+bond_coeff 277 harmonic 699.6656 1.2100
+bond_coeff 278 harmonic 289.8614 1.3340
+bond_coeff 279 harmonic 329.8423 1.1100
+bond_coeff 280 harmonic 253.8786 1.4600
+bond_coeff 281 harmonic 329.8423 1.5000
+bond_coeff 282 harmonic 329.8423 1.5000
+bond_coeff 283 harmonic 329.8423 1.5000
+bond_coeff 284 harmonic 699.6656 1.2300
+bond_coeff 285 harmonic 369.9132 1.3650
+bond_coeff 286 harmonic 299.8567 1.4000
+bond_coeff 287 harmonic 444.7874 1.3600
+bond_coeff 288 harmonic 509.7563 1.3700
+bond_coeff 289 harmonic 429.7946 1.3600
+bond_coeff 290 harmonic 649.6894 1.2300
+bond_coeff 291 harmonic 314.3497 1.2940
+bond_coeff 292 harmonic 349.8328 1.3500
+bond_coeff 293 harmonic 184.9116 1.4800
+bond_coeff 294 harmonic 299.8567 1.6300
+bond_coeff 295 harmonic 189.9092 1.7500
+bond_coeff 296 harmonic 919.5604 1.1900
+bond_coeff 297 harmonic 985.5289 1.1700
+bond_coeff 298 harmonic 409.8041 1.3600
+bond_coeff 299 harmonic 359.8280 1.4000
+bond_coeff 300 harmonic 263.8739 1.5080
+bond_coeff 301 harmonic 409.8041 1.3600
+bond_coeff 302 harmonic 349.8328 1.4300
+bond_coeff 303 harmonic 339.8376 1.4050
+bond_coeff 304 harmonic 229.5203 1.5000
+bond_coeff 305 harmonic 229.5203 1.5000
+bond_coeff 306 harmonic 229.5203 1.5000
+bond_coeff 307 harmonic 344.8352 1.5100
+bond_coeff 308 harmonic 349.8328 1.5100
+bond_coeff 309 harmonic 354.8304 1.4960
+bond_coeff 310 harmonic 324.8447 1.4960
+bond_coeff 311 harmonic 399.8089 1.3800
+bond_coeff 312 harmonic 399.8089 1.3800
+bond_coeff 313 harmonic 379.8184 1.3700
+bond_coeff 314 harmonic 399.8089 1.3800
+bond_coeff 315 harmonic 399.8089 1.3710
+bond_coeff 316 harmonic 359.8280 1.4120
+bond_coeff 317 harmonic 329.8423 1.4800
+bond_coeff 318 harmonic 449.7850 1.3710
+bond_coeff 319 harmonic 359.8280 1.3700
+bond_coeff 320 harmonic 299.8567 1.7300
+bond_coeff 321 harmonic 209.8997 1.7300
+bond_coeff 322 harmonic 349.8328 1.0800
+bond_coeff 323 harmonic 374.8208 1.0830
+bond_coeff 324 harmonic 399.8089 1.3800
+bond_coeff 325 harmonic 359.8280 1.4200
+bond_coeff 326 harmonic 294.8591 1.5000
+bond_coeff 327 harmonic 349.8328 1.5050
+bond_coeff 328 harmonic 399.8089 1.3150
+bond_coeff 329 harmonic 489.7659 1.3000
+bond_coeff 330 harmonic 374.8208 1.0830
+bond_coeff 331 harmonic 299.8567 1.4400
+bond_coeff 332 harmonic 424.7969 1.5000
+bond_coeff 333 harmonic 424.7969 1.5000
+bond_coeff 334 harmonic 199.9044 1.5600
+bond_coeff 335 harmonic 184.9116 1.5100
+bond_coeff 336 harmonic 299.8567 1.5300
+bond_coeff 337 harmonic 369.8232 1.3800
+bond_coeff 338 harmonic 399.8089 1.3200
+bond_coeff 339 harmonic 319.8471 1.3740
+bond_coeff 340 harmonic 379.8184 1.3200
+bond_coeff 341 harmonic 459.7802 1.3800
+bond_coeff 342 harmonic 379.8184 1.4000
+bond_coeff 343 harmonic 569.7277 1.2350
+bond_coeff 344 harmonic 449.7850 1.3710
+bond_coeff 345 harmonic 295.3588 1.3570
+bond_coeff 346 harmonic 399.8089 1.6300
+bond_coeff 347 harmonic 299.8567 1.7300
+bond_coeff 348 harmonic 169.9188 1.7700
+bond_coeff 349 harmonic 339.8376 1.0900
+bond_coeff 350 harmonic 332.8409 1.0700
+bond_coeff 351 harmonic 412.8027 1.4500
+bond_coeff 352 harmonic 389.8137 1.3950
+bond_coeff 353 harmonic 304.8543 1.3750
+bond_coeff 354 harmonic 393.8118 1.3750
+bond_coeff 355 harmonic 264.8734 1.4270
+bond_coeff 356 harmonic 249.8806 1.3550
+bond_coeff 357 harmonic 304.8543 1.3700
+bond_coeff 358 harmonic 304.8543 1.3750
+bond_coeff 359 harmonic 299.8567 1.3600
+bond_coeff 360 harmonic 229.8901 1.4900
+bond_coeff 361 harmonic 197.9054 1.4500
+bond_coeff 362 harmonic 229.8901 1.4900
+bond_coeff 363 harmonic 229.8901 1.4900
+bond_coeff 364 harmonic 229.8901 1.4900
+bond_coeff 365 harmonic 624.7014 1.3660
+bond_coeff 366 harmonic 229.8901 1.4020
+bond_coeff 367 harmonic 299.8567 1.3820
+bond_coeff 368 harmonic 399.8089 1.4200
+bond_coeff 369 harmonic 449.7850 1.3050
+bond_coeff 370 harmonic 379.8184 1.3790
+bond_coeff 371 harmonic 449.7850 1.3050
+bond_coeff 372 harmonic 369.8232 1.3790
+bond_coeff 373 harmonic 304.8543 1.4140
+bond_coeff 374 harmonic 304.8543 1.4140
+bond_coeff 375 harmonic 399.8089 1.3900
+bond_coeff 376 harmonic 324.8447 1.4100
+bond_coeff 377 harmonic 329.8423 1.4000
+bond_coeff 378 harmonic 679.6751 1.4100
+bond_coeff 379 harmonic 229.8901 1.3820
+bond_coeff 380 harmonic 339.8376 1.3800
+bond_coeff 381 harmonic 334.1403 1.4110
+bond_coeff 382 harmonic 524.7492 1.2600
+bond_coeff 383 harmonic 279.8662 1.3500
+bond_coeff 384 harmonic 279.8662 1.7500
+bond_coeff 385 harmonic 229.8901 1.7800
+bond_coeff 386 harmonic 189.9092 1.7300
+bond_coeff 387 harmonic 349.8328 1.7400
+bond_coeff 388 harmonic 229.8901 1.9030
+bond_coeff 389 harmonic 189.9092 2.1150
+bond_coeff 390 harmonic 414.8017 1.6500
+bond_coeff 391 harmonic 339.8376 1.0800
+bond_coeff 392 harmonic 339.8376 1.0800
+bond_coeff 393 harmonic 419.7993 1.3500
+bond_coeff 394 harmonic 301.8557 1.4030
+bond_coeff 395 harmonic 319.8471 1.4060
+bond_coeff 396 harmonic 304.8543 1.3800
+bond_coeff 397 harmonic 264.8734 1.4800
+bond_coeff 398 harmonic 264.8734 1.4800
+bond_coeff 399 harmonic 299.8567 1.4800
+bond_coeff 400 harmonic 229.8901 1.4780
+bond_coeff 401 harmonic 301.8557 1.3430
+bond_coeff 402 harmonic 339.8376 1.3650
+bond_coeff 403 harmonic 301.8557 1.3430
+bond_coeff 404 harmonic 329.6024 1.3620
+bond_coeff 405 harmonic 314.8495 1.3420
+bond_coeff 406 harmonic 347.8337 1.3490
+bond_coeff 407 harmonic 329.8423 1.3700
+bond_coeff 408 harmonic 349.8328 1.0900
+bond_coeff 409 harmonic 349.8328 1.0900
+bond_coeff 410 harmonic 301.8557 1.3600
+bond_coeff 411 harmonic 409.8041 1.4100
+bond_coeff 412 harmonic 339.8376 1.3830
+bond_coeff 413 harmonic 349.8328 1.3350
+bond_coeff 414 harmonic 301.8557 1.3430
+bond_coeff 415 harmonic 299.8567 1.3910
+bond_coeff 416 harmonic 659.6847 1.2340
+bond_coeff 417 harmonic 234.8877 1.4000
+bond_coeff 418 harmonic 372.8218 1.6550
+bond_coeff 419 harmonic 349.8328 1.8500
+bond_coeff 420 harmonic 359.8280 1.3580
+bond_coeff 421 harmonic 251.8796 1.5020
+bond_coeff 422 harmonic 559.5925 1.3030
+bond_coeff 423 harmonic 439.7898 1.3700
+bond_coeff 424 harmonic 319.8471 1.3700
+bond_coeff 425 harmonic 449.7850 1.3050
+bond_coeff 426 harmonic 399.8089 1.3920
+bond_coeff 427 harmonic 399.8089 1.3420
+bond_coeff 428 harmonic 399.8089 1.3920
+bond_coeff 429 harmonic 299.8567 1.3860
+bond_coeff 430 harmonic 304.8543 1.4140
+bond_coeff 431 harmonic 359.8280 1.3660
+bond_coeff 432 harmonic 389.8137 1.3550
+bond_coeff 433 harmonic 369.8232 1.3700
+bond_coeff 434 harmonic 261.8748 1.7410
+bond_coeff 435 harmonic 379.8184 1.0900
+bond_coeff 436 harmonic 304.8543 1.3800
+bond_coeff 437 harmonic 399.8089 1.3580
+bond_coeff 438 harmonic 299.8567 1.4900
+bond_coeff 439 harmonic 299.8567 1.4200
+bond_coeff 440 harmonic 449.7850 1.3100
+bond_coeff 441 harmonic 402.8075 1.4110
+bond_coeff 442 harmonic 359.8280 1.3850
+bond_coeff 443 harmonic 399.8089 1.3800
+bond_coeff 444 harmonic 354.8304 1.0900
+bond_coeff 445 harmonic 359.8280 1.3850
+bond_coeff 446 harmonic 239.8853 1.4900
+bond_coeff 447 harmonic 304.8543 1.5200
+bond_coeff 448 harmonic 309.8519 1.3650
+bond_coeff 449 harmonic 299.8567 1.3750
+bond_coeff 450 harmonic 339.8376 1.3810
+bond_coeff 451 harmonic 359.8280 1.3900
+bond_coeff 452 harmonic 359.8280 1.3790
+bond_coeff 453 harmonic 349.8328 1.3150
+bond_coeff 454 harmonic 244.8829 1.4170
+bond_coeff 455 harmonic 329.8423 1.4000
+bond_coeff 456 harmonic 449.7850 1.3700
+bond_coeff 457 harmonic 329.8423 1.3890
+bond_coeff 458 harmonic 299.8567 1.7600
+bond_coeff 459 harmonic 329.8423 1.5800
+bond_coeff 460 harmonic 229.8901 1.5200
+bond_coeff 461 harmonic 222.3937 1.5000
+bond_coeff 462 harmonic 222.3937 1.5380
+bond_coeff 463 harmonic 222.3937 1.5380
+bond_coeff 464 harmonic 359.8280 1.4150
+bond_coeff 465 harmonic 339.8376 1.4300
+bond_coeff 466 harmonic 427.7955 1.4200
+bond_coeff 467 harmonic 189.9092 1.7700
+bond_coeff 468 harmonic 119.9427 1.9540
+bond_coeff 469 harmonic 249.8806 1.5200
+bond_coeff 470 harmonic 249.8806 1.5200
+bond_coeff 471 harmonic 264.8734 1.3400
+bond_coeff 472 harmonic 222.3937 1.5000
+bond_coeff 473 harmonic 222.3937 1.5000
+bond_coeff 474 harmonic 222.3937 1.5380
+bond_coeff 475 harmonic 222.3937 1.5300
+bond_coeff 476 harmonic 222.3937 1.5380
+bond_coeff 477 harmonic 222.3937 1.5280
+bond_coeff 478 harmonic 222.3937 1.5240
+bond_coeff 479 harmonic 319.8471 1.4300
+bond_coeff 480 harmonic 319.8471 1.4300
+bond_coeff 481 harmonic 262.8743 1.4740
+bond_coeff 482 harmonic 359.8280 1.4150
+bond_coeff 483 harmonic 339.8376 1.4300
+bond_coeff 484 harmonic 339.8376 1.4300
+bond_coeff 485 harmonic 427.7955 1.4200
+bond_coeff 486 harmonic 357.8290 1.3130
+bond_coeff 487 harmonic 359.8280 1.4150
+bond_coeff 488 harmonic 189.9092 1.7768
+bond_coeff 489 harmonic 139.9331 1.9560
+bond_coeff 490 harmonic 308.8524 1.1110
+bond_coeff 491 harmonic 321.8462 1.1110
+bond_coeff 492 harmonic 197.9054 1.5200
+bond_coeff 493 harmonic 269.8710 1.8800
+bond_coeff 494 harmonic 269.8710 1.8800
+bond_coeff 495 harmonic 348.8333 1.3530
+bond_coeff 496 harmonic 345.8347 1.0828
+bond_coeff 497 harmonic 222.3937 1.5380
+bond_coeff 498 harmonic 222.3937 1.5380
+bond_coeff 499 harmonic 199.9044 1.4900
+bond_coeff 500 harmonic 199.9044 1.4800
+bond_coeff 501 harmonic 308.8524 1.1110
+bond_coeff 502 harmonic 222.3937 1.5300
+bond_coeff 503 harmonic 222.3937 1.5300
+bond_coeff 504 harmonic 222.3937 1.5280
+bond_coeff 505 harmonic 274.8686 1.5000
+bond_coeff 506 harmonic 204.9021 1.5200
+bond_coeff 507 harmonic 222.3937 1.5280
+bond_coeff 508 harmonic 222.3937 1.5240
+bond_coeff 509 harmonic 292.8600 1.4400
+bond_coeff 510 harmonic 399.8089 1.4580
+bond_coeff 511 harmonic 319.8471 1.4300
+bond_coeff 512 harmonic 265.7530 1.4380
+bond_coeff 513 harmonic 339.8376 1.4510
+bond_coeff 514 harmonic 319.8471 1.4300
+bond_coeff 515 harmonic 321.8462 1.4400
+bond_coeff 516 harmonic 199.9044 1.4500
+bond_coeff 517 harmonic 262.8743 1.4740
+bond_coeff 518 harmonic 262.8743 1.4740
+bond_coeff 519 harmonic 359.8280 1.4150
+bond_coeff 520 harmonic 319.8471 1.4400
+bond_coeff 521 harmonic 319.8471 1.4400
+bond_coeff 522 harmonic 427.7955 1.4200
+bond_coeff 523 harmonic 449.7850 1.3300
+bond_coeff 524 harmonic 359.8280 1.4150
+bond_coeff 525 harmonic 279.8662 1.4000
+bond_coeff 526 harmonic 269.8710 1.8900
+bond_coeff 527 harmonic 269.8710 1.8900
+bond_coeff 528 harmonic 213.8978 1.8160
+bond_coeff 529 harmonic 197.9054 1.8180
+bond_coeff 530 harmonic 184.9116 1.8070
+bond_coeff 531 harmonic 184.9116 1.7900
+bond_coeff 532 harmonic 184.9116 1.8100
+bond_coeff 533 harmonic 219.8949 1.7880
+bond_coeff 534 harmonic 159.9236 1.9660
+bond_coeff 535 harmonic 314.8495 1.7000
+bond_coeff 536 harmonic 308.8524 1.1110
+bond_coeff 537 harmonic 169.9188 1.5200
+bond_coeff 538 harmonic 419.7993 1.3740
+bond_coeff 539 harmonic 341.8366 1.0828
+bond_coeff 540 harmonic 189.9092 1.5310
+bond_coeff 541 harmonic 204.9021 1.8360
+bond_coeff 542 harmonic 299.8567 1.1110
+bond_coeff 543 harmonic 299.8567 1.1110
+bond_coeff 544 harmonic 222.3937 1.5280
+bond_coeff 545 harmonic 222.3937 1.5280
+bond_coeff 546 harmonic 225.8920 1.4900
+bond_coeff 547 harmonic 299.8567 1.4530
+bond_coeff 548 harmonic 214.8973 1.5100
+bond_coeff 549 harmonic 199.9044 1.4800
+bond_coeff 550 harmonic 199.9044 1.4900
+bond_coeff 551 harmonic 199.9044 1.4900
+bond_coeff 552 harmonic 284.3641 1.1000
+bond_coeff 553 harmonic 299.8567 1.0800
+bond_coeff 554 harmonic 222.3937 1.5300
+bond_coeff 555 harmonic 222.3937 1.5280
+bond_coeff 556 harmonic 222.3937 1.5380
+bond_coeff 557 harmonic 309.8519 1.4400
+bond_coeff 558 harmonic 399.8089 1.4580
+bond_coeff 559 harmonic 319.8471 1.4300
+bond_coeff 560 harmonic 399.8089 1.4560
+bond_coeff 561 harmonic 314.8495 1.4340
+bond_coeff 562 harmonic 319.8471 1.4300
+bond_coeff 563 harmonic 265.8729 1.4600
+bond_coeff 564 harmonic 314.8495 1.4420
+bond_coeff 565 harmonic 254.8782 1.4630
+bond_coeff 566 harmonic 359.8280 1.4150
+bond_coeff 567 harmonic 339.8376 1.4300
+bond_coeff 568 harmonic 339.8376 1.4300
+bond_coeff 569 harmonic 427.7955 1.4200
+bond_coeff 570 harmonic 449.7850 1.3300
+bond_coeff 571 harmonic 213.8978 1.8160
+bond_coeff 572 harmonic 239.8853 1.8160
+bond_coeff 573 harmonic 194.9068 1.8370
+bond_coeff 574 harmonic 209.8997 1.7900
+bond_coeff 575 harmonic 239.8853 1.8000
+bond_coeff 576 harmonic 314.8495 1.7000
+bond_coeff 577 harmonic 321.8462 1.1110
+bond_coeff 578 harmonic 249.8806 1.4800
+bond_coeff 579 harmonic 299.8567 1.4530
+bond_coeff 580 harmonic 329.8423 1.4680
+bond_coeff 581 harmonic 214.8973 1.5100
+bond_coeff 582 harmonic 199.9044 1.4800
+bond_coeff 583 harmonic 199.9044 1.4900
+bond_coeff 584 harmonic 199.9044 1.4800
+bond_coeff 585 harmonic 321.8462 1.1110
+bond_coeff 586 harmonic 299.8567 1.0800
+bond_coeff 587 harmonic 234.8877 1.4540
+bond_coeff 588 harmonic 310.8514 1.1110
+bond_coeff 589 harmonic 254.8782 1.4630
+bond_coeff 590 harmonic 313.6501 1.0980
+bond_coeff 591 harmonic 262.8743 1.4740
+bond_coeff 592 harmonic 314.3497 1.0856
+bond_coeff 593 harmonic 239.8853 1.5010
+bond_coeff 594 harmonic 222.3937 1.5240
+bond_coeff 595 harmonic 219.8949 1.4500
+bond_coeff 596 harmonic 339.8376 1.0830
+bond_coeff 597 harmonic 339.8376 1.0830
+bond_coeff 598 harmonic 269.8710 1.5400
+bond_coeff 599 harmonic 244.8829 1.4500
+bond_coeff 600 harmonic 349.8328 1.4223
+bond_coeff 601 harmonic 347.8337 1.0930
+bond_coeff 602 harmonic 194.9068 1.5180
+bond_coeff 603 harmonic 194.9068 1.5180
+bond_coeff 604 harmonic 222.3937 1.5000
+bond_coeff 605 harmonic 222.3937 1.5240
+bond_coeff 606 harmonic 219.8949 1.4580
+bond_coeff 607 harmonic 219.8949 1.4560
+bond_coeff 608 harmonic 319.8471 1.4340
+bond_coeff 609 harmonic 359.8280 1.4620
+bond_coeff 610 harmonic 219.8949 1.4560
+bond_coeff 611 harmonic 219.8949 1.4560
+bond_coeff 612 harmonic 262.8743 1.4740
+bond_coeff 613 harmonic 334.1403 1.4110
+bond_coeff 614 harmonic 339.8376 1.4300
+bond_coeff 615 harmonic 427.7955 1.4200
+bond_coeff 616 harmonic 349.8328 1.4250
+bond_coeff 617 harmonic 419.7993 1.3740
+bond_coeff 618 harmonic 306.8533 1.1000
+bond_coeff 619 harmonic 341.8366 1.0828
+bond_coeff 620 harmonic 194.9068 1.5300
+bond_coeff 621 harmonic 222.3937 1.5270
+bond_coeff 622 harmonic 222.3937 1.5370
+bond_coeff 623 harmonic 222.3937 1.5240
+bond_coeff 624 harmonic 399.8089 1.4700
+bond_coeff 625 harmonic 369.8232 1.4500
+bond_coeff 626 harmonic 319.8471 1.4550
+bond_coeff 627 harmonic 399.8089 1.4780
+bond_coeff 628 harmonic 349.8328 1.4250
+bond_coeff 629 harmonic 306.8533 1.1000
+bond_coeff 630 harmonic 222.3937 1.5240
+bond_coeff 631 harmonic 219.8949 1.4560
+bond_coeff 632 harmonic 319.8471 1.4850
+bond_coeff 633 harmonic 319.8471 1.4850
+bond_coeff 634 harmonic 239.8853 1.4460
+bond_coeff 635 harmonic 329.8423 1.0800
+bond_coeff 636 harmonic 209.8997 1.5600
+bond_coeff 637 harmonic 319.8471 1.4600
+bond_coeff 638 harmonic 234.8877 1.4300
+bond_coeff 639 harmonic 319.8471 1.5150
+bond_coeff 640 harmonic 308.8524 1.1110
+bond_coeff 641 harmonic 222.3937 1.5230
+bond_coeff 642 harmonic 219.8949 1.4580
+bond_coeff 643 harmonic 369.8232 1.4500
+bond_coeff 644 harmonic 219.8949 1.4560
+bond_coeff 645 harmonic 249.8806 1.4250
+bond_coeff 646 harmonic 259.8758 1.4200
+bond_coeff 647 harmonic 308.8524 1.1110
+bond_coeff 648 harmonic 549.7372 1.3600
+bond_coeff 649 harmonic 454.7826 1.0000
+bond_coeff 650 harmonic 579.7229 1.2250
+bond_coeff 651 harmonic 454.7826 1.0000
+bond_coeff 652 harmonic 402.8075 1.0150
+bond_coeff 653 harmonic 339.8376 1.2900
+bond_coeff 654 harmonic 359.8280 1.3550
+bond_coeff 655 harmonic 419.7993 1.4110
+bond_coeff 656 harmonic 279.8662 1.3950
+bond_coeff 657 harmonic 269.8710 1.7000
+bond_coeff 658 harmonic 473.7735 1.0100
+bond_coeff 659 harmonic 473.7735 1.0100
+bond_coeff 660 harmonic 452.7836 1.0000
+bond_coeff 661 harmonic 469.7754 1.0150
+bond_coeff 662 harmonic 449.7850 1.3650
+bond_coeff 663 harmonic 489.9358 1.0160
+bond_coeff 664 harmonic 473.7735 1.0100
+bond_coeff 665 harmonic 473.7735 1.0100
+bond_coeff 666 harmonic 419.7993 1.3200
+bond_coeff 667 harmonic 439.7898 0.9970
+bond_coeff 668 harmonic 479.7707 1.0000
+bond_coeff 669 harmonic 179.9140 1.7920
+bond_coeff 670 harmonic 223.8930 1.7000
+bond_coeff 671 harmonic 432.2934 1.0250
+bond_coeff 672 harmonic 487.7668 1.0000
+bond_coeff 673 harmonic 214.8973 1.6300
+bond_coeff 674 harmonic 234.8877 1.6500
+bond_coeff 675 harmonic 441.7888 1.0210
+bond_coeff 676 harmonic 447.5860 1.0190
+bond_coeff 677 harmonic 239.8853 1.6800
+bond_coeff 678 harmonic 453.7831 1.0200
+bond_coeff 679 harmonic 452.8835 1.0140
+bond_coeff 680 harmonic 455.2824 1.0140
+bond_coeff 681 harmonic 269.8710 1.4400
+bond_coeff 682 harmonic 449.7850 1.0180
+bond_coeff 683 harmonic 354.8304 1.4000
+bond_coeff 684 harmonic 436.7912 1.0100
+bond_coeff 685 harmonic 244.8829 1.4000
+bond_coeff 686 harmonic 309.8519 1.4000
+bond_coeff 687 harmonic 402.8075 1.0400
+bond_coeff 688 harmonic 459.7802 1.0060
+bond_coeff 689 harmonic 402.8075 1.0400
+bond_coeff 690 harmonic 309.8519 1.3500
+bond_coeff 691 harmonic 579.7229 1.4800
+bond_coeff 692 harmonic 499.7611 1.5100
+bond_coeff 693 harmonic 399.8089 1.5200
+bond_coeff 694 harmonic 539.7420 1.4480
+bond_coeff 695 harmonic 629.6990 1.4400
+bond_coeff 696 harmonic 539.7420 1.5300
+bond_coeff 697 harmonic 577.7238 1.4770
+bond_coeff 698 harmonic 299.8567 1.4610
+bond_coeff 699 harmonic 229.8901 1.6100
+bond_coeff 700 harmonic 189.9092 1.6500
+bond_coeff 701 harmonic 149.9283 1.6550
+bond_coeff 702 harmonic 249.8806 1.5750
+bond_coeff 703 harmonic 234.8877 1.6000
+bond_coeff 704 harmonic 329.8423 1.6750
+bond_coeff 705 harmonic 329.8423 1.6750
+bond_coeff 706 harmonic 299.8567 1.7150
+bond_coeff 707 harmonic 236.8868 1.5800
+bond_coeff 708 harmonic 236.8868 1.6100
+bond_coeff 709 harmonic 244.8829 1.4500
+bond_coeff 710 harmonic 544.7396 0.9600
+bond_coeff 711 harmonic 349.8328 1.4350
+bond_coeff 712 harmonic 260.2756 1.9953
+bond_coeff 713 harmonic 260.2756 1.9953
+bond_coeff 714 harmonic 260.2756 1.9953
+bond_coeff 715 harmonic 258.7763 1.9953
+bond_coeff 716 harmonic 172.9173 2.0290
+bond_coeff 717 harmonic 274.8686 1.3250
+bond_coeff 718 harmonic 204.9021 1.7260
+bond_coeff 719 harmonic 199.9044 1.5220
+bond_coeff 720 harmonic 199.9044 1.5220
+bond_coeff 721 harmonic 199.9044 1.5220
+bond_coeff 722 harmonic 199.9044 1.5220
+bond_coeff 723 harmonic 749.6417 1.2200
+bond_coeff 724 harmonic 524.7492 1.2600
+bond_coeff 725 harmonic 524.7492 1.2600
+bond_coeff 726 harmonic 149.9283 1.3340
+bond_coeff 727 harmonic 149.9283 1.3340
+bond_coeff 728 harmonic 229.8901 1.4000
+bond_coeff 729 harmonic 544.7396 0.9600
+bond_coeff 730 harmonic 308.8524 1.1110
+bond_coeff 731 harmonic 329.8423 1.0800
+bond_coeff 732 harmonic 308.8524 1.1110
+bond_coeff 733 harmonic 321.8462 1.1110
+bond_coeff 734 harmonic 339.8376 1.4300
+bond_coeff 735 harmonic 339.8376 1.4300
+bond_coeff 736 harmonic 339.8376 1.4300
+bond_coeff 737 harmonic 339.8376 1.4300
+bond_coeff 738 harmonic 339.8376 1.4300
+bond_coeff 739 harmonic 339.8376 1.4300
+bond_coeff 740 harmonic 269.8710 1.6000
+bond_coeff 741 harmonic 269.8710 1.6000
+bond_coeff 742 harmonic 579.7229 1.4800
+bond_coeff 743 harmonic 236.8868 1.5900
+bond_coeff 744 harmonic 409.8041 1.0400
+bond_coeff 745 harmonic 199.9044 1.4800
+bond_coeff 746 harmonic 260.8753 1.5100
+bond_coeff 747 harmonic 214.8973 1.5100
+bond_coeff 748 harmonic 214.8973 1.5100
+bond_coeff 749 harmonic 299.8567 1.0800
+bond_coeff 750 harmonic 299.8567 1.0800
+bond_coeff 751 harmonic 222.3937 1.5000
+bond_coeff 752 harmonic 222.3937 1.5380
+bond_coeff 753 harmonic 222.3937 1.5380
+bond_coeff 754 harmonic 222.3937 1.5300
+bond_coeff 755 harmonic 222.3937 1.5280
+bond_coeff 756 harmonic 222.3937 1.5300
+bond_coeff 757 harmonic 427.7955 1.4200
+bond_coeff 758 harmonic 427.7955 1.4200
+bond_coeff 759 harmonic 427.7955 1.4200
+bond_coeff 760 harmonic 539.7420 1.4480
+bond_coeff 761 harmonic 249.8806 1.5750
+bond_coeff 762 harmonic 509.7563 1.3300
+bond_coeff 763 harmonic 364.8256 1.1000
+bond_coeff 764 harmonic 382.8170 1.5040
+bond_coeff 765 harmonic 499.7611 1.3420
+bond_coeff 766 harmonic 360.3278 1.1000
+bond_coeff 767 harmonic 364.8256 1.5020
+bond_coeff 768 harmonic 439.7898 1.3400
+
