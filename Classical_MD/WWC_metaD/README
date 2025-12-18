@@ -1,1 +1,2 @@
 The initial structure of each window was chosen from the 2D US trajectories.
+The topology information can be found on ../../RMD/RMD_EQ/C1_NoCoeff.data LAMMPS data file.
